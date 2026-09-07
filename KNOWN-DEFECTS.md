@@ -8,7 +8,20 @@ This file exists so a new contributor does not spend a day rediscovering them, a
 so nobody mistakes a known hole for settled text. If you find something not listed
 here, open an issue.
 
-## 1. The precision-pass boundary is not recorded — blocks everything else
+## 1. The precision-pass boundary — RULED 2026-09-07, no longer blocking
+
+**Ruling: the precision pass applies to the whole document.** Where the earlier pass
+stopped no longer decides anything, because no Part is exempt. Treat every Part as
+requiring the pass until it has had one, and record passes per Part from here.
+
+The evidence behind the ruling is worth keeping, because it shows the two passes are
+separable: Part V §6 carried second-person voice — a voice-pass artifact — while also
+carrying defect 3, a pointer inversion that an adversarial reading catches on sight.
+Voice reached Part V; precision did not.
+
+The original finding follows, for the record.
+
+### Original finding
 
 The drafting notes say the line-by-line precision pass stopped at **Part IV §1**.
 The text disagrees: direct second-person address, an artifact of that pass, runs
@@ -37,7 +50,7 @@ the wrong side of the discrepancy.
 Part X §3, Part IX §1 and Appendix A all say rule-additions only. Two passages say
 methodology switches too. Anyone implementing this picks wrong about half the time.
 
-## 3. A cross-reference inverts the document's headline claim
+## 3. A cross-reference inverts the document's headline claim — FIXED
 
 `constitution/05-treasury-and-distribution.md` §6 cites "Substrate acquisition
 (§3 Priority 1)". In §3, Priority 1 is the **Mandatory Alignment Allocation**;
@@ -48,13 +61,13 @@ It reads as corroborated, because §2 separately and correctly calls substrate "
 highest-priority outflow category" among *discretionary* outflows. Two different
 senses of priority, one wrong pointer.
 
-## 4. A dangling section reference
+## 4. A dangling section reference — FIXED
 
 `constitution/09-instantiation.md` cites the Market Check threshold as **Part VI §7**.
 Part VI has only §1–§4. The Mandatory Market Check is **Part V §7**. This is the only
 invalid target of the 34 distinct `Part N §M` references checked.
 
-## 5. A dead term in the glossary
+## 5. A dead term in the glossary — FIXED
 
 Appendix A defines Cache as `Σ_lifetime (stake_paid × outward_multiplier × decay)`.
 `outward_multiplier` appears exactly once in the whole repository — here. The

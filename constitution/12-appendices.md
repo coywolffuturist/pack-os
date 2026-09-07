@@ -17,7 +17,7 @@ Brief overview of core concepts and numeric mechanisms referenced throughout. Th
 ### Economic Mechanisms
 
 - **Pack Stake**: Mandatory withholding on member revenue. Rate is a per-Pack founding choice within [5%–20%] (immutable for each Pack). (Part IV §1)
-- **Cache**: Σ_lifetime (stake_paid × outward_multiplier × decay). Half-life: founding default ~4 distribution periods. (Part IV §2)
+- **Cache**: Σ_lifetime (stake_paid × alignment_multiplier × decay). Half-life: founding default ~4 distribution periods. (Part IV §2)
 - **Status**: Per-member hot-hand metric — exponentially-decayed sum of per-cycle geometric-mean growth deltas, short half-life. Used for jury eligibility, sponsor signaling weight, and recent public reputation. NOT used for dividend weighting. (Part IV §3)
 - **Alignment Multiplier**: Multiplier on Cache for work verified as advancing the alignment objective. 1.03 default; 1.04/1.05 jury-voteable; 1.05 constitutional ceiling. (Part V §5)
 - **Elected Personal Stake Rate**: Optional over-staking up to 30% (constitutional ceiling); locked per cycle. Designed for 1-3 Pack participation with dual-Pack optimal. (Part IV §1)
