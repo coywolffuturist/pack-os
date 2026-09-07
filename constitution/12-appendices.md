@@ -33,7 +33,7 @@ Brief overview of core concepts and numeric mechanisms referenced throughout. Th
 ### Governance, Exit, and Response
 
 - **Athenian Jury**: 15-of-21 unified threshold. (Part VI §1)
-- **Rule-Addition Jury**: 51 / 40-of-51 (constitutional amendment). (Part X §3)
+- **Amendment Jury**: 51 / 40-of-51 (amendment-grade decisions). (Part X §3)
 - **Pack Renewal**: Bottom 1% or 2.5% per cycle post-1000-cap. (Part VII §3)
 - **Excommunication**: Operational immediate; financial at boundary. (Part VII §4)
 - **Two-Cycle Extended Sale Window: PackSeat NFT disposition mechanism**. (Part VII §5)
@@ -57,7 +57,7 @@ Stage-2 strategic ops        | 50%              | complement of dividend      | 
 Pack Response cap            | 1.5× damage      | Constitutional              | —
 Apprenticeship               | deployment count | Per-Pack founding           | —
 Standard jury                | 15-of-21         | Constitutional              | —
-Rule-addition jury           | 51 / 40-of-51    | Constitutional amendment    | —
+Amendment jury               | 51 / 40-of-51    | Constitutional amendment    | —
 Mint bid floor               | self-scaling     | k × median stake            | Per-Pack (k)
 Pack Exchange fee            | 10% (default)    | [0%–20%]                    | Per-Pack founding
 ```

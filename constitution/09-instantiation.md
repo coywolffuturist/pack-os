@@ -4,7 +4,7 @@
 
 - 1,000 active-member cap (constitutional, immutable per Pack instance)
 - Pack Stake mechanism (mandatory + elected Personal Stake; Part IV §1)
-- Athenian jury mechanism (15-of-21 unified threshold; 51/40-of-51 for rule additions)
+- Athenian jury mechanism (15-of-21 unified threshold; 51/40-of-51 for amendment-grade decisions)
 - Treasury structure (unified balance; net income split per Part V §3)
 - Pack Exit Pathways (Voluntary, Pack Renewal, Excommunication)
 - Liveness Check, Apprenticeship, Bloodline, Sponsor Pledge primitive

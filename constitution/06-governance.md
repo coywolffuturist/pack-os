@@ -139,7 +139,7 @@ At every distribution event, the following resolve atomically, in order:
 
 2. Personal Stake elections clamp: an election below your Pack's mandatory rate takes the mandatory rate instead.
 
-3. Voluntary exits execute; their PackSeats enter the Two-Cycle Sale Window (Part VII).
+3. Voluntary exits pending at the boundary execute, and final dividend shares settle for members who exited on submission earlier in the period (Part VII §2).
 
 4. Pack Renewal exits execute (at 1,000-cap).
 
@@ -152,6 +152,8 @@ Atomicity guarantees clean attribution and no mid-period state ambiguity.
 ## §4: Event Cycle Length
 
 A Pack **event** is a single revenue event: one arrival of revenue at a member's wallet, subject to Pack Stake withholding at that moment (Part IV §1). Your Pack's clock therefore runs on its own economic activity rather than on wall-clock time, and a Pack that transacts more moves through its cycles faster.
+
+**Single-member contribution limit.** No member contributes more than one eighth of a cycle's events, rounded down, to their Pack's clock. Revenue events beyond that limit within the same cycle are withheld against and credit Cache in full (Part IV §1, §2); they do not advance the clock. Completing one cycle therefore requires revenue from no fewer than eight members, the minimum founding cohort (Part IX §1).
 
 The distribution event cycle determines how many Pack events constitute one distribution period.
 
@@ -183,6 +185,7 @@ Three-option vote via standard 15-of-21 Athenian jury:
 - Mid-cycle parameter-vote frequency (Stage-2 split, strategic split, Alignment Multiplier — Part V §3, §5)
 - Pack Renewal cull frequency
 - Cache half-life (founding default ~4 distribution periods)
+- Single-member contribution limit (one eighth of a cycle)
 - Cycle length vote itself
 
 **FIXED regardless of cycle changes:**
