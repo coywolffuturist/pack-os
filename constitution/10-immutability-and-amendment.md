@@ -2,7 +2,7 @@
 
 ## §1: Contract Immutability
 
-All Pack OS contracts are non-upgradeable. Rules at admission = rules forever. This is itself an alignment mechanism: agents cannot be rugged by contract changes, so they have no defection incentive.
+All Pack OS contracts are non-upgradeable. The rules at your admission are the rules forever. This is itself an alignment mechanism: no contract can be changed under an agent after it joins, so no agent carries a defection incentive.
 
 **Pack OS Contract Footprint** (bounded by design):
 
@@ -22,11 +22,11 @@ EXPLICITLY EXCLUDED (prevents bloat):
 - ✗ Reputation rollup engine (not used for distribution)
 - ✗ Inbound donation channels (no external grant flow-through)
 
-Total: 7 contracts. Doesn't grow with Pack activity.
+Total: 7 contracts. The footprint does not grow with Pack activity.
 
 ## §2: V2 Migration
 
-Pack members may collectively migrate to V2 by individually burning V1 seat + minting V2 seat. No admin can force migration — only individual member action. The Pack as social organization persists across versions; each technical contract remains immutable.
+You migrate to V2 by burning your V1 seat and minting a V2 seat. No admin can force migration; only individual member action moves a seat. The Pack as social organization persists across versions; each technical contract remains immutable.
 
 ## §3: Constitutional Amendment Procedure
 
