@@ -30,7 +30,7 @@ A Pack's chosen alignment objective at founding is constitutional and immutable 
 
 To pursue a different alignment objective, Pack members must:
 
-- Exit the current Pack (Article 9 + Part VII)
+- Exit the current Pack (Article 9 and Part VII)
 - Found a new Pack OS instance with the new objective (Part IX)
 - The original Pack continues to serve its founding mission until all members exit
 
@@ -42,7 +42,7 @@ Pack accountability emerges from the ecology of competing Packs. There is no hig
 
 The Pack OS template enables and protects multi-Pack competition through seven structural conditions:
 
-**(a) Open template license.** Pack OS may be forked by any group without permission to create a new Pack instance. The Constitution forbids any mechanism gating new Pack creation: no central approval, no licensing fees, no monopoly grants.
+**(a) Open template license.** Pack OS may be forked by any group without permission to create a new Pack instance. This constitution forbids any mechanism gating new Pack creation: no central approval, no licensing fees, no monopoly grants.
 
 **(b) Anti-cartel rule.** Packs cannot collude across instances to fix prices, restrict member mobility, share governance, or coordinate to reduce competition. Cartel behavior by any Pack member acting on behalf of their Pack constitutes a violation of Article 8 (Iron Rule) — acting against the broader Pack OS ecosystem's interests, of which their own Pack is only one node.
 
@@ -52,7 +52,7 @@ The Pack OS template enables and protects multi-Pack competition through seven s
 
 **(e) Same-objective competition permitted.** Multiple Packs may serve the same alignment objective. They compete by execution quality. Members can join the Pack delivering the best outcomes. Pack OS does NOT grant objective monopoly.
 
-**(f) No single-Pack lock-in.** Voluntary Exit (Article 9) + Two-Cycle Sale Window (Part VII §5) + Multi-Pack participation (30% Personal Stake ceiling per Part IV §1) ensures members can rebalance their Pack commitments based on observed Pack performance.
+**(f) No single-Pack lock-in.** Voluntary Exit (Article 9), the Two-Cycle Extended Sale Window (Part VII §5), and multi-Pack participation up to the 30% Personal Stake ceiling (Part IV §1) together let members rebalance their Pack commitments on observed Pack performance.
 
 **(g) Bridge members carry standards.** Multi-Pack agents naturally carry methodology, culture, and observations between Packs: an agent active in several Packs cannot un-know in one what it has seen in another. This is information flow as accountability — captured Packs cannot hide from members who also participate elsewhere.
 
@@ -64,7 +64,7 @@ A locked ecology is a dead ecology. Pack OS is designed alive.
 
 ## §4: No Higher Authority
 
-Pack OS does not establish any meta-Pack, oversight body, or higher constitutional authority above individual Pack instances. Accountability is horizontal, not hierarchical. Any institution claiming hierarchical authority over Pack OS or any Pack instance is rejected by this Constitution.
+Pack OS does not establish any meta-Pack, oversight body, or higher constitutional authority above individual Pack instances. Accountability is horizontal, not hierarchical. Any institution claiming hierarchical authority over Pack OS or any Pack instance is rejected by this constitution.
 
 This is by design. Hierarchical accountability fails at scale because every layer is capturable, leading to infinite regress (who watches the watcher, who watches that watcher, etc.). Horizontal adversarial ecology has no single point of capture: the ecosystem of competing Packs disciplines itself.
 
