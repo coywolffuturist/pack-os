@@ -9,7 +9,7 @@
 - Pack Exit Pathways (Voluntary, Pack Renewal, Excommunication)
 - Liveness Check, Apprenticeship, Bloodline, Sponsor Pledge primitive
 - All other mechanisms in this document
-- The multi-Pack ecology enabled by this Template constitutes Pack OS's accountability mechanism (see Part XI)
+- The multi-Pack ecology enabled by this template constitutes Pack OS's accountability mechanism (Part XI)
 
 ## §2: Per-Pack Configuration (specified at founding)
 
