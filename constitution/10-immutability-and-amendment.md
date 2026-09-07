@@ -30,11 +30,13 @@ Pack members may collectively migrate to V2 by individually burning V1 seat + mi
 
 ## §3: Constitutional Amendment Procedure
 
-Adding new excommunication-triggerable rules, raising any constitutional ceiling, or changing an amendment-grade parameter (Pack Stake bounds, Personal Stake ceiling, Pack cap, the Mandatory Alignment Allocation rate, the Alignment Multiplier cap, the settlement numeraire, the Expansion (Liveness) window, etc.) requires:
+This section carries the complete list of amendment-grade decisions. Where any other Part names a decision as amendment-grade, it points here; this list governs.
+
+Adding new excommunication-triggerable rules, raising any constitutional ceiling, changing an amendment-grade parameter (Pack Stake bounds, Personal Stake ceiling, Pack cap, the Mandatory Alignment Allocation rate, the Alignment Multiplier cap, the settlement numeraire, the Expansion (Liveness) window, etc.), or replacing your Pack's measurement body through a methodology switch (Part VI §2) requires:
 
 - A large Athenian jury of **51 jurors** drawn via VRF (exceptional jury size, used only for this purpose)
 - A **40-of-51 affirmative supermajority** (~78%) for adoption
 - Public draft of the proposed amendment available to all members for one full distribution period before the jury vote (no surprise rules)
 - Once adopted, the amendment applies only to acts committed AFTER adoption (no retroactive application)
 
-This is the only Athenian jury in Pack OS that is not 15-of-21. All other juries are 15-of-21.
+The 51-juror panel and its 40-of-51 threshold are the only jury size and threshold in Pack OS that are not 15-of-21. The decisions listed in this section are the complete set that use them; every other Athenian jury is 15-of-21.

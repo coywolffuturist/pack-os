@@ -35,7 +35,7 @@ Until this is settled nobody can tell which text is reviewed and which is still
 moving. **This is the first thing to resolve.** It is also not certain the notes are
 the wrong side of the discrepancy.
 
-## 2. The 40-of-51 jury's scope contradicts itself three ways
+## 2. The 40-of-51 jury's scope contradicts itself three ways — FIXED
 
 - `constitution/10-immutability-and-amendment.md` — "This is the only Athenian jury
   in Pack OS that is not 15-of-21. All other juries are 15-of-21."
@@ -76,13 +76,13 @@ genuinely titled "The Inward / Outward Principle", the dead term reads as a real
 mechanism. Anyone implementing Cache from the glossary hunts something that does
 not exist.
 
-## 6. A number that holds for only one exit path
+## 6. A number that holds for only one exit path — FIXED
 
 `constitution/07-exit-pathways.md` says "Pack temporarily at 999 active members
 during this cycle." Pack Renewal culls 1% or 2.5% at the 1,000-seat cap — 10 or 25
 seats enter the same window at once.
 
-## 7. Ratification is undefined
+## 7. Ratification is undefined — OPEN, and the largest question here
 
 `signatory` and `ratify` appear nowhere in `constitution/`. They appear only in this
 repository's own README and CONTRIBUTING. So "the signatories ratify", and
@@ -90,14 +90,14 @@ CONTRIBUTING's "amendments to a ratified text: not yet in force", both terminate
 an event the constitution never defines. There is no ratification procedure, no
 definition of a signatory, and no threshold.
 
-## 8. "Event" is the base time unit and is never defined
+## 8. "Event" is the base time unit and is never defined — FIXED
 
 Cycle length defaults to "100 events". Jury non-response windows are "rolling 100 /
 500 events". Stake is withheld per "revenue event". The nearest thing to a definition
 is circular — Part VI describes how many Pack events make one distribution period.
 Appendix A omits the term. Anything time-denominated has to be guessed.
 
-## 9. Standards in CONTRIBUTING that the current text does not meet
+## 9. Standards in CONTRIBUTING that the current text does not meet — RESOLVED
 
 CONTRIBUTING states drafting standards for **new and revised text**. Existing text
 predates them in places:
@@ -109,7 +109,22 @@ predates them in places:
   deliberate. The 60-second juror timeout and the 24-hour TRIVIAL tier are not
   marked either way.
 
-Do not mass-fix these. Each is a small ruling, and some are deliberate exceptions.
+**Resolved 2026-09-07.** The bare-§ count was measured against an earlier draft of
+CONTRIBUTING that required every § to carry its Part. The rule now reads: a
+reference within the same Part may be bare. All 35 bare references were checked
+against the section index of their own Part and all 35 resolve, so none is a defect.
+
+Formula notation in prose went from 16 occurrences to 12. The four removed were
+genuine prose violations. The twelve that remain are accepted exceptions, recorded
+here rather than forced: Appendix A, C and D name parameters because naming them is
+what a glossary does; Part VI's proposal record lists field names, which is a data
+structure and not a formula; and `max_penalty_rate` in Part V is a named
+constitutional parameter under discussion, not a calculation.
+
+Both unmarked wall-clock windows are now marked deliberate, with the reason in the
+text: the 60-second juror timeout, because a window denominated in Pack events would
+let a quiet Pack stall a verdict; and the 24-hour TRIVIAL tier, because recovery time
+from an attack is set by the outside world, not by a Pack's event rate.
 
 ---
 

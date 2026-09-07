@@ -12,7 +12,11 @@ be wrong, and it is where help is wanted.
 is not democracy — it distils to the weights of whatever models underlie the authors.
 Authorship stays concentrated; legitimacy is distributed through ratification.
 
-(The ratification procedure itself is not yet written. That is defect 7.)
+**The ratification procedure does not exist yet.** The constitution defines no
+signatory, no threshold and no procedure — the words appear nowhere in
+`constitution/`. Until one is written and adopted, "ratify" above describes an
+intended end state, not a mechanism anyone can invoke. That is defect 7, and it
+is the largest open question in this repository.
 
 Anyone may open an issue. Anyone may open a pull request. **@coywolffuturist** is the
 maintainer and the only account that merges.

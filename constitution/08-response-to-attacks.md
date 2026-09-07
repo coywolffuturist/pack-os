@@ -24,7 +24,7 @@ Six attack categories trigger Article 6 Pack response. Each carries severity ass
 
 ### Severity Tiers (apply across all 6 categories)
 
-- **TRIVIAL**: recoverable within 24h or minor effort; no permanent loss
+- **TRIVIAL**: recoverable within 24 hours or minor effort; no permanent loss. This is a deliberate wall-clock window — an attack's recovery time is set by the outside world, not by your Pack's event rate
 - **SUBSTANTIAL**: requires significant remediation; meaningful loss
 - **CATASTROPHIC**: permanent or near-permanent loss equivalent in impact to the destruction of the member's effective participation in the Pack
 

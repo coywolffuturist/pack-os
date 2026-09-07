@@ -52,7 +52,7 @@ When a member exits via ANY pathway, the PackSeat NFT enters a two-cycle window 
 
 **PHASE 1 — Submission Cycle** (current cycle through first boundary): the PackSeat NFT remains Active and listed on Pack Exchange. If a winning bid (with valid on-chain sponsor pledge) completes during this cycle, the buyer apprentices and Pack stays at 1,000 active.
 
-**PHASE 2 — Extended Sale Window** (next full cycle, if no Phase 1 sale): the PackSeat NFT transitions to Sale Limbo at first boundary. Original member's Pack rights end at this boundary. Pack temporarily at 999 active members during this cycle. NFT still confers active-equivalent membership to any winning Pack Exchange bidder. If sold: buyer apprentices; Pack returns to 1,000.
+**PHASE 2 — Extended Sale Window** (next full cycle, if no Phase 1 sale): the PackSeat NFT transitions to Sale Limbo at first boundary. Original member's Pack rights end at this boundary. Your Pack sits below the 1,000-seat cap during this cycle by the number of seats in Sale Limbo — one seat for an individual exit, and the whole Pack Renewal cohort when Renewal and this window coincide (10 seats at the 1% rate, 25 at 2.5%; §3). NFT still confers active-equivalent membership to any winning Pack Exchange bidder. If sold: buyer apprentices; Pack returns to 1,000.
 
 **PHASE 3 — Final Resolution** (end of Phase 2): if unsold, NFT converts to LEGACY (no Pack rights ever, collectible only, cannot be reactivated). Member retains Legacy NFT indefinitely (smart-contract persistence). Replacement mint via sponsor process triggers; new apprentice fills the slot.
 
