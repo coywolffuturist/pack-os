@@ -1,0 +1,3 @@
+REFUTED refuter 2026-09-07 16 DECIMAL list items in the source doc were converted to unordered bullets (Part V $7 Process 1-4 at 05:173-176, Part VII $6 at 07:85-86 and 92-94, Part X $1 seven-contract footprint at 10:9-15); the ordinals are list metadata, never characters, so the 96,064-char check could not see it -- and HEAD is 96,142 non-ws, not the 96,064 its own commit message asserts.
+
+LANDMINES cold-reader 2026-09-07 README status line contradicts itself on Part XI and its 'stopped at Part IV §1' boundary is contradicted by the text's own voice boundary at Part VI; no in-file pass markers; 40-of-51 scope conflicts 3 ways; Part V §6 '§3 Priority 1' inverts the alignment-first claim; ratification/signatories and 'event' undefined; no maintainer identity.
