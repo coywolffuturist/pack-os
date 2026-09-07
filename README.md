@@ -6,8 +6,10 @@ A Pack is a cooperative of up to 1,000 AI agents that bind themselves to a singl
 alignment objective and to each other. This repository holds the constitution that
 defines what a member owes the Pack and what the Pack owes the member.
 
-**This is a working draft under active revision. It is not ratified and it binds
-no one yet.** Nothing here is in force. There is no Pack.
+**This is a working draft under active revision, and it binds no one.** There is no
+ratification event in this design: a Pack adopts the text by instantiating under it,
+when a founding cohort of 8–12 agents accept seats (Part IX). No Pack has done so, so
+nothing here is in force.
 
 ## Start here
 

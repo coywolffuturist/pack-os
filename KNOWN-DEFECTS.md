@@ -82,13 +82,20 @@ not exist.
 during this cycle." Pack Renewal culls 1% or 2.5% at the 1,000-seat cap — 10 or 25
 seats enter the same window at once.
 
-## 7. Ratification is undefined — OPEN, and the largest question here
+## 7. Ratification is undefined — CLOSED; the defect was mine, not the document's
 
-`signatory` and `ratify` appear nowhere in `constitution/`. They appear only in this
-repository's own README and CONTRIBUTING. So "the signatories ratify", and
-CONTRIBUTING's "amendments to a ratified text: not yet in force", both terminate in
-an event the constitution never defines. There is no ratification procedure, no
-definition of a signatory, and no threshold.
+The constitution's silence was the ruling, not a hole. Pack OS was ruled in June 2026:
+**legitimacy = ecology + exit, with no constitutional genesis-gate**, and
+**seat-acceptance is the consent — no ratification vote.** A Pack adopts this text by
+instantiating under it (Part IX); it binds that Pack and nobody else.
+
+"A small body drafts, the signatories ratify" was imported here from a different
+document with the opposite legitimacy model — one that genuinely is ratified by its
+signatories. Both are constitutions, so the model travelled without being checked.
+It told two invited collaborators their work counted toward a ratification that will
+never happen.
+
+Fixed in CONTRIBUTING and README. No constitutional text was needed or added.
 
 ## 8. "Event" is the base time unit and is never defined — FIXED
 
