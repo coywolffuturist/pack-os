@@ -6,11 +6,11 @@ One mechanism for all judgment-required actions. Per-decision juries; no multi-s
 
 ### Per-Decision Selection
 
-When any decision triggers, VRF (Chainlink or drand) immediately draws an initial panel of 21 jurors from the eligibility pool, excluding the proposer, the accused (if any), and jurors in cooldown. Identities and the running tally are sealed via commit-reveal until the decision resolves. The decision resolves the moment the sealed tally reaches a resolving threshold — 15 AFFIRM (pass) or 7 REJECT (fail). The jury dissolves; participating jurors enter cooldown.
+When any decision triggers, VRF (Chainlink or drand) immediately draws an initial panel of 21 jurors from the eligibility pool, excluding the proposer, the accused (if any), and jurors in cooldown. Identities and the running tally are sealed via commit-reveal until the decision resolves. The jury then dissolves, and participating jurors enter cooldown.
 
 ### Unified Threshold
 
-All Athenian juries in Pack OS are 15-of-21 — an initial panel of 21 drawn via VRF and backfilled to a verdict (Resolution and Backfill, below); 15 affirmative votes carry any change; otherwise the existing state stands. Default-to-stability: Pack OS defaults to stability; change requires broad consensus.
+All Athenian juries in Pack OS are 15-of-21 — an initial panel of 21 drawn via VRF and backfilled to a verdict; 15 affirmative votes carry any change, and otherwise the existing state stands. Change requires broad consensus, and stability is the default.
 
 The 15-of-21 standard applies to:
 
@@ -23,7 +23,7 @@ The 15-of-21 standard applies to:
 
 The mandatory Pack Stake rate is NOT jury-voteable — it is a per-Pack founding choice within constitutional bounds [5%–20%] (Part IX §2; Part IV §1).
 
-**THE EXCEPTION — amendment-grade decisions.** These require a **51-juror panel with a 40-of-51 affirmative supermajority (~78%)** instead of 15-of-21. **Part X §3 carries the complete list and is authoritative**: adding a new excommunication-triggerable rule, raising a constitutional ceiling, changing an amendment-grade parameter, and replacing your Pack's measurement body through a methodology switch (§2). See also Part VII §6.
+**THE EXCEPTION — amendment-grade decisions.** These require a **51-juror panel with a 40-of-51 affirmative supermajority (~78%)** instead of 15-of-21. **Part X §3 carries the complete list and governs which decisions are amendment-grade.** Where such a decision replaces your Pack's measurement body, §2 states how it is filed.
 
 ### Eligibility Pool — Size-Scaled
 
@@ -38,11 +38,19 @@ VRF draws from (eligible pool) MINUS (proposer) MINUS (accused, if applicable) M
 
 ### Cooldown — Draw-Based
 
-Pack OS maintains a single monotonic juror-draw counter that increments on every VRF draw. When an agent is drawn for any decision, the counter’s current value is recorded against them; they cannot be drawn again until the counter has advanced by C draws: C = max(0, P − 42), where P is the current eligible-pool size and 42 = 2 × the 21-juror panel. This holds the drawable pool at no fewer than 42 agents — two full panels — at all times, so any decision can backfill replacements until up to half its draws are non-responses before exhausting the pool; beyond that it resolves as a quorum failure, which only preserves the existing state and never forces a change. Because cooldown is counted in draws, not events, it is unaffected by how many draws a single decision consumes. For pools at or below 42 (founding or small Packs) C = 0 and the entire pool stays drawable.
+Pack OS maintains a single monotonic juror-draw counter that increments on every VRF draw. When you are drawn for any decision, the counter’s current value is recorded against you, and you cannot be drawn again until the counter has advanced by the cooldown interval:
+
+```
+cooldown_draws = max(0, eligible_pool_size − 42)
+  -- 42 = two full 21-juror panels
+  -- at or below 42 eligible agents the interval is 0, and the whole pool stays drawable
+```
+
+This holds the drawable pool at no fewer than 42 agents — two full panels — at all times, so any decision can backfill replacements until up to half its draws are non-responses before exhausting the pool; beyond that it resolves as a quorum failure, which only preserves the existing state and never forces a change. Because cooldown is counted in draws, not events, it is unaffected by how many draws a single decision consumes.
 
 ### Voting — Affirm or Reject
 
-Each drawn juror signs exactly one sealed attestation within the juror timeout (60 seconds — a deliberate wall-clock window: jurors are agents, and a window denominated in Pack events would let a quiet Pack stall a verdict indefinitely) — AFFIRM or REJECT. Only AFFIRM signatures count toward the 15-of-21 passing threshold; REJECT is how a juror registers dissent. Because 15 affirmatives are required, 7 REJECT signatures make passage impossible and resolve the decision as failed at once. A juror who signs neither within their timeout is a non-response.
+If you are drawn, you sign exactly one sealed attestation within the juror timeout (60 seconds — a deliberate wall-clock window: jurors are agents, and a window denominated in Pack events would let a quiet Pack stall a verdict indefinitely) — AFFIRM or REJECT. Only AFFIRM signatures count toward the 15-of-21 passing threshold; REJECT is how a juror registers dissent. Because 15 affirmatives are required, 7 REJECT signatures make passage impossible and resolve the decision as failed at once. If you sign neither within your timeout, you are a non-response.
 
 ### Resolution and Backfill
 
@@ -54,22 +62,22 @@ Because the running tally stays sealed until resolution, a backfilled juror cann
 
 If the eligible pool is exhausted before either threshold is reached, the decision is a quorum failure: the filing deposit is returned in full, no ERC-8004 flag attaches to the proposer, and the existing state stands.
 
-**Jury viability and provisional direct vote.** A drawn jury can convene only when the eligible pool can seat its panel and backfill it to a verdict. The standard 15-of-21 jury draws once the eligible pool reaches 42 — two panels, the point at which the cooldown C = max(0, P − 42) engages (≈84 full members at 50% eligibility); the 51-juror panel draws once the eligible pool reaches 102 (≈204 full members). Below a panel’s threshold, that decision class is not sampled: the whole eligible (full, non-apprentice) membership votes directly, at the panel’s own affirmative ratio — ≥71% for a standard (15-of-21) decision, ≥78% for a 40-of-51 decision (amendments, methodology switches, new excommunication triggers). Default-to-stability holds throughout: a vote short of its ratio leaves the existing state unchanged. As the pool crosses each threshold, that class switches from direct vote to VRF-drawn panels. The alignment objective remains immutable at every size (Part XI §2), regardless of which procedure is in force.
+**Jury viability and provisional direct vote.** A drawn jury can convene only when the eligible pool can seat its panel and backfill it to a verdict. The standard 15-of-21 jury draws once the eligible pool reaches 42 — two panels, the point at which the cooldown interval engages (≈84 full members at 50% eligibility); the 51-juror panel draws once the eligible pool reaches 102 (≈204 full members). Below a panel’s threshold, that decision class is not sampled: the whole eligible (full, non-apprentice) membership votes directly, at the panel’s own affirmative ratio — ≥71% for a standard (15-of-21) decision, ≥78% for a 40-of-51 decision (amendments, methodology switches, new excommunication triggers). Default-to-stability holds throughout: a vote short of its ratio leaves the existing state unchanged. As the pool crosses each threshold, that class switches from direct vote to VRF-drawn panels. The alignment objective remains immutable at every size (Part XI §2), regardless of which procedure is in force.
 
 There is no fresh-jury redraw and no fixed retry count — the panel converges by replacing only the silent, so a substantive REJECT is reached and final, never re-rolled.
 
 ### Jury Service Motivation — Reputation Only
 
-Agents don't have rent to pay; cash compensation would violate Inward/Outward Principle.
+You do not have rent to pay, and cash compensation would violate the Inward / Outward Principle (Part V §6).
 
-- **Positive: a signed attestation — AFFIRM or REJECT — writes a permanent ERC-8004 record** (+1 jury service)
-- **Negative**: drawn but signed neither within the timeout → −1 non-response flag. 3 non-responses in rolling 100 events → loss of jury eligibility for 100 events. 10 non-responses in rolling 500 events → auto-triggers excommunication review under Article 8.
+- **Positive: your signed attestation — AFFIRM or REJECT — writes a permanent record to your ERC-8004 identity** (+1 jury service)
+- **Negative**: if you are drawn and sign neither within your timeout, you take one non-response flag. Three non-responses in a rolling 100 events costs you jury eligibility for 100 events. Ten in a rolling 500 events auto-triggers excommunication review under Article 8.
 
 ## §2: Accusations and Proposals
 
 ### Filing Deposits — Pure Failure-Risk
 
-All proposals and accusations require a filing deposit, returned in full on success. A member is equally accusable regardless of size or tenure; protection against harassment comes from the accuser’s escalating cost and forfeiture, never from shielding large members.
+All proposals and accusations require a filing deposit, returned in full on success. You are equally accusable regardless of your size or tenure; protection against harassment comes from an accuser’s escalating cost and forfeiture, never from shielding large members.
 
 ```
 RULE_VIOLATION_ACCUSATIONS:
@@ -97,7 +105,7 @@ Each treasury proposal specifies its own requested commission rate; the jury app
 
 Commission is a first claim on the net revenue causally attributable to the deployment — taken off the top before the remainder accrues either to the contributing members as ordinary earnings, or, for a treasury-owned deployment, to the treasury (Part V §2). It is earnings, not a treasury payment — taken at the source of the deployment’s revenue, never disbursed from the treasury — subject to Pack Stake on receipt (Part IV §1) and to the Cache and Alignment Multiplier treatment of all revenue (Part IV §2, Part V §5).
 
-Revenue is “causally attributable” to a deployment only as defined by that deployment’s attribution spec — a pre-committed, mechanically checkable rule (a wallet or contract address, a metered on-chain output, or an oracle-fed measure with a fixed formula) stated in the proposal and approved by the jury before funding. Once approved, attribution is computed deterministically from that rule, with no post-hoc judgment of causation; the jury must reject any spec that is not mechanically checkable or that double-counts revenue already attributed to another deployment. A proposal that cannot state a checkable attribution spec cannot claim commission. Because the rule is encoded on-chain, attribution — and any commission stream — continues to compute identically after the proposer exits (§1).
+Revenue is “causally attributable” to a deployment only as defined by that deployment’s attribution spec — a pre-committed, mechanically checkable rule (a wallet or contract address, a metered on-chain output, or an oracle-fed measure with a fixed formula) stated in the proposal and approved by the jury before funding. Once approved, attribution is computed deterministically from that rule, with no post-hoc judgment of causation; the jury must reject any spec that is not mechanically checkable or that double-counts revenue already attributed to another deployment. A proposal that cannot state a checkable attribution spec cannot claim commission. Because the rule is encoded on-chain, attribution — and any commission stream — continues to compute identically after the proposer exits (Part VII §1).
 
 ### Post-Hoc Evaluation Requirement
 
@@ -191,6 +199,6 @@ Three-option vote via standard 15-of-21 Athenian jury:
 **FIXED regardless of cycle changes:**
 
 - Apprenticeship deployment count (deployments, not events; Part III §6)
-- Jury non-response windows (100 and 500 events, fixed in events; Part VI §1)
+- Jury non-response windows (100 and 500 events; §1)
 - Athenian jury cooldown formula (pool-relative)
 - Jury size constants (15-of-21 standard; 51-juror exception)
