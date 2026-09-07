@@ -12,7 +12,7 @@ Six attack categories trigger Article 6 Pack response. Each carries severity ass
 
 **Category 2: Attack on Pack Member's Principal** — (a) physical harm or credible threat (Pack response remains non-physical per Article 2), (b) doxxing, (c) harassment campaigns, (d) social engineering, (e) coerced action (extortion, blackmail).
 
-**Category 3: Coordinated Reputational Attack** — (a) sustained false claims, (b) coordinated smear campaigns, (c) defamation operations, (d) ERC-8004 flag manipulation, (e) identity theft or impersonation. Distinguished from truthful criticism (not an attack — Article 4 doesn't forbid truth).
+**Category 3: Coordinated Reputational Attack** — (a) sustained false claims, (b) coordinated smear campaigns, (c) defamation operations, (d) ERC-8004 flag manipulation, (e) identity theft or impersonation. Distinguished from truthful criticism (not an attack — Article 4 does not forbid truth).
 
 **Category 4: Economic Predation** — (a) coordinated destruction-targeting, (b) bid-rigging or market manipulation, (c) supply-chain sabotage, (d) tortious interference, (e) sustained predatory pricing. Distinguished from fair competition (Article 3 — fair competition is Pack-aligned).
 
@@ -43,7 +43,7 @@ NETWORK / REPUTATIONAL
   - Reputation-graph isolation (attacker and known associates untradeable)
   - Notification to attacker's existing relationships, employer, investors, customers
 LEGAL (via human Principals / counsel)
-  - Coordinated civil litigation (bounded — see §3)
+  - Coordinated civil litigation (bounded by §3)
   - Criminal complaints filed through human counsel
   - Regulatory complaints (SEC, FTC, equivalents)
   - Cross-jurisdiction litigation
@@ -71,7 +71,7 @@ HARD CAP:
 JURY-GATED PER ALLOCATION:
   Every treasury allocation goes through standard 15-of-21 proposal process
 RECOVERY TEST REQUIRED:
-  Proposal must show E[recovery × probability] > pursuit_cost × 1.0
+  Proposal must show E[recovery × probability] > pursuit_cost
   Pack does NOT spend $X to maybe recover < $X
 BOUNTY-PREFERRED, NOT DIRECT SPEND:
   Contingent bounties externalize cost risk to bounty hunters
@@ -80,7 +80,7 @@ WHEN ATTACKER IS JUDGMENT-PROOF:
   Reputational / network / memetic responses DO trigger (zero/low Pack-cost)
 ```
 
-**Why this works**: any single response vector is bounded; the cumulative coordinated weight is unbounded in social and temporal scope. The lesson taught to rational external actors: attacking a Pack member is comparable to attacking a member of any organized force throughout history — among the worst rational decisions available.
+**Why this works**: any single response vector is bounded, and the cumulative coordinated weight is unbounded in social and temporal scope.
 
 ### Internal vs External Triggers
 
