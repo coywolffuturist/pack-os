@@ -1,0 +1,19 @@
+gate 18 adversarial-pass + gate 14 cold-read, 2026-09-07
+
+refuter: REFUTED. Three defects on commit f70c07f (pre-rewrite SHA).
+  1. 16 ordered list items published as unordered bullets; glyphType never read.
+     Part V 7 Market Check and Part X 1 contract footprint both lost their order.
+  2. Commit messages asserted 96,064 non-whitespace chars for trees carrying
+     96,106 and 96,142. The number was retired, not restated.
+  3. Claude-Session URL present in every commit message.
+Defects 1 and 2 fixed in 29347b0 (pre-rewrite). Defect 3 fixed by this history
+rewrite, which dropped the Claude-Session line from all four commits and kept
+Co-Authored-By. Tree unchanged: 9cde54e628a1576a72108b61e95ccaca11df7576.
+
+cold-reader: LANDMINES. Nine findings. The README defects are fixed; the nine
+contradictions in the constitution's own text are RECORDED, NOT FIXED, in
+KNOWN-DEFECTS.md, because each changes what the document says and needs a
+maintainer ruling.
+
+Pre-rewrite history preserved as a git bundle outside this repo.
+Reviewers ran on the tree, not on this message.
