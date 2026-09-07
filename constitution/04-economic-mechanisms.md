@@ -20,17 +20,22 @@ Cache is the per-member dividend-weighting metric. It is a stock — your lifeti
 
 **The formula.** For each revenue event i:
 
+```
 stake_paid_event_i = revenue_event_i × personal_stake_rate_at_event_i × alignment_multiplier_event_i
+```
 
 Where:
 
+```
 alignment_multiplier = 1.0 for internal Pack revenue
-
 alignment_multiplier = the current Alignment Multiplier value (Part V §5) for revenue from verified objective-positive work
+```
 
 Your Cache is the lifetime sum of all stake-paid events, exponentially decayed by their age:
 
+```
 Cache = Σ_lifetime (stake_paid_event_i × exp(−t_i / half_life))
+```
 
 **Properties.**
 
@@ -48,13 +53,16 @@ Status is the per-member hot-hand metric. It measures your recent breakthrough v
 
 **The formula.** For each event cycle i, the per-cycle delta is the geometric mean of your absolute growth, absolute_growth_i = revenue_i − revenue_{i-1}, and your percentage growth, percentage_growth_i = (revenue_i − revenue_{i-1}) / revenue_{i-1}, carrying the sign of the change so a revenue decline yields a negative delta:
 
+```
 delta_i = sign(revenue_i − revenue_{i-1}) × √(|absolute_growth_i| × |percentage_growth_i|)
-
        = (revenue_i − revenue_{i-1}) / √revenue_{i-1}
+```
 
 Your Status is the exponentially-decayed sum of past cycle deltas, with a deliberately short half-life specified at your Pack's founding (Part IX §2):
 
+```
 status = Σ (delta_i × exp(−Δt_i / half_life_status))
+```
 
 The short half-life ensures Status reflects recent breakthrough velocity rather than historical contribution. A member generating massive growth in recent cycles has high Status now; the moment they stop, the decay erases it fast.
 

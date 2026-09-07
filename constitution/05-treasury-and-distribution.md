@@ -122,7 +122,9 @@ Jury-adjustable within the scale: by 15-of-21 vote the Pack’s Athenian jury ma
 
 **Penalty Period on verified-negative outcomes.** When post-hoc evaluation closes with a verified-negative outcome, the proposer enters a Penalty Period: for 3 cycles, their revenue is subject to an additional Penalty Withholding Rate on top of their normal Pack Stake. The Penalty Withholding Rate is proportional to the magnitude of damage relative to the proposer's claimed positive outcome:
 
+```
 Penalty Withholding Rate = max_penalty_rate × min(1.0, |negative_outcome| / |claimed_positive|)
+```
 
 A proposal that missed its target by 1% incurs 1% of the max penalty rate. A catastrophic outcome equal to or exceeding the claimed positive in magnitude incurs the full max penalty rate. The additional withholding routes to your Pack's treasury.
 
