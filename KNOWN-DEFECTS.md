@@ -154,6 +154,49 @@ independently against Part IV §2 rather than taken on its word.
 **The general lesson, for anyone fixing a term here:** when a correction touches a
 formula, check the arithmetic against the authoritative Part, not just the term.
 
+## 11. The "event" definition left the Pack clock stallable and spinnable — FIXED
+
+Defect 8 was closed by defining a Pack event as a revenue event. That definition is
+a faithful reading of the text — Part IV §1 already denominated Stake per revenue
+event — but substituting it into every use of "event" showed the clock has two
+independent holes, and that rights hang off it.
+
+**Stalled.** A Pack with no revenue never reaches a distribution-event boundary.
+Voluntary exit executed only at a boundary, so its members could not leave, while
+excommunication still ran immediately on a wall-clock juror timeout. The Pack could
+expel on a clock that always ticks; a member could not leave on one. Worst at
+instantiation, where a founding cohort has no clock at all.
+
+**Spun.** Nothing set a minimum on a revenue event, so one member could manufacture
+Pack time with dust transfers: decaying every rival's Cache before a distribution,
+rolling their own jury non-response flags out of the window, forcing Renewal
+periods, and burning the Part X §3 public-draft window whose stated purpose is to
+prevent surprise rules.
+
+The drafters had already seen half of this. The juror-timeout note in this branch
+says an event-denominated window "would let a quiet Pack stall a verdict
+indefinitely." That instance was fixed and the class was not swept.
+
+**Fixed** by giving voluntary exit the split excommunication already used (Part VII
+§2, Part II Article 9, Part VI §3, Part VII §5), and by capping any single member at
+one eighth of a cycle's events (Part VI §4). No wall-clock was added; the standing
+rule denominating time in events holds.
+
+**Named, not closed:** a member with no revenue in the period who anticipates a
+large deal may exit on submission rather than waiting up to one cycle. The lockup
+never prevented that — it delayed it by at most one cycle. A seat in Sale Limbo in a
+dormant Pack still never completes its two cycles, so it never converts to LEGACY;
+the member is out, the seat's fate hangs.
+
+## 12. Part X §3 claimed a complete list and ended it with "etc." — FIXED
+
+§3 declared itself "the complete list of amendment-grade decisions" and closed its
+enumeration with "etc.", reopening the ambiguity the defect-2 fix existed to close.
+The list is now closed. Two related corrections shipped with it: the 51-juror panel
+was named the "rule-addition jury" in Part IX and twice in the appendices though
+§3 covers four categories, and the Mandatory Alignment Allocation floor (Part V §4)
+was not visible from §3.
+
 ## Already swept — do not redo
 
 **Cross-references, 2026-09-07.** All 156 qualified `Part N §M` references were
