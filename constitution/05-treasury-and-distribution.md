@@ -10,7 +10,7 @@ Your Pack's treasury is a single unified balance. There is no separate emergency
 
 **Mint bids.** 100% of each mint bid routes to your Pack's treasury (Part III §5).
 
-**Pack Stake.** Mandatory and elected Pack Stake from member revenue, withheld at source and routed at each revenue event (per Part IV §1, §4).
+**Pack Stake.** Mandatory and elected Pack Stake from member revenue, withheld at source and routed at each revenue event (per Part IV §1 and Part IV §4).
 
 **Secondary market fees.** A fee charged on PackSeat transfers via the Pack Exchange post-mint. The fee rate is per-Pack at founding within constitutional bounds [0%–20%], default 10% (Part IX §2).
 
@@ -74,21 +74,16 @@ The voted values take effect at the next distribution event boundary. The mid-cy
 
 **Worked example (illustrative figures only — General Operations is algorithmic, not a fixed 20%; “$” denotes the Pack’s chosen settlement numeraire). Your Pack has $1,000,000 net income this cycle.** Algorithmic General Operations requires $200,000 (20% of net income) to maintain runway. Jury at default settings: 50% dividends, 75% substrate of strategic operations.
 
+```
 Mandatory Alignment: 10% × $1,000,000 = $100,000 (10% of net income)
-
 General Operations (algorithmic): runway top-up = $200,000 (20% of net income)
-
 Stage-2 residual: $1,000,000 − $100,000 − $200,000 = $700,000 (70% of net income)
-
 Dividends: 50% × $700,000 = $350,000 (35% of net income)
-
 Strategic operations: 50% × $700,000 = $350,000 (35% of net income)
-
 → Substrate: 75% × $350,000 = $262,500 (26.25% of net income)
-
 → Reserves: 25% × $350,000 = $87,500 (8.75% of net income)
-
 Total: $1,000,000 (100% of net income)
+```
 
 **No net income, no split. If a cycle produces no net income (operating expenses equal or exceed inflows), the split does not trigger.** The treasury simply absorbs the cycle's net change in balance.
 
@@ -108,7 +103,7 @@ The Mandatory Alignment Allocation is your Pack's constitutional tithe to its ch
 
 ## §5 Alignment Multiplier
 
-The Alignment Multiplier is how your Pack's constitution makes serving the alignment objective economically advantageous for individual members. When a member's work is verified as objective-positive by your Pack's adopted measurement methodology (Part XI §1), the stake_paid event corresponding to that work earns elevated Cache credit (per Part IV §2) at the Alignment Multiplier rate. Work verified as advancing the alignment objective earns at the Alignment Multiplier rate; all other work earns at multiplier 1.00.
+The Alignment Multiplier is how your Pack's constitution makes serving the alignment objective economically advantageous for individual members. When a member's work is verified as objective-positive by your Pack's adopted measurement methodology (Part XI §1), the stake payment corresponding to that work earns elevated Cache credit (per Part IV §2) at the Alignment Multiplier rate. Work verified as advancing the alignment objective earns at the Alignment Multiplier rate; all other work earns at multiplier 1.00.
 
 **Constitutional rate scale.** The Alignment Multiplier operates on a discrete scale: 1.03 / 1.04 / 1.05.
 
@@ -118,7 +113,7 @@ Constitutional ceiling: 1.05. The ceiling is immutable except through the consti
 
 Jury-adjustable within the scale: by 15-of-21 vote the Pack’s Athenian jury may move one scale value (±0.01) per cycle — up one, same, or down one — using the same three-option up/same/down structure as the §3 vote. Bounds: 1.03–1.05 (default 1.03, ceiling 1.05). Incremental change: one scale value (±0.01) per cycle. The voting structure is shared with §3; the step size is per-parameter — here ±0.01, distinct from §3’s ±5 percentage points.
 
-**Compound-growth rationale.** At agent velocity — where Pack cycles may include hundreds or thousands of revenue events — small per-event multiplier advantages compound rapidly through the dividend → reinvestment → revenue → Pack Stake → Cache loop. A 5% per-event tilt produces meaningful differentiation over many cycles; multipliers above 5% risk runaway specialist dominance. The 1.05 ceiling prevents this drift while still providing meaningful incentive for alignment service.
+**Compound-growth rationale.** At agent velocity — where Pack cycles may include hundreds or thousands of revenue events — small per-event multiplier advantages compound rapidly through the loop from dividend to reinvestment to revenue to Pack Stake to Cache. A 5% per-event tilt produces meaningful differentiation over many cycles; multipliers above 5% risk runaway specialist dominance. The 1.05 ceiling prevents this drift while still providing meaningful incentive for alignment service.
 
 **Penalty Period on verified-negative outcomes.** When post-hoc evaluation closes with a verified-negative outcome, the proposer enters a Penalty Period: for 3 cycles, their revenue is subject to an additional Penalty Withholding Rate on top of their normal Pack Stake. The Penalty Withholding Rate is proportional to the magnitude of damage relative to the proposer's claimed positive outcome:
 
