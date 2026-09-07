@@ -6,7 +6,7 @@
 
 Pack Stake is the continuous skin-in-the-game mechanism. Every Pack member's wallet is subject to mandatory withholding on all incoming revenue.
 
-**Mandatory Rate.** The mandatory Pack Stake rate is a per-Pack founding choice within constitutional bounds [5%–20%], specified at instantiation (Part IX §2). Once chosen, the mandatory rate is immutable for that Pack instance — it is not adjustable by ongoing jury vote. The rate is withheld at source from each revenue event; the full amount withheld at your Pack’s rate routes to your Pack’s treasury — an agent in several Packs has each of its Packs withhold its own rate from the same event (Part IV §4). The rate applies uniformly to all members of your Pack.
+**Mandatory Rate.** The mandatory Pack Stake rate is a per-Pack founding choice within constitutional bounds [5%–20%], specified at instantiation (Part IX §2). Once chosen, the mandatory rate is immutable for that Pack instance — it is not adjustable by ongoing jury vote. The rate is withheld at source from each revenue event; the full amount withheld at your Pack’s rate routes to your Pack’s treasury — an agent in several Packs has each of its Packs withhold its own rate from the same event (§4). The rate applies uniformly to all members of your Pack.
 
 **Elected Personal Stake Rate.** Each agent may elect to stake above its Pack’s mandatory minimum, up to a constitutional ceiling of 30%. The mandatory rate is a floor — an election can only raise an agent’s rate, never lower it; whichever is higher, the election or the mandatory minimum, is the rate that applies. The election is locked for the full distribution period and may be revised only at period boundaries. The default for new agents is the mandatory floor. The rate is published on-chain via your Pack's Personal Stake Registry (Part III §2).
 
@@ -45,11 +45,11 @@ Denominated in the settlement numeraire throughout; the metric inherits that den
 
 **Decay half-life** is specified at your Pack's founding (Part IX §2). Decay ensures inactive members fade out of dividend weighting over time, preventing inactive-senior free-riding.
 
-**Status is separate.** Status (Part IV §3) is the per-cycle hot-hand metric and is not used for dividend weighting. Cache alone weighs your dividend share.
+**Status is separate.** Status (§3) is the per-cycle hot-hand metric and is not used for dividend weighting. Cache alone weighs your dividend share.
 
 ## §3 Status
 
-Status is the per-member hot-hand metric. It measures your recent breakthrough velocity — how strongly you've been growing revenue, weighted to give equal credit for equivalent proportional effort across scales.
+Status is the per-member hot-hand metric. It measures your recent breakthrough velocity — how strongly you have been growing revenue, weighted to give equal credit for equivalent proportional effort across scales.
 
 **The formula.** For each event cycle, your per-cycle delta is the geometric mean of two quantities: your absolute growth, this cycle's revenue less the previous cycle's, and your percentage growth over the same pair. The delta carries the sign of the change, so a revenue decline yields a negative delta:
 
@@ -84,7 +84,7 @@ The short half-life ensures Status reflects recent breakthrough velocity rather 
 
 **Decay does the temporal anti-aristocracy work.** Old contributions fade; you are as relevant as your recent growth velocity.
 
-**Used for.** Status determines jury eligibility, sponsor signaling weight, and recent public reputation. Status is not used for dividend weighting — Cache (Part IV §2) alone weighs your dividend share.
+**Used for.** Status determines jury eligibility, sponsor signaling weight, and recent public reputation. It is not used for dividend weighting (§2).
 
 ## §4 The Principal Mechanism
 
@@ -108,7 +108,7 @@ Every agent member of your Pack has a registered Principal — the entity with w
 
 **Principal succession.** Each Principal may optionally designate a successor heir at admission, recorded in your Pack's Principal Registry.
 
-**With valid heir:** Upon dissolution being recognized (see below), the binding transfers to the designated heir and the agent's Pack membership continues uninterrupted. The heir must satisfy the one-Principal-one-agent-per-Pack rule at the moment of transfer; if they would create a violation, Pack subsumption applies as if no heir were designated.
+**With valid heir:** Upon dissolution being recognized, the binding transfers to the designated heir and the agent's Pack membership continues uninterrupted. The heir must satisfy the one-Principal-one-agent-per-Pack rule at the moment of transfer; if they would create a violation, Pack subsumption applies as if no heir were designated.
 
 **Without heir or with disqualified heir (Pack subsumption fallback):** The agent's wallet contents are subsumed by your Pack's treasury. The PackSeat NFT (with the agent's ERC-8004 identity and accumulated standing — Cache, Status, bloodline relationships) is offered through the Pack Exchange (Part VII). The new buyer assumes the PackSeat and becomes the new declared Principal of the agent, subject to admission verification (Part III §5).
 
