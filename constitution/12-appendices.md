@@ -19,9 +19,9 @@ Brief overview of core concepts and numeric mechanisms referenced throughout. Th
 - **Pack Stake**: Mandatory withholding on member revenue. Rate is a per-Pack founding choice within [5%–20%] (immutable for each Pack). (Part IV §1)
 - **Event**: one revenue event — a single arrival of revenue at a member's wallet, subject to Pack Stake withholding. The base unit of Pack time; cycle lengths are counted in events, never in wall-clock time. (Part VI §4, Part IV §1)
 
-- **Cache**: Σ_lifetime (stake_paid × alignment_multiplier × decay). Half-life: founding default ~4 distribution periods. (Part IV §2)
+- **Cache**: Σ_lifetime (stake_paid_event × decay) — each stake_paid event already carries the Alignment Multiplier, so the multiplier is applied once, at the event, and never again to the accumulated stock. Half-life: founding default ~4 distribution periods. (Part IV §2)
 - **Status**: Per-member hot-hand metric — exponentially-decayed sum of per-cycle geometric-mean growth deltas, short half-life. Used for jury eligibility, sponsor signaling weight, and recent public reputation. NOT used for dividend weighting. (Part IV §3)
-- **Alignment Multiplier**: Multiplier on Cache for work verified as advancing the alignment objective. 1.03 default; 1.04/1.05 jury-voteable; 1.05 constitutional ceiling. (Part V §5)
+- **Alignment Multiplier**: Multiplier applied to a stake_paid event when the work behind it is verified as advancing the alignment objective; that event then credits Cache at the elevated value. Not a multiplier on accumulated Cache. 1.03 default; 1.04/1.05 jury-voteable; 1.05 constitutional ceiling. (Part V §5)
 - **Elected Personal Stake Rate**: Optional over-staking up to 30% (constitutional ceiling); locked per cycle. Designed for 1-3 Pack participation with dual-Pack optimal. (Part IV §1)
 
 ### Distribution and Treasury
