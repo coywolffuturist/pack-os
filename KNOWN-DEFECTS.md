@@ -97,3 +97,25 @@ predates them in places:
   marked either way.
 
 Do not mass-fix these. Each is a small ruling, and some are deliberate exceptions.
+
+---
+
+## Already swept — do not redo
+
+**Cross-references, 2026-09-07.** All 156 qualified `Part N §M` references were
+checked mechanically against the actual section index of all eleven Parts. Exactly
+one target does not exist: defect 4 above. Sixteen further references were flagged
+by a heuristic looking for a cited concept missing from its target section; all
+sixteen were read in context and all sixteen are correct. The reference layer is
+sound apart from defects 3 and 4.
+
+**Conversion fidelity.** The split files were diffed word-for-word against the
+source conversion: 16,296 words, zero differences, order preserved. List glyph types
+were checked against the source document — 16 ordered items and 138 unordered, all
+carrying their correct form. Structure probes on the source found no footnotes,
+inline images, tables, hyperlinks, or tracked changes that could have been silently
+dropped.
+
+What has **not** been swept: whether Appendix B's parameter values still match the
+Parts they summarise (8 of 16 rows spot-checked and consistent), and whether the
+mechanisms are sound as designed. The second is not a text question.
