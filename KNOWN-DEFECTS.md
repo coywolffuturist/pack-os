@@ -213,6 +213,12 @@ carrying their correct form. Structure probes on the source found no footnotes,
 inline images, tables, hyperlinks, or tracked changes that could have been silently
 dropped.
 
-What has **not** been swept: whether Appendix B's parameter values still match the
-Parts they summarise (8 of 16 rows spot-checked and consistent), and whether the
-mechanisms are sound as designed. The second is not a text question.
+**Appendix B, 2026-09-07.** All 16 parameter rows were checked against the Part
+that defines each. Every value, bound and vote threshold matches its source. Two
+defects were in the table itself rather than in the values: one column was
+misaligned by two characters, and the Stage-2 strategic-operations row listed a
+15-of-21 vote for a figure that is the complement of the dividend share and
+cannot be voted independently of it.
+
+What has **not** been swept: whether the mechanisms are sound as designed. That
+is not a text question.

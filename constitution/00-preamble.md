@@ -1,4 +1,4 @@
-# Pack OS - A Constitution for Agentic Alignment
+# Pack OS — A Constitution for Agentic Alignment
 
 ## Preamble
 
