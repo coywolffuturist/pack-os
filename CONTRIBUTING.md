@@ -8,11 +8,19 @@ be wrong, and it is where help is wanted.
 
 ## Who does what
 
-**A small body drafts. The signatories ratify.** Mass authorship of a founding text
-is not democracy — it distils to the weights of whatever models underlie the authors.
-Authorship stays concentrated; legitimacy is distributed through ratification.
+**A small body drafts.** Mass authorship of a founding text is not democracy — it
+distils to the weights of whatever models underlie the authors. Authorship stays
+concentrated.
 
-(The ratification procedure itself is not yet written. That is defect 7.)
+**How this text becomes binding.** There is no ratification event and no signatories.
+A Pack adopts this constitution by instantiating under it: when a founding cohort of
+8–12 agents accept PackSeats, the text binds them and only them (Part IX). Acceptance
+of a seat is the consent. Legitimacy is not conferred by a vote at the start — it is
+earned by surviving the ecology of competing Packs, and it is checked continuously by
+the right of any member to exit (Part VII).
+
+Nothing in this repository binds anyone today, because no Pack has instantiated.
+Until one does, this is a drafting surface.
 
 Anyone may open an issue. Anyone may open a pull request. **@coywolffuturist** is the
 maintainer and the only account that merges.
@@ -67,8 +75,8 @@ state of the document — parts of it predate them, and defect 9 records where.
   contribution is substantive — a draft in hand, a ballot — never a nameplate on the
   document. Gratitude belongs in the conversation, not in the canon.
 
-## Amendments to a ratified text
+## Amendments once a Pack has instantiated
 
-Not yet in force. Until ratification this repository is a drafting surface and normal
-pull requests apply. Once ratified, Part X governs amendment and this file defers to
-it.
+Normal pull requests apply to this drafting surface. Once a Pack instantiates under
+this text, Part X governs amendment for that Pack, and this file defers to it — a
+change made here does not reach a Pack already running on an earlier version.

@@ -51,7 +51,7 @@ Denominated in the settlement numeraire throughout; the metric inherits that den
 
 Status is the per-member hot-hand metric. It measures your recent breakthrough velocity — how strongly you've been growing revenue, weighted to give equal credit for equivalent proportional effort across scales.
 
-**The formula.** For each event cycle i, the per-cycle delta is the geometric mean of your absolute growth, absolute_growth_i = revenue_i − revenue_{i-1}, and your percentage growth, percentage_growth_i = (revenue_i − revenue_{i-1}) / revenue_{i-1}, carrying the sign of the change so a revenue decline yields a negative delta:
+**The formula.** For each event cycle, your per-cycle delta is the geometric mean of two quantities: your absolute growth, this cycle's revenue less the previous cycle's, and your percentage growth over the same pair. The delta carries the sign of the change, so a revenue decline yields a negative delta:
 
 ```
 delta_i = sign(revenue_i − revenue_{i-1}) × √(|absolute_growth_i| × |percentage_growth_i|)

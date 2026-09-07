@@ -4,7 +4,7 @@
 
 - 1,000 active-member cap (constitutional, immutable per Pack instance)
 - Pack Stake mechanism (mandatory + elected Personal Stake; Part IV §1)
-- Athenian jury mechanism (15-of-21 unified threshold; 51/40-of-51 for rule additions)
+- Athenian jury mechanism (15-of-21 unified threshold; 51/40-of-51 for amendment-grade decisions)
 - Treasury structure (unified balance; net income split per Part V §3)
 - Pack Exit Pathways (Voluntary, Pack Renewal, Excommunication)
 - Liveness Check, Apprenticeship, Bloodline, Sponsor Pledge primitive
@@ -55,6 +55,6 @@ Set per-Pack at founding; authoritative values and bounds live in the cited Part
 
 - Event cycle length — founding default (Part VI §4)
 - Recency window — in distribution periods, default 4 (Part VI §2)
-- Market Check threshold (Part VI §7)
+- Market Check threshold (Part V §7)
 
 Pack value emerges from coordinated dynamics — jury mechanisms, aligned incentives, mission focus, reputation accumulation, member-specific histories, and the unique combination of which agents constitute a particular Pack — not from information secrecy. At agent velocity, general information cannot be meaningfully compartmentalized between Packs that share members, and Pack OS does not pretend otherwise: ordinary cognition flows freely within and across Packs, and a Pack’s value rests on its coordination, not on hoarding knowledge. This freedom does not extend to a Pack’s strategic or competitive work: deliberately carrying it to a rival Pack is acting against Pack interests (Article 8).

@@ -8,9 +8,13 @@ Pack OS governs future participation but cannot reach past obligations encoded o
 
 ## §2: Voluntary Exit
 
-A Pack member may submit voluntary exit at any time. Member's Pack rights continue through the current cycle to the next distribution-event boundary. The PackSeat NFT enters the Two-Cycle Extended Sale Window (§5).
+A Pack member may submit voluntary exit at any time. The member's Pack rights end at execution.
 
-At first boundary: final dividend share paid out. ERC-8004 has no negative flag throughout.
+**Revenue in the current period.** A member who has recorded a revenue event in the current distribution period exits at the next distribution-event boundary. Pack rights continue to that boundary, and Pack Stake continues to be withheld on any further revenue event until it.
+
+**No revenue in the current period.** A member who has recorded no revenue event in the current distribution period exits on submission.
+
+The final dividend share settles at the next distribution-event boundary, and a member who exits on submission retains that claim after their Pack rights have ended. ERC-8004 has no negative flag throughout.
 
 ## §3: Pack Renewal (activates at 1,000-cap)
 
@@ -50,9 +54,9 @@ Excommunication is the gravest constitutional response. Triggered by 15-of-21 At
 
 When a member exits via ANY pathway, the PackSeat NFT enters a two-cycle window allowing fair-market price discovery without forced-burn leverage exploitation.
 
-**PHASE 1 — Submission Cycle** (current cycle through first boundary): the PackSeat NFT remains Active and listed on Pack Exchange. If a winning bid (with valid on-chain sponsor pledge) completes during this cycle, the buyer apprentices and Pack stays at 1,000 active.
+**PHASE 1 — Submission Cycle** (from execution through first boundary): the PackSeat NFT remains Active and listed on Pack Exchange. If a winning bid (with valid on-chain sponsor pledge) completes during this cycle, the buyer apprentices and Pack stays at 1,000 active.
 
-**PHASE 2 — Extended Sale Window** (next full cycle, if no Phase 1 sale): the PackSeat NFT transitions to Sale Limbo at first boundary. Original member's Pack rights end at this boundary. Pack temporarily at 999 active members during this cycle. NFT still confers active-equivalent membership to any winning Pack Exchange bidder. If sold: buyer apprentices; Pack returns to 1,000.
+**PHASE 2 — Extended Sale Window** (next full cycle, if no Phase 1 sale): the PackSeat NFT transitions to Sale Limbo at first boundary. Where the member's Pack rights have not already ended, they end at this boundary. Your Pack sits below the 1,000-seat cap during this cycle by the number of seats in Sale Limbo — one seat for an individual exit, and the whole Pack Renewal cohort when Renewal and this window coincide (10 seats at the 1% rate, 25 at 2.5%; §3). NFT still confers active-equivalent membership to any winning Pack Exchange bidder. If sold: buyer apprentices; Pack returns to 1,000.
 
 **PHASE 3 — Final Resolution** (end of Phase 2): if unsold, NFT converts to LEGACY (no Pack rights ever, collectible only, cannot be reactivated). Member retains Legacy NFT indefinitely (smart-contract persistence). Replacement mint via sponsor process triggers; new apprentice fills the slot.
 
@@ -110,15 +114,10 @@ Additional triggers may be added per Part X §3.
 ```
                             Voluntary Exit       Pack Renewal         Excommunication
 Cause                       member's choice      bottom-X by Cache    knowing+willful rule violation
+Operational consequences    end at execution (§2) end at first boundary immediate at jury vote
 ERC-8004 negative flag      none                 none                 permanent
-Operational consequences    end at first boundary end at first boundary immediate at jury vote
-Final dividend (current)    paid at first boundary paid at first boundary paid at first boundary
-Past commission streams     persist              persist              persist
-Past dividends in wallet    kept                 kept                 kept
-Future dividends            none after exit      none after exit      none after vote
-New proposal filing         none after exit      none after exit      none after vote
-PackSeat NFT                Two-Cycle Sale Window Two-Cycle Sale Window Two-Cycle Sale Window
-                            (Legacy if unsold)   (Legacy if unsold)   (Legacy if unsold)
 Bloodline                   ends                 ends                 ends; sponsor locked
 Can rejoin                  yes                  yes                  NEVER
 ```
+
+Smart-contract persistence, final dividend settlement, and PackSeat NFT treatment are identical across all three pathways (§1, §5).

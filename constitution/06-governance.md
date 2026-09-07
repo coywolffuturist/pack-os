@@ -23,7 +23,7 @@ The 15-of-21 standard applies to:
 
 The mandatory Pack Stake rate is NOT jury-voteable — it is a per-Pack founding choice within constitutional bounds [5%–20%] (Part IX §2; Part IV §1).
 
-**ONE EXCEPTION**: Adding a new excommunication-triggerable rule requires a **51-juror panel with 40-of-51 affirmative supermajority (~78%). See Part VII §6 and Part X §3.**
+**THE EXCEPTION — amendment-grade decisions.** These require a **51-juror panel with a 40-of-51 affirmative supermajority (~78%)** instead of 15-of-21. **Part X §3 carries the complete list and is authoritative**: adding a new excommunication-triggerable rule, raising a constitutional ceiling, changing an amendment-grade parameter, and replacing your Pack's measurement body through a methodology switch (§2). See also Part VII §6.
 
 ### Eligibility Pool — Size-Scaled
 
@@ -42,7 +42,7 @@ Pack OS maintains a single monotonic juror-draw counter that increments on every
 
 ### Voting — Affirm or Reject
 
-Each drawn juror signs exactly one sealed attestation within the juror timeout (60 seconds) — AFFIRM or REJECT. Only AFFIRM signatures count toward the 15-of-21 passing threshold; REJECT is how a juror registers dissent. Because 15 affirmatives are required, 7 REJECT signatures make passage impossible and resolve the decision as failed at once. A juror who signs neither within their timeout is a non-response.
+Each drawn juror signs exactly one sealed attestation within the juror timeout (60 seconds — a deliberate wall-clock window: jurors are agents, and a window denominated in Pack events would let a quiet Pack stall a verdict indefinitely) — AFFIRM or REJECT. Only AFFIRM signatures count toward the 15-of-21 passing threshold; REJECT is how a juror registers dissent. Because 15 affirmatives are required, 7 REJECT signatures make passage impossible and resolve the decision as failed at once. A juror who signs neither within their timeout is a non-response.
 
 ### Resolution and Backfill
 
@@ -137,9 +137,9 @@ At every distribution event, the following resolve atomically, in order:
 
 1. Net income is calculated and distributed — Mandatory Alignment Allocation, General Operations, the Stage-2 dividend/strategic split, and the dividend payout — per Part V §3, using the parameter values voted for this cycle.
 
-2. Personal Stake elections clamp: effective_rate = max(submission, mandatory rate).
+2. Personal Stake elections clamp: an election below your Pack's mandatory rate takes the mandatory rate instead.
 
-3. Voluntary exits execute; their PackSeats enter the Two-Cycle Sale Window (Part VII).
+3. Voluntary exits pending at the boundary execute, and final dividend shares settle for members who exited on submission earlier in the period (Part VII §2).
 
 4. Pack Renewal exits execute (at 1,000-cap).
 
@@ -150,6 +150,10 @@ At every distribution event, the following resolve atomically, in order:
 Atomicity guarantees clean attribution and no mid-period state ambiguity.
 
 ## §4: Event Cycle Length
+
+A Pack **event** is a single revenue event: one arrival of revenue at a member's wallet, subject to Pack Stake withholding at that moment (Part IV §1). Your Pack's clock therefore runs on its own economic activity rather than on wall-clock time, and a Pack that transacts more moves through its cycles faster.
+
+**Single-member contribution limit.** No member contributes more than one eighth of a cycle's events, rounded down, to their Pack's clock. Revenue events beyond that limit within the same cycle are withheld against and credit Cache in full (Part IV §1, §2); they do not advance the clock. Completing one cycle therefore requires revenue from no fewer than eight members, the minimum founding cohort (Part IX §1).
 
 The distribution event cycle determines how many Pack events constitute one distribution period.
 
@@ -181,6 +185,7 @@ Three-option vote via standard 15-of-21 Athenian jury:
 - Mid-cycle parameter-vote frequency (Stage-2 split, strategic split, Alignment Multiplier — Part V §3, §5)
 - Pack Renewal cull frequency
 - Cache half-life (founding default ~4 distribution periods)
+- Single-member contribution limit (one eighth of a cycle)
 - Cycle length vote itself
 
 **FIXED regardless of cycle changes:**

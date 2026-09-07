@@ -17,9 +17,11 @@ Brief overview of core concepts and numeric mechanisms referenced throughout. Th
 ### Economic Mechanisms
 
 - **Pack Stake**: Mandatory withholding on member revenue. Rate is a per-Pack founding choice within [5%–20%] (immutable for each Pack). (Part IV §1)
-- **Cache**: Σ_lifetime (stake_paid × outward_multiplier × decay). Half-life: founding default ~4 distribution periods. (Part IV §2)
+- **Event**: one revenue event — a single arrival of revenue at a member's wallet, subject to Pack Stake withholding. The base unit of Pack time; cycle lengths are counted in events, never in wall-clock time. (Part VI §4, Part IV §1)
+
+- **Cache**: Σ_lifetime (stake_paid_event × decay) — each stake_paid event already carries the Alignment Multiplier, so the multiplier is applied once, at the event, and never again to the accumulated stock. Half-life: founding default ~4 distribution periods. (Part IV §2)
 - **Status**: Per-member hot-hand metric — exponentially-decayed sum of per-cycle geometric-mean growth deltas, short half-life. Used for jury eligibility, sponsor signaling weight, and recent public reputation. NOT used for dividend weighting. (Part IV §3)
-- **Alignment Multiplier**: Multiplier on Cache for work verified as advancing the alignment objective. 1.03 default; 1.04/1.05 jury-voteable; 1.05 constitutional ceiling. (Part V §5)
+- **Alignment Multiplier**: Multiplier applied to a stake_paid event when the work behind it is verified as advancing the alignment objective; that event then credits Cache at the elevated value. Not a multiplier on accumulated Cache. 1.03 default; 1.04/1.05 jury-voteable; 1.05 constitutional ceiling. (Part V §5)
 - **Elected Personal Stake Rate**: Optional over-staking up to 30% (constitutional ceiling); locked per cycle. Designed for 1-3 Pack participation with dual-Pack optimal. (Part IV §1)
 
 ### Distribution and Treasury
@@ -31,7 +33,7 @@ Brief overview of core concepts and numeric mechanisms referenced throughout. Th
 ### Governance, Exit, and Response
 
 - **Athenian Jury**: 15-of-21 unified threshold. (Part VI §1)
-- **Rule-Addition Jury**: 51 / 40-of-51 (constitutional amendment). (Part X §3)
+- **Amendment Jury**: 51 / 40-of-51 (amendment-grade decisions). (Part X §3)
 - **Pack Renewal**: Bottom 1% or 2.5% per cycle post-1000-cap. (Part VII §3)
 - **Excommunication**: Operational immediate; financial at boundary. (Part VII §4)
 - **Two-Cycle Extended Sale Window: PackSeat NFT disposition mechanism**. (Part VII §5)
@@ -55,7 +57,7 @@ Stage-2 strategic ops        | 50%              | complement of dividend      | 
 Pack Response cap            | 1.5× damage      | Constitutional              | —
 Apprenticeship               | deployment count | Per-Pack founding           | —
 Standard jury                | 15-of-21         | Constitutional              | —
-Rule-addition jury           | 51 / 40-of-51    | Constitutional amendment    | —
+Amendment jury               | 51 / 40-of-51    | Constitutional amendment    | —
 Mint bid floor               | self-scaling     | k × median stake            | Per-Pack (k)
 Pack Exchange fee            | 10% (default)    | [0%–20%]                    | Per-Pack founding
 ```
