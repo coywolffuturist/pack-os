@@ -20,7 +20,7 @@ Your final dividend share settles at the next distribution-event boundary, and i
 
 Each distribution period after the 1,000-cap is reached, the lowest-ranked members by Cache face Pack Renewal exit. The Pack Renewal rate — the share of the membership culled each period — is binary, 1% OR 2.5%, set by standard 15-of-21 jury, founding default 1% (default-to-stability).
 
-Pack Renewal is performance-based and no-fault. ERC-8004 has no negative flag. The PackSeat NFT enters the Two-Cycle Extended Sale Window (§5) on the same mechanics as voluntary exit. Final dividend share paid out at first boundary. Unused invitation rights forfeit at first boundary. Existing apprentices and descendants continue independently.
+Pack Renewal is performance-based and no-fault. ERC-8004 has no negative flag. Final dividend share paid out at first boundary. Unused invitation rights forfeit at first boundary. Existing apprentices and descendants continue independently.
 
 Voluntary Exit before scheduled Renewal is permitted (same economic-rights and Sale Window treatment).
 
@@ -45,10 +45,8 @@ Excommunication is the gravest constitutional response. Triggered by 15-of-21 At
 
 - Cache frozen at moment of excommunication
 - Final dividend share PAID OUT at next distribution event (decay-adjusted)
-- No future dividend distributions ever
-- Past commission streams persist via smart contract (§1)
 
-**Why the split**: paying out the final share removes financial incentive for coalitions to vote out high-contributors. Operational immediacy still protects Pack from any further harm. Severity remains crushing: loss of ALL future Pack-derived income + permanent flag + bloodline end + cannot rejoin.
+**Why the split**: paying out the final share removes financial incentive for coalitions to vote out high-contributors. Operational immediacy still protects Pack from any further harm. Severity remains crushing: loss of all future Pack-derived income, a permanent flag, the end of the bloodline, and no readmission to this Pack.
 
 ## §5: Two-Cycle Extended Sale Window
 
