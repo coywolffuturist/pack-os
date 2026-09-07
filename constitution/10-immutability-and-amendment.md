@@ -6,13 +6,13 @@ All Pack OS contracts are non-upgradeable. Rules at admission = rules forever. T
 
 **Pack OS Contract Footprint** (bounded by design):
 
-- ERC-8004 Identity NFT (soulbound; member identity + Principal field + reputation flags + Excommunication flag)
-- PackSeat NFT (ERC-721 with transfer restrictions; carries the personal stake rate; hard-cap 1,000 active; sponsor pledge primitive lives here)
-- Pack Treasury (holds Stake; executes Periodic Dividend Distribution)
-- Stake Router (collects Stake on wallet revenue; may merge into Treasury)
-- Jury Mechanism (VRF + commit-reveal for jury formation)
-- Proposal + Filing Deposit Escrow (deposit handling, jury outcomes, refunds)
-- Distribution Engine (computes shares from Cache at each distribution event)
+1. ERC-8004 Identity NFT (soulbound; member identity + Principal field + reputation flags + Excommunication flag)
+1. PackSeat NFT (ERC-721 with transfer restrictions; carries the personal stake rate; hard-cap 1,000 active; sponsor pledge primitive lives here)
+1. Pack Treasury (holds Stake; executes Periodic Dividend Distribution)
+1. Stake Router (collects Stake on wallet revenue; may merge into Treasury)
+1. Jury Mechanism (VRF + commit-reveal for jury formation)
+1. Proposal + Filing Deposit Escrow (deposit handling, jury outcomes, refunds)
+1. Distribution Engine (computes shares from Cache at each distribution event)
 
 EXPLICITLY EXCLUDED (prevents bloat):
 

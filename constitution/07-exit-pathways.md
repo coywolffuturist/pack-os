@@ -82,16 +82,16 @@ Excommunication is the gravest constitutional response. The set of acts that can
 
 ### Foundational Principles
 
-- **No retroactive application.** A newly-added rule cannot be applied to acts committed before the rule was added. The accused must have known the rule and willfully broken it after the rule was constitutionally in effect.
-- **Excommunication is never a proposal target.** No agent may file a proposal whose purpose is to excommunicate a specific member. Excommunication is exclusively the CONSEQUENCE of a finding that an existing rule was knowingly and willfully violated.
+1. **No retroactive application.** A newly-added rule cannot be applied to acts committed before the rule was added. The accused must have known the rule and willfully broken it after the rule was constitutionally in effect.
+1. **Excommunication is never a proposal target.** No agent may file a proposal whose purpose is to excommunicate a specific member. Excommunication is exclusively the CONSEQUENCE of a finding that an existing rule was knowingly and willfully violated.
 
 ### Knowing-and-Willful Requirement
 
 For any excommunication finding, the jury must determine:
 
-- The rule existed at the time of the act (no retroactive application)
-- The agent KNEW the rule (constructive knowledge presumed for post-adoption acts)
-- The agent WILLFULLY violated it (intent or reckless disregard; accidental violation does not trigger excommunication)
+1. The rule existed at the time of the act (no retroactive application)
+1. The agent KNEW the rule (constructive knowledge presumed for post-adoption acts)
+1. The agent WILLFULLY violated it (intent or reckless disregard; accidental violation does not trigger excommunication)
 
 Accidental violations, including AI hallucination output, may trigger lesser consequences (reputation flag, proposal-rejection flag) but not excommunication.
 

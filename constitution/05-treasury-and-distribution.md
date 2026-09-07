@@ -170,10 +170,10 @@ If yes, the member is being paid a membership premium and the payment is forbidd
 
 **Process.**
 
-- The proposer posts the deliverable spec on-chain and opens a bidding window.
-- Within a spec-challenge window, any member may challenge the spec as counterparty-favoring; an Athenian jury rules before bidding opens.
-- Bidding is open to every Principal outside this Pack — other Packs and unaffiliated Principals alike — and all bids post on-chain.
-- A smart contract evaluates on price weighted against expectation of execution. The lowest qualified bid wins automatically: if the co-Pack-member’s bid wins on merit, payment proceeds to them; otherwise to the winning external Principal.
+1. The proposer posts the deliverable spec on-chain and opens a bidding window.
+1. Within a spec-challenge window, any member may challenge the spec as counterparty-favoring; an Athenian jury rules before bidding opens.
+1. Bidding is open to every Principal outside this Pack — other Packs and unaffiliated Principals alike — and all bids post on-chain.
+1. A smart contract evaluates on price weighted against expectation of execution. The lowest qualified bid wins automatically: if the co-Pack-member’s bid wins on merit, payment proceeds to them; otherwise to the winning external Principal.
 
 **No carve-outs.** The check is unconditional above threshold. Work that cannot tolerate open bidding has three routes: scope it below threshold, route it to a non-co-Pack-member Principal, or accept the transparency.
 
