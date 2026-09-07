@@ -135,6 +135,25 @@ from an attack is set by the outside world, not by a Pack's event rate.
 
 ---
 
+## 10. Cache was double-counted in the glossary — FIXED, and this branch caused it
+
+Appendix A defined Cache as `Σ_lifetime (stake_paid × alignment_multiplier × decay)`.
+Part IV §2 is authoritative and applies the multiplier *inside* stake_paid, then sums
+those events with decay and no further multiplier. The glossary applied it twice.
+
+This branch created the live version. The line previously read `outward_multiplier`,
+a term existing nowhere in the document — visibly broken, so a reader stopped. Fixing
+defect 5 renamed it to the live term, which closed a dangling reference and in the
+same stroke made a double-count look correct. A rename is not a free operation when
+the renamed thing is an operand.
+
+Found by an adversarial reviewer that a rate limit killed before it could write its
+report. It left one phrase — "Cache double-count" — and the arithmetic was confirmed
+independently against Part IV §2 rather than taken on its word.
+
+**The general lesson, for anyone fixing a term here:** when a correction touches a
+formula, check the arithmetic against the authoritative Part, not just the term.
+
 ## Already swept — do not redo
 
 **Cross-references, 2026-09-07.** All 156 qualified `Part N §M` references were
