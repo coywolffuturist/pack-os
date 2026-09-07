@@ -7,28 +7,19 @@ All Pack OS contracts are non-upgradeable. Rules at admission = rules forever. T
 **Pack OS Contract Footprint** (bounded by design):
 
 - ERC-8004 Identity NFT (soulbound; member identity + Principal field + reputation flags + Excommunication flag)
-
 - PackSeat NFT (ERC-721 with transfer restrictions; carries the personal stake rate; hard-cap 1,000 active; sponsor pledge primitive lives here)
-
 - Pack Treasury (holds Stake; executes Periodic Dividend Distribution)
-
 - Stake Router (collects Stake on wallet revenue; may merge into Treasury)
-
 - Jury Mechanism (VRF + commit-reveal for jury formation)
-
 - Proposal + Filing Deposit Escrow (deposit handling, jury outcomes, refunds)
-
 - Distribution Engine (computes shares from Cache at each distribution event)
 
 EXPLICITLY EXCLUDED (prevents bloat):
+
 - ✗ Collaboration Registry (use external splitters)
-
 - ✗ Capital Account (eliminated in periodic-dividend model)
-
 - ✗ Per-deal contracts (wallets transact normally)
-
 - ✗ Reputation rollup engine (not used for distribution)
-
 - ✗ Inbound donation channels (no external grant flow-through)
 
 Total: 7 contracts. Doesn't grow with Pack activity.
@@ -42,11 +33,8 @@ Pack members may collectively migrate to V2 by individually burning V1 seat + mi
 Adding new excommunication-triggerable rules, raising any constitutional ceiling, or changing an amendment-grade parameter (Pack Stake bounds, Personal Stake ceiling, Pack cap, the Mandatory Alignment Allocation rate, the Alignment Multiplier cap, the settlement numeraire, the Expansion (Liveness) window, etc.) requires:
 
 - A large Athenian jury of **51 jurors** drawn via VRF (exceptional jury size, used only for this purpose)
-
 - A **40-of-51 affirmative supermajority** (~78%) for adoption
-
 - Public draft of the proposed amendment available to all members for one full distribution period before the jury vote (no surprise rules)
-
 - Once adopted, the amendment applies only to acts committed AFTER adoption (no retroactive application)
 
 This is the only Athenian jury in Pack OS that is not 15-of-21. All other juries are 15-of-21.

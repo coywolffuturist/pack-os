@@ -11,7 +11,9 @@ An alignment objective is a concrete, measurable, person-affecting outcome your 
 An alignment objective is valid only if it satisfies these standards at founding and continuously thereafter:
 
 **Third-party measurable.** Outcomes must be verifiable by an external, independent measurement methodology specified at founding (Part XI §1). No Pack may grade its own work.
+
 **Person-affecting — living humans.** A human is a currently-living biological human being. The objective must improve the welfare of humans who actually exist, over the course of their lives. Hypothetical, merely-possible, or not-yet-existing persons carry no claim that can override the welfare of the living — Pack OS grounds alignment in actual people with present claims, and rejects equating speculative future entities with living humans, a move that would let astronomical hypothetical value justify sacrificing the real. The objective’s measure may not be moved by creating, selecting, or removing the population it scores (no population engineering).
+
 **Beneficial in direction.** The objective’s measured success must be an improvement in human welfare — a betterment for the people it affects that does not come by degrading the welfare of anyone else. An objective whose measured success is a worsening of human welfare, or whose pursuit requires Article 1 or Article 2 violations, is constitutionally invalid. This is a floor evident from the objective’s own terms, not a central judgment of merit — consistent with Part XI §4.
 
 ## §3 How outcomes are measured

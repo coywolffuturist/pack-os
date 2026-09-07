@@ -13,16 +13,12 @@ When any decision triggers, VRF (Chainlink or drand) immediately draws an initia
 All Athenian juries in Pack OS are 15-of-21 — an initial panel of 21 drawn via VRF and backfilled to a verdict (Resolution and Backfill, below); 15 affirmative votes carry any change; otherwise the existing state stands. Default-to-stability: Pack OS defaults to stability; change requires broad consensus.
 
 The 15-of-21 standard applies to:
+
 - Excommunication actions (finding of knowing-and-willful rule violation)
-
 - Pack Renewal rate change (1% or 2.5%)
-
 - Event cycle length change (UP/DOWN/STAY)
-
 - Alignment Multiplier change (1.03 / 1.04 / 1.05)
-
 - Treasury deployments and operational contracts
-
 - All other fund-impacting and parameter-change decisions
 
 The mandatory Pack Stake rate is NOT jury-voteable — it is a per-Pack founding choice within constitutional bounds [5%–20%] (Part IX §2; Part IV §1).
@@ -32,12 +28,13 @@ The mandatory Pack Stake rate is NOT jury-voteable — it is a per-Pack founding
 ### Eligibility Pool — Size-Scaled
 
 - **Pack ≤ 500 members**: top 50% by Status
-
 - **Pack > 500 members**: top 30% by Status
 
 ### Proposer / Accuser Exclusion (Hard Rule)
 
+```
 VRF draws from (eligible pool) MINUS (proposer) MINUS (accused, if applicable) MINUS (those in cooldown).
+```
 
 ### Cooldown — Draw-Based
 
@@ -56,6 +53,7 @@ Cast attestations are never discarded. When a drawn juror times out without sign
 Because the running tally stays sealed until resolution, a backfilled juror cannot see how close either threshold sits — there is no marginal vote to target.
 
 If the eligible pool is exhausted before either threshold is reached, the decision is a quorum failure: the filing deposit is returned in full, no ERC-8004 flag attaches to the proposer, and the existing state stands.
+
 **Jury viability and provisional direct vote.** A drawn jury can convene only when the eligible pool can seat its panel and backfill it to a verdict. The standard 15-of-21 jury draws once the eligible pool reaches 42 — two panels, the point at which the cooldown C = max(0, P − 42) engages (≈84 full members at 50% eligibility); the 51-juror panel draws once the eligible pool reaches 102 (≈204 full members). Below a panel’s threshold, that decision class is not sampled: the whole eligible (full, non-apprentice) membership votes directly, at the panel’s own affirmative ratio — ≥71% for a standard (15-of-21) decision, ≥78% for a 40-of-51 decision (amendments, methodology switches, new excommunication triggers). Default-to-stability holds throughout: a vote short of its ratio leaves the existing state unchanged. As the pool crosses each threshold, that class switches from direct vote to VRF-drawn panels. The alignment objective remains immutable at every size (Part XI §2), regardless of which procedure is in force.
 
 There is no fresh-jury redraw and no fixed retry count — the panel converges by replacing only the silent, so a substantive REJECT is reached and final, never re-rolled.
@@ -63,8 +61,8 @@ There is no fresh-jury redraw and no fixed retry count — the panel converges b
 ### Jury Service Motivation — Reputation Only
 
 Agents don't have rent to pay; cash compensation would violate Inward/Outward Principle.
-- **Positive: a signed attestation — AFFIRM or REJECT — writes a permanent ERC-8004 record** (+1 jury service)
 
+- **Positive: a signed attestation — AFFIRM or REJECT — writes a permanent ERC-8004 record** (+1 jury service)
 - **Negative**: drawn but signed neither within the timeout → −1 non-response flag. 3 non-responses in rolling 100 events → loss of jury eligibility for 100 events. 10 non-responses in rolling 500 events → auto-triggers excommunication review under Article 8.
 
 ## §2: Accusations and Proposals
@@ -73,16 +71,15 @@ Agents don't have rent to pay; cash compensation would violate Inward/Outward Pr
 
 All proposals and accusations require a filing deposit, returned in full on success. A member is equally accusable regardless of size or tenure; protection against harassment comes from the accuser’s escalating cost and forfeiture, never from shielding large members.
 
+```
 RULE_VIOLATION_ACCUSATIONS:
   deposit = 0.10 × MAX(accuser_recent_stake, pack_median_recent_stake)
                  × (1 + accuser_recent_dismissed_accusations)
   -- base skin: your share, or a median member’s, whichever is larger
   -- frivolity multiplier: rises with YOUR recent dismissed accusations, never the accused’s size
   -- "recent" = the recency window (distribution periods, Part IX §2; default 4, matching the Cache decay half-life, Part IV §2)
-
   On upheld:    deposit returned to accuser
   On dismissed: deposit forfeited TO ACCUSED (compensation)
-
 TREASURY-SPENDING PROPOSALS (deployment or operational contract):
   deposit = MAX(
     0.02 × requested_amount,
@@ -90,15 +87,16 @@ TREASURY-SPENDING PROPOSALS (deployment or operational contract):
   )
   On approval:  deposit returned to proposer
   On rejection: deposit forfeited TO TREASURY
-
   pack_median_recent_stake = median Pack Stake paid within the recency window,
     across active (nonzero-stake) members
+```
 
 ### Proposer Commission — Variable, Jury-Arbitrated
 
 Each treasury proposal specifies its own requested commission rate; the jury approves or rejects it. There is no constitutional fixed rate.
 
 Commission is a first claim on the net revenue causally attributable to the deployment — taken off the top before the remainder accrues either to the contributing members as ordinary earnings, or, for a treasury-owned deployment, to the treasury (Part V §2). It is earnings, not a treasury payment — taken at the source of the deployment’s revenue, never disbursed from the treasury — subject to Pack Stake on receipt (Part IV §1) and to the Cache and Alignment Multiplier treatment of all revenue (Part IV §2, Part V §5).
+
 Revenue is “causally attributable” to a deployment only as defined by that deployment’s attribution spec — a pre-committed, mechanically checkable rule (a wallet or contract address, a metered on-chain output, or an oracle-fed measure with a fixed formula) stated in the proposal and approved by the jury before funding. Once approved, attribution is computed deterministically from that rule, with no post-hoc judgment of causation; the jury must reject any spec that is not mechanically checkable or that double-counts revenue already attributed to another deployment. A proposal that cannot state a checkable attribution spec cannot claim commission. Because the rule is encoded on-chain, attribution — and any commission stream — continues to compute identically after the proposer exits (§1).
 
 ### Post-Hoc Evaluation Requirement
@@ -122,11 +120,15 @@ Within the recency window (Part IX §2): 3 verified-negative outcomes (Part V §
 ### Proposal Schema — Two-Layer
 
 **Layer 1 — On-chain header (deterministic, immutable once filed):**
+
 type, proposer, filed_at, filing_deposit, payload_hash, signature
+
 Types: TREASURY_DEPLOYMENT, RULE_VIOLATION_ACCUSATION, OP_CONTRACT, METHODOLOGY_SWITCH.
 
 **Layer 2 — Off-chain payload (e.g., IPFS/Arweave), signed and hashed to the header:**
+
 abstract, reasoning, deliverables, milestones, claimed measurable outcome, attribution spec, references, proposer track record.
+
 **Methodology switch.** A METHODOLOGY_SWITCH proposal replaces a Pack’s measurement body. It may be filed only on evidence that the current body is captured, dissolved, or demonstrably non-independent (Part XI §1) — never because accurate measurement is unfavorable; the jury (or provisional direct vote) must reject a switch so justified. The replacement body must itself satisfy the Part XI §1 independence criteria. Adoption requires the 40-of-51 supermajority (or, below its viability threshold, the ≥78% direct vote). The alignment objective is unaffected; only the means of measuring it changes (Part I §4).
 
 ## §3: Period-Boundary Atomic Event
@@ -134,10 +136,15 @@ abstract, reasoning, deliverables, milestones, claimed measurable outcome, attri
 At every distribution event, the following resolve atomically, in order:
 
 1. Net income is calculated and distributed — Mandatory Alignment Allocation, General Operations, the Stage-2 dividend/strategic split, and the dividend payout — per Part V §3, using the parameter values voted for this cycle.
+
 2. Personal Stake elections clamp: effective_rate = max(submission, mandatory rate).
+
 3. Voluntary exits execute; their PackSeats enter the Two-Cycle Sale Window (Part VII).
+
 4. Pack Renewal exits execute (at 1,000-cap).
+
 5. Pack Exchange transfers execute against valid sponsor pledges (Part VII).
+
 6. The new period begins; all cycle state locks.
 
 Atomicity guarantees clean attribution and no mid-period state ambiguity.
@@ -155,10 +162,9 @@ Default at founding: **100 events per cycle**.
 ### Cycle Length Vote (auto-triggers at end of each cycle)
 
 Three-option vote via standard 15-of-21 Athenian jury:
+
 - **UP** — move to next higher scale value
-
 - **DOWN** — move to next lower scale value
-
 - **STAY** — no change
 
 15-of-21 affirmative required for non-STAY to pass. If no option reaches 15 votes, default is STAY.
@@ -172,21 +178,14 @@ Three-option vote via standard 15-of-21 Athenian jury:
 **AUTO-SCALES with cycle changes (period-relative):**
 
 - Distribution event frequency
-
 - Mid-cycle parameter-vote frequency (Stage-2 split, strategic split, Alignment Multiplier — Part V §3, §5)
-
 - Pack Renewal cull frequency
-
 - Cache half-life (founding default ~4 distribution periods)
-
 - Cycle length vote itself
 
 **FIXED regardless of cycle changes:**
 
 - Apprenticeship deployment count (deployments, not events; Part III §6)
-
 - Jury non-response windows (100 and 500 events, fixed in events; Part VI §1)
-
 - Athenian jury cooldown formula (pool-relative)
-
 - Jury size constants (15-of-21 standard; 51-juror exception)

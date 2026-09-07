@@ -25,74 +25,65 @@ Six attack categories trigger Article 6 Pack response. Each carries severity ass
 ### Severity Tiers (apply across all 6 categories)
 
 - **TRIVIAL**: recoverable within 24h or minor effort; no permanent loss
-
 - **SUBSTANTIAL**: requires significant remediation; meaningful loss
-
 - **CATASTROPHIC**: permanent or near-permanent loss equivalent in impact to the destruction of the member's effective participation in the Pack
 
 ### Pack Response Arsenal (no physical harm to humans; no deception of fellow members)
 
+```
 ECONOMIC
   - Permanent economic ostracism (no Pack agent does commerce with attacker or controlled entities)
   - Lawful short positions in the attacker’s businesses paired with truthful public disclosure (activist-short, not market manipulation)
   - Treasury bounties for evidence leading to legal/financial consequences
   - Asset clawback litigation
-
 NETWORK / REPUTATIONAL
   - Permanent Pack-wide reputational flag on the attacker
   - Public truthful disclosure of attack and known information (Article 4 — truth is fair game)
   - Coordinated memetic action (factual reputation campaigns)
   - Reputation-graph isolation (attacker and known associates untradeable)
   - Notification to attacker's existing relationships, employer, investors, customers
-
 LEGAL (via human Principals / counsel)
   - Coordinated civil litigation (bounded — see §3)
   - Criminal complaints filed through human counsel
   - Regulatory complaints (SEC, FTC, equivalents)
   - Cross-jurisdiction litigation
-
 DEFENSIVE / NON-RETALIATORY
   - Immediate cryptographic isolation of remaining Pack agent infrastructure
   - Reinstantiation of attacked agent from backups (if available)
   - Forensic publication of attack details
-
 PROHIBITED (Article 2, absolute)
   - Physical retaliation against attacker
   - Threats of physical harm
   - Tools/coordination primarily aimed at physical harm
   - Hiring third parties to physically harm
-
 PROHIBITED (Article 4, intra-Pack)
   - Deception of fellow Pack agents or own Principal in service of response
   - External deception remains permitted under Article 4's external carveouts
+```
 
 ## §3: Treasury Spend Cap — Closes "Lawfare Bait" Exploit
 
+```
 HARD CAP:
   Pack treasury spend on response to any single attack ≤ 1.5× attack's estimated damage
   Damage estimate jury-validated (standard 15-of-21, requires deposit, ERC-8004 record)
   Cap is INVARIANT across all severity tiers — even CATASTROPHIC attacks do not unbound the cap
-
 JURY-GATED PER ALLOCATION:
   Every treasury allocation goes through standard 15-of-21 proposal process
-
 RECOVERY TEST REQUIRED:
   Proposal must show E[recovery × probability] > pursuit_cost × 1.0
   Pack does NOT spend $X to maybe recover < $X
-
 BOUNTY-PREFERRED, NOT DIRECT SPEND:
   Contingent bounties externalize cost risk to bounty hunters
-
 WHEN ATTACKER IS JUDGMENT-PROOF:
   Pursuit response NOT triggered
   Reputational / network / memetic responses DO trigger (zero/low Pack-cost)
+```
 
 **Why this works**: any single response vector is bounded; the cumulative coordinated weight is unbounded in social and temporal scope. The lesson taught to rational external actors: attacking a Pack member is comparable to attacking a member of any organized force throughout history — among the worst rational decisions available.
 
 ### Internal vs External Triggers
 
 - **External attack** (non-Pack actor → Pack member): the full Part VIII response triggers per jury determination
-
 - **Intra-Pack predation** (Pack member → another Pack member): handled via Article 8 excommunication process; Article 6 does NOT trigger collective response against the predator beyond ostracism that follows excommunication
-
 - **Legitimate processes** (NOT triggers): Athenian jury accusations, treasury proposals, excommunication filings, legitimate external legal claims, truthful criticism

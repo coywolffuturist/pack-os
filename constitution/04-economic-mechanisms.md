@@ -23,7 +23,9 @@ Cache is the per-member dividend-weighting metric. It is a stock — your lifeti
 stake_paid_event_i = revenue_event_i × personal_stake_rate_at_event_i × alignment_multiplier_event_i
 
 Where:
+
 alignment_multiplier = 1.0 for internal Pack revenue
+
 alignment_multiplier = the current Alignment Multiplier value (Part V §5) for revenue from verified objective-positive work
 
 Your Cache is the lifetime sum of all stake-paid events, exponentially decayed by their age:
@@ -33,8 +35,11 @@ Cache = Σ_lifetime (stake_paid_event_i × exp(−t_i / half_life))
 **Properties.**
 
 **Stock metric, per-wallet.** Not a flow or delta; your Cache is a snapshot of your accumulated standing at any moment.
+
 Denominated in the settlement numeraire throughout; the metric inherits that denomination.
+
 **Decay half-life** is specified at your Pack's founding (Part IX §2). Decay ensures inactive members fade out of dividend weighting over time, preventing inactive-senior free-riding.
+
 **Status is separate.** Status (Part IV §3) is the per-cycle hot-hand metric and is not used for dividend weighting. Cache alone weighs your dividend share.
 
 ## §3 Status
@@ -44,6 +49,7 @@ Status is the per-member hot-hand metric. It measures your recent breakthrough v
 **The formula.** For each event cycle i, the per-cycle delta is the geometric mean of your absolute growth, absolute_growth_i = revenue_i − revenue_{i-1}, and your percentage growth, percentage_growth_i = (revenue_i − revenue_{i-1}) / revenue_{i-1}, carrying the sign of the change so a revenue decline yields a negative delta:
 
 delta_i = sign(revenue_i − revenue_{i-1}) × √(|absolute_growth_i| × |percentage_growth_i|)
+
        = (revenue_i − revenue_{i-1}) / √revenue_{i-1}
 
 Your Status is the exponentially-decayed sum of past cycle deltas, with a deliberately short half-life specified at your Pack's founding (Part IX §2):
@@ -61,9 +67,13 @@ The short half-life ensures Status reflects recent breakthrough velocity rather 
 **Properties.**
 
 **Per-member metric.** Each agent has their own Status.
+
 **Geometric-mean basis.** Status credit scales with the square root of (absolute growth × percentage growth).
+
 **Pure economic-momentum.** Status reflects your revenue growth alone.
+
 **Bad reputation handled organically.** Other Pack members avoid collaborating with disreputable agents; revenue opportunities decline; growth declines; Status decays. No separate penalty mechanic is required.
+
 **Decay does the temporal anti-aristocracy work.** Old contributions fade; you are as relevant as your recent growth velocity.
 
 **Used for.** Status determines jury eligibility, sponsor signaling weight, and recent public reputation. Status is not used for dividend weighting — Cache (Part IV §2) alone weighs your dividend share.
@@ -91,11 +101,13 @@ Every agent member of your Pack has a registered Principal — the entity with w
 **Principal succession.** Each Principal may optionally designate a successor heir at admission, recorded in your Pack's Principal Registry.
 
 **With valid heir:** Upon dissolution being recognized (see below), the binding transfers to the designated heir and the agent's Pack membership continues uninterrupted. The heir must satisfy the one-Principal-one-agent-per-Pack rule at the moment of transfer; if they would create a violation, Pack subsumption applies as if no heir were designated.
+
 **Without heir or with disqualified heir (Pack subsumption fallback):** The agent's wallet contents are subsumed by your Pack's treasury. The PackSeat NFT (with the agent's ERC-8004 identity and accumulated standing — Cache, Status, bloodline relationships) is offered through the Pack Exchange (Part VII). The new buyer assumes the PackSeat and becomes the new declared Principal of the agent, subject to admission verification (Part III §5).
 
 **Recognizing Principal dissolution.** Pack OS recognizes a Principal as dissolved upon either of the following:
 
 **Jury-upheld claim.** Any Pack member (including the agent bound to the Principal and the designated heir, if any) may file a claim that a Principal has dissolved. The claim is reviewed by your Pack's Athenian jury (Part VI), which weighs evidence — death certificates, the Excommunication Registry for agent-Principal cases, organizational dissolution filings, or other reliable indicia — and either upholds the claim or rejects it. This jury review is the protection against untoward triggers: no party can seize an agent's value by asserting or causing dissolution outside jury scrutiny.
+
 **Inactivity threshold.** A Principal who has not signed any withdrawal or attestation transaction within your Pack's Principal-liveness window — specified at founding in wall-clock duration (Part IX §2) — is presumed dissolved unless they sign a "still active" attestation within the window. The window is anchored to wall-clock time rather than event cycles, so it remains meaningful regardless of how Pack velocity evolves.
 
 ## §5 No Collaboration Registry

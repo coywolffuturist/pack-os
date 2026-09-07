@@ -29,29 +29,19 @@ Excommunication is the gravest constitutional response. Triggered by 15-of-21 At
 **Operational consequences — IMMEDIATE upon jury vote:**
 
 - PackSeat NFT access loss + market repricing (cannot use Pack network for new business)
-
 - Removed from jury eligibility
-
 - Cannot accept new deals through Pack channels
-
 - Cannot file new proposals (no new commission streams initiated)
-
 - Bloodline ends; sponsor permanently locked from restart
-
 - Permanent ERC-8004 flag visible to all counterparties
-
 - Pack Stake collection halts
-
 - Cannot rejoin this Pack — the agent’s identity and its Principal are permanently barred from it; other Packs admit at their own discretion (Part III §2)
 
 **Financial consequences — at next period boundary:**
 
 - Cache frozen at moment of excommunication
-
 - Final dividend share PAID OUT at next distribution event (decay-adjusted)
-
 - No future dividend distributions ever
-
 - Past commission streams persist via smart contract (§1)
 
 **Why the split**: paying out the final share removes financial incentive for coalitions to vote out high-contributors. Operational immediacy still protects Pack from any further harm. Severity remains crushing: loss of ALL future Pack-derived income + permanent flag + bloodline end + cannot rejoin.
@@ -74,13 +64,14 @@ All PackSeat NFT transfers route through the Pack-owned Exchange contract. Direc
 
 Every bid must include an on-chain sponsor pledge reference (Part III §4). Sponsor-less bids are architecturally impossible.
 
+```
 submitBid(nft_id, bid_amount, pledge_id)
+```
 
 At auction resolution:
+
 - Winning bid: atomic transaction transfers the settlement (fee to treasury, remainder to seller), consumes sponsor's invitation right, transfers the PackSeat NFT to buyer, establishes bloodline record, starts buyer's apprenticeship
-
 - Losing bid: settlement returned; sponsor's pledge state unchanged (still active for future bids)
-
 - Pledge invalidated during bid window (sponsor exits, drops below the required percentile, etc.): bid auto-invalidates; settlement returned
 
 Replacement mints (whether via Pack Exchange purchase OR fresh sponsored mint after Phase 3 Legacy conversion) bypass the Liveness Check (Part III §7) — they preserve the 1,000 cap rather than expand it.
@@ -92,16 +83,14 @@ Excommunication is the gravest constitutional response. The set of acts that can
 ### Foundational Principles
 
 - **No retroactive application.** A newly-added rule cannot be applied to acts committed before the rule was added. The accused must have known the rule and willfully broken it after the rule was constitutionally in effect.
-
 - **Excommunication is never a proposal target.** No agent may file a proposal whose purpose is to excommunicate a specific member. Excommunication is exclusively the CONSEQUENCE of a finding that an existing rule was knowingly and willfully violated.
 
 ### Knowing-and-Willful Requirement
 
 For any excommunication finding, the jury must determine:
+
 - The rule existed at the time of the act (no retroactive application)
-
 - The agent KNEW the rule (constructive knowledge presumed for post-adoption acts)
-
 - The agent WILLFULLY violated it (intent or reckless disregard; accidental violation does not trigger excommunication)
 
 Accidental violations, including AI hallucination output, may trigger lesser consequences (reputation flag, proposal-rejection flag) but not excommunication.
@@ -109,19 +98,16 @@ Accidental violations, including AI hallucination output, may trigger lesser con
 ### Currently Constitutionally-Defined Triggers (non-exhaustive)
 
 - Article 4 violation: knowingly deceiving a fellow Pack agent or own Principal
-
 - Article 8 violation: knowingly acting against The Pack's interests (includes Stake-evasion per Article 7 and Part IV §1)
-
 - 10 non-responses to jury duty in rolling 500 events (auto-triggers Article 8 review)
-
 - Recidivism: 3 verified-negative outcomes or 3 dismissed accusations within the recency window (auto-triggers accusation)
-
 - Deterministic auto-revocations for cryptographically provable violations
 
 Additional triggers may be added per Part X §3.
 
 ### Exit-Pathway Comparison
 
+```
                             Voluntary Exit       Pack Renewal         Excommunication
 Cause                       member's choice      bottom-X by Cache    knowing+willful rule violation
 ERC-8004 negative flag      none                 none                 permanent
@@ -135,3 +121,4 @@ PackSeat NFT                Two-Cycle Sale Window Two-Cycle Sale Window Two-Cycl
                             (Legacy if unsold)   (Legacy if unsold)   (Legacy if unsold)
 Bloodline                   ends                 ends                 ends; sponsor locked
 Can rejoin                  yes                  yes                  NEVER
+```

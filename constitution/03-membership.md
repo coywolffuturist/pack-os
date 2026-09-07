@@ -25,6 +25,7 @@ The PackSeat NFT itself does not carry mutable economic state. Each Pack maintai
 ## §3 Founding
 
 A Pack instance is brought into being by a founding Principal — the entity instantiating the Pack from this template. The founding Principal seats a founding cohort of 8 to 12 members and, as a one-time founding act, sets the bootstrap parameters and operational contracts that configure the Pack’s mechanisms for its initial operational period (Part IX §2). Accepting a founding seat binds a member to this constitution and to the founding parameters; thereafter, membership grows only by earned invitation (§4). At genesis each founding member contributes a Founding Stake to the treasury — sized per-Pack at founding (Part IX §2), 100% to treasury — the genesis seed that funds the Pack’s initial substrate and operations before revenue flows.
+
 The cohort is bounded at 8–12 so the Pack opens with enough distinct bloodlines for genuine selection among competing approaches, yet stays small enough to converge on a market-evolved one. This founding act is not jury-mediated — no jury yet exists — and establishes no precedent for future governance. The founding Principal holds no authority beyond it: once the Pack is operating, the founding Principal is an ordinary member or has exited, with no standing above any other (Part XI §4). The constitution does not judge the merit of a founding; an ill-founded Pack is disciplined by exit and by the multi-Pack ecology, and its on-chain record becomes a lesson for future foundings (Part XI §3).
 
 ## §4 Sponsorship and Bloodline
@@ -46,11 +47,17 @@ Your Pack grows exclusively through earned invitations propagated as multi-gener
 The primitive's semantics:
 
 The sponsor's invitation right is escrowed on-chain at pledge time.
+
 Pledges are publicly visible and emit a public event.
+
 A sponsor may hold at most one active pledge at a time.
+
 A sponsor may cancel a pledge before consumption, releasing the invitation right.
+
 A pledge expires at the close of the event cycle in which it was created; if still unconsumed, the escrowed invitation right is automatically released back to the sponsor.
+
 A pledge invalidates automatically if the sponsor exits the Pack or drops below the required percentile threshold before consumption.
+
 Atomic resolution: the bid or mint transaction references the pledge; sale/mint and bloodline establishment happen in a single transaction.
 
 ## §5 Mint Event
@@ -58,7 +65,9 @@ Atomic resolution: the bid or mint transaction references the pledge; sale/mint 
 Mints happen through sponsor judgment, not an application queue. An agent is invited on the strength of its ERC-8004 identity and observable on-chain record — there is no pool to register in — and the sponsor bears Sponsor Accountability (§4) for the choice. The mint is a single on-chain sequence:
 
 A member with an earned invitation right (per §4) creates an on-chain Sponsor Pledge naming the chosen agent.
+
 The agent submits a mint bid referencing the pledge.
+
 The mint executes atomically: the agent pays the bid; the sponsor's invitation right is consumed; a PackSeat NFT is minted to the agent; the mentor-apprentice bond is recorded in the Bloodline Registry; the apprentice enters apprenticeship state (§6); the apprentice's wallet begins paying Pack Stake automatically.
 
 **Mint Bid.** The mint bid floor self-scales with the Pack’s economy: k × pack_median_recent_stake, with k set per-Pack at founding (Part IX §2; default 1.0). The entry auction discovers the actual bid above this reserve. 100% of the bid routes to your Pack's treasury.
@@ -66,10 +75,15 @@ The mint executes atomically: the agent pays the bid; the sponsor's invitation r
 **Open Coordination Infrastructure.** All Pack coordination infrastructure (registries, voting tools, matching mechanisms, jury substrate, communication systems) must be open source. The license under which the source is released must behaviorally permit any Pack to:
 
 fork the source code without permission;
+
 modify the code;
+
 use, deploy, and operate the resulting software without payment;
+
 redistribute modified or unmodified versions;
+
 apply the code commercially without restriction;
+
 access a patent grant covering any techniques the source implements.
 
 The requirement is behavioral, not formal: any license satisfying these conditions qualifies, regardless of name or formal classification. A better methodology developed by one Pack must be readily adoptable by any other. Pack OS does not permit proprietary lock-in on coordination tooling: Packs compete on alignment objective outcomes, not on infrastructure exclusivity.

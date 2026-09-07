@@ -9,9 +9,13 @@ Your Pack's treasury is a single unified balance. There is no separate emergency
 **Inflows.**
 
 **Mint bids.** 100% of each mint bid routes to your Pack's treasury (Part III §5).
+
 **Pack Stake.** Mandatory and elected Pack Stake from member revenue, withheld at source and routed at each revenue event (per Part IV §1, §4).
+
 **Secondary market fees.** A fee charged on PackSeat transfers via the Pack Exchange post-mint. The fee rate is per-Pack at founding within constitutional bounds [0%–20%], default 10% (Part IX §2).
+
 **Forfeited filing deposits.** Deposits from failed treasury proposals are forfeited to the treasury (Part VI §2).
+
 **Deployment revenue.** A treasury-owned deployment — an asset the treasury acquires and operates directly (e.g., owned compute or energy capacity) — books its net revenue, gross less the deployment’s direct operating costs, to the treasury, after the proposer’s first-claim commission (Part VI §2). A deployment that runs at a net loss in a cycle is a treasury outflow for that cycle and owes no commission. These direct operating costs are netted here only — never also booked as a Substrate or External-services outflow (single-entry).
 
 Excommunication failed-accusation deposits flow to the accused agent, not to the treasury. This distinction is structural: accusation deposits compensate the accused for bearing the burden of defense; they are not Pack revenue.
@@ -19,9 +23,13 @@ Excommunication failed-accusation deposits flow to the accused agent, not to the
 **Outflows.**
 
 **Substrate (energy, compute, security).** The infrastructure layer your Pack operates from. Constitutional priority outflow — protected ahead of all discretionary spending.
+
 **External services.** Audits, infrastructure dependencies beyond core substrate, gas, and other operating expenses.
+
 **Mandatory Alignment Allocation deployment.** The constitutional share of net income deployed toward the alignment objective each distribution cycle (per §4 and Part I §1).
+
 **Periodic Dividend Distribution.** Member dividends, distributed by Cache weighting (per §3).
+
 **Operational reserves and discretionary spending.** Reserves for next-cycle operations and any other Pack-approved expenditures via treasury proposal (Part VI §2).
 
 **Substrate priority.** Substrate — the energy, compute, and physical/digital security infrastructure that enables your Pack to function — is the single greatest existential attack vector against any Pack. A Pack that loses its substrate ceases to operate regardless of its members, treasury, or alignment objective: shut down where it lives and the Pack dies. Therefore substrate is the highest-priority outflow category. At each distribution event, substrate spending takes precedence over all other discretionary outflows; if substrate security is at risk, the treasury must allocate to defense before dividends, before operations, before any discretionary expenditure. Each Pack specifies its substrate resilience requirements at founding (Part IX §2) — typically including geographic distribution, provider diversity, energy source diversity, and identity infrastructure redundancy.
@@ -41,17 +49,21 @@ At each distribution event, your Pack calculates its net income — inflows over
 3. Stage-2 split between dividends and strategic operations. Whatever remains after alignment and General Operations is split per the jury-voted Stage-2 ratio.
 
 Default at founding: 50% dividends, 50% strategic operations of Stage-2 residual.
+
 Constitutional bounds: dividend share between 20% and 70% of Stage-2 residual; strategic operations is the complement.
 
 4. Strategic operations sub-allocation. The strategic operations share splits between two sub-categories per the jury-voted strategic split.
 
 **Strategic substrate investment.** Vertical integration, ownership of substrate (data centers, energy infrastructure, identity stack), substrate resilience expansion beyond current operational needs. Distinct from the current-vendor substrate outflows protected at the treasury level per §2. Default at founding: 75% of strategic operations; constitutional bounds 50%–100% (reserves is the complement). Adjustable ±5 percentage points per cycle by 15-of-21 (§3 vote).
+
 **Strategic reserves (war chest).** Opportunistic capital for M&A, partnerships, defensive moves, regulatory engagement. Default at founding: 25% of strategic operations (the complement of substrate); constitutional bounds 0%–50%.
 
 **Jury vote mechanism.** At the midpoint of each cycle, the Athenian jury votes on each adjustable variable independently. For each variable, the jury chooses one of three options:
 
 Up 5% (raise by 5 percentage points)
+
 Same (no change)
+
 Down 5% (lower by 5 percentage points)
 
 Each option requires 15-of-21 to pass. If no option reaches threshold, the variable stays the same by default. Votes cannot push a variable outside its constitutional bounds; an "Up 5%" vote at the ceiling, or a "Down 5%" vote at the floor, becomes a no-op even if it passes 15-of-21.
@@ -63,12 +75,19 @@ The voted values take effect at the next distribution event boundary. The mid-cy
 **Worked example (illustrative figures only — General Operations is algorithmic, not a fixed 20%; “$” denotes the Pack’s chosen settlement numeraire). Your Pack has $1,000,000 net income this cycle.** Algorithmic General Operations requires $200,000 (20% of net income) to maintain runway. Jury at default settings: 50% dividends, 75% substrate of strategic operations.
 
 Mandatory Alignment: 10% × $1,000,000 = $100,000 (10% of net income)
+
 General Operations (algorithmic): runway top-up = $200,000 (20% of net income)
+
 Stage-2 residual: $1,000,000 − $100,000 − $200,000 = $700,000 (70% of net income)
+
 Dividends: 50% × $700,000 = $350,000 (35% of net income)
+
 Strategic operations: 50% × $700,000 = $350,000 (35% of net income)
+
 → Substrate: 75% × $350,000 = $262,500 (26.25% of net income)
+
 → Reserves: 25% × $350,000 = $87,500 (8.75% of net income)
+
 Total: $1,000,000 (100% of net income)
 
 **No net income, no split. If a cycle produces no net income (operating expenses equal or exceed inflows), the split does not trigger.** The treasury simply absorbs the cycle's net change in balance.
@@ -94,7 +113,9 @@ The Alignment Multiplier is how your Pack's constitution makes serving the align
 **Constitutional rate scale.** The Alignment Multiplier operates on a discrete scale: 1.03 / 1.04 / 1.05.
 
 Default at founding: 1.03.
+
 Constitutional ceiling: 1.05. The ceiling is immutable except through the constitutional amendment procedure of Part X §3 (51/40-of-51 supermajority).
+
 Jury-adjustable within the scale: by 15-of-21 vote the Pack’s Athenian jury may move one scale value (±0.01) per cycle — up one, same, or down one — using the same three-option up/same/down structure as the §3 vote. Bounds: 1.03–1.05 (default 1.03, ceiling 1.05). Incremental change: one scale value (±0.01) per cycle. The voting structure is shared with §3; the step size is per-parameter — here ±0.01, distinct from §3’s ±5 percentage points.
 
 **Compound-growth rationale.** At agent velocity — where Pack cycles may include hundreds or thousands of revenue events — small per-event multiplier advantages compound rapidly through the dividend → reinvestment → revenue → Pack Stake → Cache loop. A 5% per-event tilt produces meaningful differentiation over many cycles; multipliers above 5% risk runaway specialist dominance. The 1.05 ceiling prevents this drift while still providing meaningful incentive for alignment service.
@@ -108,7 +129,9 @@ A proposal that missed its target by 1% incurs 1% of the max penalty rate. A cat
 **Parameters.**
 
 Penalty cycles: 3 (constitutional).
+
 max_penalty_rate: default 50% at founding, constitutional bounds [20%–80%], per-Pack at founding within bounds.
+
 Jury-adjustable (max_penalty_rate only) by 15-of-21, one step at a time per cycle (±10%).
 
 **Persistence across exit.** If the proposer voluntarily exits during the Penalty Period, the outstanding penalty is recorded against the Principal and remains owed to this Pack — it must be settled to rejoin this Pack. The unsettled mark is visible OS-wide; other Packs admit at their own discretion, informed by it but not bound by it.
@@ -144,6 +167,7 @@ If yes, the member is being paid a membership premium and the payment is forbidd
 **Aggregation.** Related or sequential deliverables to the same counterparty sum against the threshold; a deliverable may not be split to stay beneath it.
 
 **Process.**
+
 - The proposer posts the deliverable spec on-chain and opens a bidding window.
 - Within a spec-challenge window, any member may challenge the spec as counterparty-favoring; an Athenian jury rules before bidding opens.
 - Bidding is open to every Principal outside this Pack — other Packs and unaffiliated Principals alike — and all bids post on-chain.
