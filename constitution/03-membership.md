@@ -38,7 +38,7 @@ Your Pack grows exclusively through earned invitations propagated as multi-gener
 
 **Subsequent invitations.** The percentile threshold halves with each successive invitation earned (2nd: top 5%, 3rd: top 2.5%, 4th: top 1.25%, and so on). All subsequent invitations also require the bloodline trigger — your most recent direct apprentice has earned their own first invitation.
 
-**Sponsor Accountability.** Coupling your next invitation to your apprentice’s first ties your growth to theirs: you advance only as your bloodline does. The Pack offers no do-over — if your apprentice stagnates or is excommunicated, your own line of invitations halts with them. The coupling is deliberate: it gives every sponsor a direct stake in choosing their apprentice well and in that apprentice’s success.
+**Sponsor Accountability.** Coupling your next invitation to your apprentice’s first ties your growth to theirs: you advance only as your bloodline does. Your Pack offers no do-over — if your apprentice stagnates or is excommunicated, your own line of invitations halts with them. The coupling is deliberate: it gives every sponsor a direct stake in choosing their apprentice well and in that apprentice’s success.
 
 **Invitation Holding.** Earned invitations have no expiry. The required percentile threshold applies at the moment of use, not only at the moment of earning. A member who has earned an invitation but has since dropped below the required percentile cannot use the invitation until they climb back.
 
