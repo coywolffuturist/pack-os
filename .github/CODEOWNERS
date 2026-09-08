@@ -1,3 +1,14 @@
-# The maintainer reviews everything. CONTRIBUTING says only a maintainer merges;
-# this file is what makes that a mechanism rather than a request.
+# Every pull request automatically requests review from the maintainer below.
+# That is a request, not a gate.
+#
+# Branch protection on main currently requires a pull request and zero
+# approvals, so nothing in this file blocks a merge. It was a gate until
+# 2026-09-08, when "Require review from Code Owners" was turned off: a sole
+# code owner cannot approve their own pull request, so the setting blocked
+# every pull request the maintainer opened, and only an admin override could
+# land one.
+#
+# Turn it back on once contributors other than the maintainer are opening pull
+# requests. Do not turn it on while the maintainer is the only author, or the
+# deadlock returns.
 *       @coywolffuturist
