@@ -161,7 +161,7 @@ Atomicity guarantees clean attribution and no mid-period state ambiguity.
 
 A Pack **event** is a single revenue event: one arrival of revenue at a member's wallet, subject to Pack Stake withholding at that moment (Part IV §1). Your Pack's clock therefore runs on its own economic activity rather than on wall-clock time, and a Pack that transacts more moves through its cycles faster.
 
-**Single-member contribution limit.** No member contributes more than one eighth of a cycle's events, rounded down, to their Pack's clock. Revenue events beyond that limit within the same cycle are withheld against and credit Cache in full (Part IV §1 and Part IV §2); they do not advance the clock. Completing one cycle therefore requires revenue from no fewer than eight members, the minimum founding cohort (Part IX §1).
+**Single-member contribution limit.** No member contributes more than one eighth of a cycle's events, rounded up, to their Pack's clock. Revenue events beyond that limit within the same cycle are withheld against and credit Cache in full (Part IV §1 and Part IV §2); they do not advance the clock. Rounding up keeps a founding cohort at its minimum size able to complete a cycle at every value on the constitutional scale: completing one cycle requires revenue from no fewer than eight members, the minimum founding cohort (Part III §3).
 
 The distribution event cycle determines how many Pack events constitute one distribution period.
 

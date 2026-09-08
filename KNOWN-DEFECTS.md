@@ -182,6 +182,18 @@ indefinitely." That instance was fixed and the class was not swept.
 one eighth of a cycle's events (Part VI §4). No wall-clock was added; the standing
 rule denominating time in events holds.
 
+**Correction, 2026-09-08.** The cap first shipped rounding DOWN, and that re-created
+the stall it was written to prevent. At the founding default of 100 events, a
+rounded-down cap is 12, so the minimum legal cohort of eight supplied at most 96 of
+the 100 events a cycle needs. Such a Pack could never reach a distribution event
+however much it earned, and therefore could never distribute, never rank Status to
+issue a first invitation, never fire the cycle-length vote, never complete an
+amendment public-draft period, and never release a member who had recorded revenue.
+The sentence asserting that eight members suffice was false at two of the seven
+scale values, including the default. The cap now rounds UP, which makes that
+sentence true at every scale value. Found by an adversarial reviewer, not by the
+author.
+
 **Named, not closed:** a member with no revenue in the period who anticipates a
 large deal may exit on submission rather than waiting up to one cycle. The lockup
 never prevented that — it delayed it by at most one cycle. A seat in Sale Limbo in a
@@ -213,8 +225,15 @@ carrying their correct form. Structure probes on the source found no footnotes,
 inline images, tables, hyperlinks, or tracked changes that could have been silently
 dropped.
 
-**Appendix B, 2026-09-07.** All 16 parameter rows were checked against the Part
-that defines each. Every value, bound and vote threshold matches its source. Two
+**Appendix B, 2026-09-07 — INCOMPLETE, see below.** All 16 parameter rows were
+checked against the Part that defines each. Every value and bound matches its source.
+
+**Correction, 2026-09-08.** That sweep checked each row against the ONE Part that
+defines it, and never against Part X §3, which now claims to govern which decisions
+are amendment-grade. Two vote-to-change cells disagree with it: Pack cap reads
+"Constitutional, immutable" with no vote, and Personal Stake ceiling reads
+"Constitutional", while Part X §3 lists both as amendment-grade parameters. See
+defect 13. Two
 defects were in the table itself rather than in the values: one column was
 misaligned by two characters, and the Stage-2 strategic-operations row listed a
 15-of-21 vote for a figure that is the complement of the dividend share and
