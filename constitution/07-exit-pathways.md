@@ -121,4 +121,4 @@ Bloodline                   ends                 ends                 ends; spon
 Can rejoin                  yes                  yes                  NEVER
 ```
 
-Smart-contract persistence, final dividend settlement, and PackSeat NFT treatment are identical across all three pathways (§1, §5).
+Smart-contract persistence is identical across all three pathways (§1). Each pathway states its own final dividend settlement and its own PackSeat NFT treatment, in §2, §3 and §4.
