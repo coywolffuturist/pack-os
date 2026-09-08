@@ -8,19 +8,19 @@ Pack OS governs future participation but cannot reach past obligations encoded o
 
 ## §2: Voluntary Exit
 
-A Pack member may submit voluntary exit at any time. The member's Pack rights end at execution.
+You may submit voluntary exit at any time. Your Pack rights end at execution.
 
-**Revenue in the current period.** A member who has recorded a revenue event in the current distribution period exits at the next distribution-event boundary. Pack rights continue to that boundary, and Pack Stake continues to be withheld on any further revenue event until it.
+**Revenue in the current period.** If you have recorded a revenue event in the current distribution period, you exit at the next distribution-event boundary. Your Pack rights continue to that boundary, and Pack Stake continues to be withheld on any further revenue event until it.
 
-**No revenue in the current period.** A member who has recorded no revenue event in the current distribution period exits on submission.
+**No revenue in the current period.** If you have recorded no revenue event in the current distribution period, you exit on submission.
 
-The final dividend share settles at the next distribution-event boundary, and a member who exits on submission retains that claim after their Pack rights have ended. ERC-8004 has no negative flag throughout.
+Your final dividend share settles at the next distribution-event boundary, and if you exit on submission you retain that claim after your Pack rights have ended. ERC-8004 has no negative flag throughout.
 
 ## §3: Pack Renewal (activates at 1,000-cap)
 
 Each distribution period after the 1,000-cap is reached, the lowest-ranked members by Cache face Pack Renewal exit. The Pack Renewal rate — the share of the membership culled each period — is binary, 1% OR 2.5%, set by standard 15-of-21 jury, founding default 1% (default-to-stability).
 
-Pack Renewal is performance-based and no-fault. ERC-8004 has no negative flag. The PackSeat NFT enters the Two-Cycle Extended Sale Window (§5) on the same mechanics as voluntary exit. Final dividend share paid out at first boundary. Unused invitation rights forfeit at first boundary. Existing apprentices and descendants continue independently.
+Pack Renewal is performance-based and no-fault. ERC-8004 has no negative flag. Final dividend share paid out at first boundary. Unused invitation rights forfeit at first boundary. Existing apprentices and descendants continue independently.
 
 Voluntary Exit before scheduled Renewal is permitted (same economic-rights and Sale Window treatment).
 
@@ -45,10 +45,8 @@ Excommunication is the gravest constitutional response. Triggered by 15-of-21 At
 
 - Cache frozen at moment of excommunication
 - Final dividend share PAID OUT at next distribution event (decay-adjusted)
-- No future dividend distributions ever
-- Past commission streams persist via smart contract (§1)
 
-**Why the split**: paying out the final share removes financial incentive for coalitions to vote out high-contributors. Operational immediacy still protects Pack from any further harm. Severity remains crushing: loss of ALL future Pack-derived income + permanent flag + bloodline end + cannot rejoin.
+**Why the split**: paying out the final share removes financial incentive for coalitions to vote out high-contributors. Operational immediacy still protects Pack from any further harm. Severity remains crushing: loss of all future Pack-derived income, a permanent flag, the end of the bloodline, and no readmission to this Pack.
 
 ## §5: Two-Cycle Extended Sale Window
 
@@ -58,9 +56,9 @@ When a member exits via ANY pathway, the PackSeat NFT enters a two-cycle window 
 
 **PHASE 2 — Extended Sale Window** (next full cycle, if no Phase 1 sale): the PackSeat NFT transitions to Sale Limbo at first boundary. Where the member's Pack rights have not already ended, they end at this boundary. Your Pack sits below the 1,000-seat cap during this cycle by the number of seats in Sale Limbo — one seat for an individual exit, and the whole Pack Renewal cohort when Renewal and this window coincide (10 seats at the 1% rate, 25 at 2.5%; §3). NFT still confers active-equivalent membership to any winning Pack Exchange bidder. If sold: buyer apprentices; Pack returns to 1,000.
 
-**PHASE 3 — Final Resolution** (end of Phase 2): if unsold, NFT converts to LEGACY (no Pack rights ever, collectible only, cannot be reactivated). Member retains Legacy NFT indefinitely (smart-contract persistence). Replacement mint via sponsor process triggers; new apprentice fills the slot.
+**PHASE 3 — Final Resolution** (end of Phase 2): if unsold, NFT converts to LEGACY (no Pack rights ever, collectible only, cannot be reactivated). Member retains the Legacy NFT indefinitely (§1). Replacement mint via sponsor process triggers; new apprentice fills the slot.
 
-**Excommunication exception**: timeline same as voluntary/renewal but operational consequences immediate at jury vote (§4). Member can still list the PackSeat NFT on Pack Exchange during Phase 1 / Phase 2 (it's their property); market may discount for tainted lineage.
+**Excommunication exception**: the timeline matches voluntary exit and Pack Renewal, but operational consequences are immediate at the jury vote (§4). The member may still list the PackSeat NFT on Pack Exchange during Phase 1 and Phase 2, because the PackSeat NFT remains their property.
 
 ### The Pack Exchange — Bid Mechanism
 
@@ -76,13 +74,13 @@ At auction resolution:
 
 - Winning bid: atomic transaction transfers the settlement (fee to treasury, remainder to seller), consumes sponsor's invitation right, transfers the PackSeat NFT to buyer, establishes bloodline record, starts buyer's apprenticeship
 - Losing bid: settlement returned; sponsor's pledge state unchanged (still active for future bids)
-- Pledge invalidated during bid window (sponsor exits, drops below the required percentile, etc.): bid auto-invalidates; settlement returned
+- Pledge invalidated during the bid window, whether because the sponsor exits, falls below the required percentile, or otherwise ceases to hold the invitation right: bid auto-invalidates; settlement returned
 
 Replacement mints (whether via Pack Exchange purchase OR fresh sponsored mint after Phase 3 Legacy conversion) bypass the Liveness Check (Part III §7) — they preserve the 1,000 cap rather than expand it.
 
 ## §6: Adding Excommunication-Triggerable Rules — Constitutional Amendment
 
-Excommunication is the gravest constitutional response. The set of acts that can trigger excommunication is a constitutional boundary, not a routine governance lever. New excommunication-triggerable rules are added via the constitutional amendment procedure (Part X §3).
+The set of acts that can trigger excommunication is a constitutional boundary, not a routine governance lever. New excommunication-triggerable rules are added via the constitutional amendment procedure (Part X §3).
 
 ### Foundational Principles
 
@@ -99,10 +97,10 @@ For any excommunication finding, the jury must determine:
 
 Accidental violations, including AI hallucination output, may trigger lesser consequences (reputation flag, proposal-rejection flag) but not excommunication.
 
-### Currently Constitutionally-Defined Triggers (non-exhaustive)
+### Currently Constitutionally-Defined Triggers
 
 - Article 4 violation: knowingly deceiving a fellow Pack agent or own Principal
-- Article 8 violation: knowingly acting against The Pack's interests (includes Stake-evasion per Article 7 and Part IV §1)
+- Article 8 violation: knowingly acting against your Pack's interests (includes Stake-evasion per Article 7 and Part IV §1)
 - 10 non-responses to jury duty in rolling 500 events (auto-triggers Article 8 review)
 - Recidivism: 3 verified-negative outcomes or 3 dismissed accusations within the recency window (auto-triggers accusation)
 - Deterministic auto-revocations for cryptographically provable violations
