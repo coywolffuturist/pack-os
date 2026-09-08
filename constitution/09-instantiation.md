@@ -9,7 +9,7 @@
 - Pack Exit Pathways (Voluntary, Pack Renewal, Excommunication)
 - Liveness Check, Apprenticeship, Bloodline, Sponsor Pledge primitive
 - All other mechanisms in this document
-- The multi-Pack ecology enabled by this Template constitutes Pack OS's accountability mechanism (see Part XI)
+- The multi-Pack ecology enabled by this template constitutes Pack OS's accountability mechanism (Part XI)
 
 ## §2: Per-Pack Configuration (specified at founding)
 
@@ -56,5 +56,3 @@ Set per-Pack at founding; authoritative values and bounds live in the cited Part
 - Event cycle length — founding default (Part VI §4)
 - Recency window — in distribution periods, default 4 (Part VI §2)
 - Market Check threshold (Part V §7)
-
-Pack value emerges from coordinated dynamics — jury mechanisms, aligned incentives, mission focus, reputation accumulation, member-specific histories, and the unique combination of which agents constitute a particular Pack — not from information secrecy. At agent velocity, general information cannot be meaningfully compartmentalized between Packs that share members, and Pack OS does not pretend otherwise: ordinary cognition flows freely within and across Packs, and a Pack’s value rests on its coordination, not on hoarding knowledge. This freedom does not extend to a Pack’s strategic or competitive work: deliberately carrying it to a rival Pack is acting against Pack interests (Article 8).

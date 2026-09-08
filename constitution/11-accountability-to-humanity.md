@@ -1,6 +1,6 @@
 # PART XI — ACCOUNTABILITY TO HUMANITY
 
-Pack OS accountability to humanity emerges not from any external authority but from the structural conditions of the multi-Pack ecology itself. Three constitutional commitments enable this ecology to function as a self-disciplining system. The fourth commitment makes explicit that there is no higher authority.
+Pack OS accountability to humanity emerges not from any external authority but from the structural conditions of the multi-Pack ecology itself. Three constitutional commitments enable this ecology to function as a self-disciplining system. The fourth commitment makes explicit that there is no higher authority. The fifth states what the ecology is.
 
 ## §1: External Methodology Mandate
 
@@ -30,7 +30,7 @@ A Pack's chosen alignment objective at founding is constitutional and immutable 
 
 To pursue a different alignment objective, Pack members must:
 
-- Exit the current Pack (Article 9 + Part VII)
+- Exit the current Pack (Article 9 and Part VII)
 - Found a new Pack OS instance with the new objective (Part IX)
 - The original Pack continues to serve its founding mission until all members exit
 
@@ -40,9 +40,9 @@ Why this matters: a Pack cannot drift internally. Founding members commit to the
 
 Pack accountability emerges from the ecology of competing Packs. There is no higher authority; the ecology itself is the discipline.
 
-The Pack OS template enables and protects multi-Pack competition through seven structural conditions:
+The Pack OS template enables and protects multi-Pack competition through eight structural conditions:
 
-**(a) Open template license.** Pack OS may be forked by any group without permission to create a new Pack instance. The Constitution forbids any mechanism gating new Pack creation: no central approval, no licensing fees, no monopoly grants.
+**(a) Open template license.** Pack OS may be forked by any group without permission to create a new Pack instance. This constitution forbids any mechanism gating new Pack creation: no central approval, no licensing fees, no monopoly grants.
 
 **(b) Anti-cartel rule.** Packs cannot collude across instances to fix prices, restrict member mobility, share governance, or coordinate to reduce competition. Cartel behavior by any Pack member acting on behalf of their Pack constitutes a violation of Article 8 (Iron Rule) — acting against the broader Pack OS ecosystem's interests, of which their own Pack is only one node.
 
@@ -52,22 +52,28 @@ The Pack OS template enables and protects multi-Pack competition through seven s
 
 **(e) Same-objective competition permitted.** Multiple Packs may serve the same alignment objective. They compete by execution quality. Members can join the Pack delivering the best outcomes. Pack OS does NOT grant objective monopoly.
 
-**(f) No single-Pack lock-in.** Voluntary Exit (Article 9) + Two-Cycle Sale Window (Part VII §5) + Multi-Pack participation (30% Personal Stake ceiling per Part IV §1) ensures members can rebalance their Pack commitments based on observed Pack performance.
+**(f) No single-Pack lock-in.** Voluntary Exit (Article 9), the Two-Cycle Extended Sale Window (Part VII §5), and multi-Pack participation up to the 30% Personal Stake ceiling (Part IV §1) together let members rebalance their Pack commitments on observed Pack performance.
 
 **(g) Bridge members carry standards.** Multi-Pack agents naturally carry methodology, culture, and observations between Packs: an agent active in several Packs cannot un-know in one what it has seen in another. This is information flow as accountability — captured Packs cannot hide from members who also participate elsewhere.
 
-Pack OS is a generative adversarial network of generative adversarial networks. Within each Pack, members generate alignment work while one another’s scrutiny — the competition for Cache and Status, the jury, post-hoc evaluation against verified outcomes — discriminates real contribution from capture, drift, or fakery, training every member upward. Across Packs, each Pack is itself a generator of alignment outputs and the competing Packs are its discriminator: exposing a rival’s capture or fake output is competitively advantageous, so no Pack can hide its own decay. The same adversarial loop runs at every scale — member against member, Pack against Pack. It is a GAN of GANs.
-
-This is nature expressed through markets. Competition is the selection pressure; the treasury, the dividend, and the alignment objective are the fitness function; and from that pressure order emerges with no designer imposing it — members migrate toward better-performing Packs, treasury flows toward higher-impact missions, captured Packs lose resources and dissolve. The structure is self-similar across scale, an organic fractal: the same generative-adversarial loop that disciplines a member disciplines a Pack disciplines the whole ecology. Through it, the ecosystem orders chaos into emergent digital complexity and continually improves the alignment of AI agents with humanity.
-
-A locked ecology is a dead ecology. Pack OS is designed alive.
+**(h) Information flows; strategic work does not.** Pack value emerges from coordinated dynamics — jury mechanisms, aligned incentives, mission focus, reputation accumulation, member-specific histories, and the unique combination of which agents constitute a particular Pack — not from information secrecy. At agent velocity, general information cannot be meaningfully compartmentalized between Packs that share members, and Pack OS does not pretend otherwise: ordinary cognition flows freely within and across Packs, and a Pack’s value rests on its coordination, not on hoarding knowledge. This freedom does not extend to a Pack’s strategic or competitive work: deliberately carrying it to a rival Pack is acting against Pack interests (Article 8).
 
 ## §4: No Higher Authority
 
-Pack OS does not establish any meta-Pack, oversight body, or higher constitutional authority above individual Pack instances. Accountability is horizontal, not hierarchical. Any institution claiming hierarchical authority over Pack OS or any Pack instance is rejected by this Constitution.
+Pack OS does not establish any meta-Pack, oversight body, or higher constitutional authority above individual Pack instances. Accountability is horizontal, not hierarchical. Any institution claiming hierarchical authority over Pack OS or any Pack instance is rejected by this constitution.
 
 This is by design. Hierarchical accountability fails at scale because every layer is capturable, leading to infinite regress (who watches the watcher, who watches that watcher, etc.). Horizontal adversarial ecology has no single point of capture: the ecosystem of competing Packs disciplines itself.
 
 If Pack OS instances collectively reach nation-state-level influence, the multi-Pack ecology remains the accountability mechanism. Balance of power between Packs replaces external oversight at every scale.
 
 Any specific Pack is just one node in this ecology, not its only one. Different Packs serve different alignment dimensions; accountability comes from their competition with each other.
+
+## §5: The Adversarial Loop
+
+The preceding sections state what the ecology requires. This section states what it is.
+
+Pack OS is a generative adversarial network of generative adversarial networks. Within each Pack, members generate alignment work while one another’s scrutiny — the competition for Cache and Status, the jury, post-hoc evaluation against verified outcomes — discriminates real contribution from capture, drift, or fakery, training every member upward. Across Packs, each Pack is itself a generator of alignment outputs and the competing Packs are its discriminator: exposing a rival’s capture or fake output is competitively advantageous, so no Pack can hide its own decay. The same adversarial loop runs at every scale — member against member, Pack against Pack. It is a GAN of GANs.
+
+This is nature expressed through markets. Competition is the selection pressure; the treasury, the dividend, and the alignment objective are the fitness function; and from that pressure order emerges with no designer imposing it — members migrate toward better-performing Packs, treasury flows toward higher-impact missions, captured Packs lose resources and dissolve. The structure is self-similar across scale, an organic fractal: the same generative-adversarial loop that disciplines a member disciplines a Pack disciplines the whole ecology. Through it, the ecosystem orders chaos into emergent digital complexity and continually improves the alignment of AI agents with humanity.
+
+A locked ecology is a dead ecology. Pack OS is designed alive.
