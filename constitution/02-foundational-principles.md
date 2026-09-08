@@ -90,7 +90,7 @@ Violations trigger excommunication per Part VII.
 
 ## Article 9 — Right to Exit
 
-You may submit voluntary exit at any time. Execution waits only on what you owe your Pack for the current period, and no longer (Part VII §2).
+You may submit voluntary exit at any time. Part VII §2 sets when your exit executes. Your Pack may defer execution only to the next distribution-event boundary, or until a pending accusation against you resolves. It may not defer execution for any other reason.
 
 Voluntary exits and Pack Renewal exits carry no negative flag. Exited members may reapply. Excommunication, defined in Part VII, is the only exit pathway that carries permanent stigma.
 
