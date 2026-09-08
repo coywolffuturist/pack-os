@@ -3,7 +3,7 @@
 ## §1: Universal Constitutional Architecture (shared across all Packs)
 
 - 1,000 active-member cap (constitutional, immutable per Pack instance)
-- Pack Stake mechanism (mandatory + elected Personal Stake; Part IV §1)
+- Pack Stake mechanism (mandatory and elected Personal Stake; Part IV §1)
 - Athenian jury mechanism (15-of-21 unified threshold; 51/40-of-51 for amendment-grade decisions)
 - Treasury structure (unified balance; net income split per Part V §3)
 - Pack Exit Pathways (Voluntary, Pack Renewal, Excommunication)
@@ -17,7 +17,7 @@ Set per-Pack at founding; authoritative values and bounds live in the cited Part
 
 **Objective & verification**
 
-- Alignment objective + external measurement methodology (Part I; Part XI §1)
+- Alignment objective and external measurement methodology (Part I; Part XI §1)
 - Attribution methodology / attribution oracle (Part VI §2; Part XI §1)
 - ERC-8004 outcome-recording standards
 
@@ -42,10 +42,10 @@ Set per-Pack at founding; authoritative values and bounds live in the cited Part
 **Treasury & distribution**
 
 - Secondary-market fee (Part V §2)
-- Reserve Floor — K cycles + inflow-projection confidence (Part V §2)
+- Reserve Floor — K cycles and inflow-projection confidence (Part V §2)
 - Substrate resilience requirements (Part V §2)
 - General Operations — safety margin and runway length (Part V §3)
-- Stage-2 split + strategic substrate/reserves split — founding defaults (Part V §3)
+- Stage-2 split and strategic substrate/reserves split — founding defaults (Part V §3)
 - Mandatory Alignment Allocation rate — 10% floor, amendment-only (Part V §4)
 - Alignment Multiplier — founding default (Part V §5)
 - Penalty max rate (Part V §5)

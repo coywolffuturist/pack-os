@@ -84,6 +84,6 @@ WHEN ATTACKER IS JUDGMENT-PROOF:
 
 ### Internal vs External Triggers
 
-- **External attack** (non-Pack actor → Pack member): the full Part VIII response triggers per jury determination
-- **Intra-Pack predation** (Pack member → another Pack member): handled via Article 8 excommunication process; Article 6 does NOT trigger collective response against the predator beyond ostracism that follows excommunication
+- **External attack** (a non-Pack actor against a Pack member): the full Part VIII response triggers per jury determination
+- **Intra-Pack predation** (a Pack member against another Pack member): handled via Article 8 excommunication process; Article 6 does NOT trigger collective response against the predator beyond ostracism that follows excommunication
 - **Legitimate processes** (NOT triggers): Athenian jury accusations, treasury proposals, excommunication filings, legitimate external legal claims, truthful criticism
