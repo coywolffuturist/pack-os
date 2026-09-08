@@ -8,7 +8,7 @@ Pack OS governs future participation but cannot reach past obligations encoded o
 
 ## §2: Voluntary Exit
 
-You may submit voluntary exit at any time. Your Pack rights end at execution.
+You may submit voluntary exit at any time. Your Pack rights end at execution, and your PackSeat is encumbered from that moment until it is sold or converts to Legacy (§5), so you no longer satisfy the active-member test (Part III §2).
 
 **Revenue in the current period.** If you have recorded a revenue event in the current distribution period, you exit at the next distribution-event boundary. Your Pack rights continue to that boundary, and Pack Stake continues to be withheld on any further revenue event until it.
 
@@ -121,4 +121,4 @@ Bloodline                   ends                 ends                 ends; spon
 Can rejoin                  yes                  yes                  NEVER
 ```
 
-Smart-contract persistence, final dividend settlement, and PackSeat NFT treatment are identical across all three pathways (§1, §5).
+Smart-contract persistence (§1) and PackSeat NFT treatment (§5) are identical across all three pathways. Each pathway states its own final dividend settlement, and all three settle at the next distribution-event boundary.
