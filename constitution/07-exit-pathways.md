@@ -32,7 +32,7 @@ Excommunication is the gravest constitutional response. Triggered by 15-of-21 At
 
 **Operational consequences — IMMEDIATE upon jury vote:**
 
-- PackSeat NFT access loss + market repricing (cannot use Pack network for new business)
+- PackSeat NFT access loss and market repricing (cannot use Pack network for new business)
 - Removed from jury eligibility
 - Cannot accept new deals through Pack channels
 - Cannot file new proposals (no new commission streams initiated)

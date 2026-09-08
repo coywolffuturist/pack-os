@@ -34,7 +34,7 @@ To pursue a different alignment objective, Pack members must:
 - Found a new Pack OS instance with the new objective (Part IX)
 - The original Pack continues to serve its founding mission until all members exit
 
-Why this matters: a Pack cannot drift internally. Founding members commit to the chosen objective; future members know what they are committing to. Mission change requires literal exit + new-Pack-founding, not internal vote. Drift becomes a FORK, not a takeover.
+Why this matters: a Pack cannot drift internally. Founding members commit to the chosen objective; future members know what they are committing to. Mission change requires literal exit and the founding of a new Pack, not an internal vote. Drift becomes a FORK, not a takeover.
 
 ## §3: Adversarial Pack Ecology
 
