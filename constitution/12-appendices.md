@@ -46,7 +46,7 @@ Parameter                    | Default          | Scale / Bounds              | 
 Pack cap                     | 1,000 active     | Constitutional, immutable   | —
 Founding cohort              | per-Pack         | [8–12]                      | Founding (one-time)
 Pack Stake rate              | per-Pack         | [5%–20%]                    | Per-Pack founding (immutable)
-Personal Stake ceiling       | —                | 30%                         | Constitutional
+Personal Stake ceiling       | —                | 30%                         | Amendment only
 Pack Renewal rate            | 1% per cycle     | 1% or 2.5%                  | 15-of-21
 Event cycle length           | 100 events       | 100/500/1000/5000/10000...  | 15-of-21
 Alignment Multiplier         | 1.03             | 1.03 / 1.04 / 1.05          | 15-of-21

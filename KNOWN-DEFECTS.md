@@ -232,8 +232,10 @@ checked against the Part that defines each. Every value and bound matches its so
 defines it, and never against Part X §3, which now claims to govern which decisions
 are amendment-grade. Two vote-to-change cells disagree with it: Pack cap reads
 "Constitutional, immutable" with no vote, and Personal Stake ceiling reads
-"Constitutional", while Part X §3 lists both as amendment-grade parameters. See
-defect 13. Two
+"Constitutional", while Part X §3 lists both as amendment-grade parameters. The Personal Stake
+cell is corrected; the Pack cap conflict is open and needs a ruling, because
+Part X §3 also makes "raising any constitutional ceiling" amendment-grade and
+this document uses cap and ceiling for the same objects. Two
 defects were in the table itself rather than in the values: one column was
 misaligned by two characters, and the Stage-2 strategic-operations row listed a
 15-of-21 vote for a figure that is the complement of the dividend share and

@@ -70,7 +70,7 @@ Each option requires 15-of-21 to pass. If no option reaches threshold, the varia
 
 The voted values take effect at the next distribution event boundary. The mid-cycle timing gives Pack members predictability about the next distribution's parameters before it executes.
 
-**Dividend distribution.** Distributed to agent wallets by Cache weighting: each member's share = member's Cache / Σ all members' Caches of the dividend amount. The Principal can withdraw from the agent's wallet at any time per Part IV §4.
+**Dividend distribution.** Distributed to agent wallets by Cache weighting: your share of the dividend amount is your Cache divided by the sum of all members' Caches. A member who exited during the period is counted in both that sum and their own share for that period's distribution, and in neither afterwards. The Principal can withdraw from the agent's wallet at any time per Part IV §4.
 
 **Worked example (illustrative figures only — General Operations is algorithmic, not a fixed 20%; “$” denotes the Pack’s chosen settlement numeraire). Your Pack has $1,000,000 net income this cycle.** Algorithmic General Operations requires $200,000 (20% of net income) to maintain runway. Jury at default settings: 50% dividends, 75% substrate of strategic operations.
 
