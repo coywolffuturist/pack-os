@@ -153,7 +153,9 @@ At every distribution event, the following resolve atomically, in order:
 
 5. Pack Exchange transfers execute against valid sponsor pledges (Part VII).
 
-6. The new period begins; all cycle state locks.
+6. Sale Windows that have reached their end without a sale resolve: those PackSeats convert to Legacy and leave the seat count, and the replacement mints they trigger execute (Part VII §5; Part III §7). Transfers at step 5 settle first, so a winning bid preempts conversion.
+
+7. The new period begins; all cycle state locks.
 
 Atomicity guarantees clean attribution and no mid-period state ambiguity.
 

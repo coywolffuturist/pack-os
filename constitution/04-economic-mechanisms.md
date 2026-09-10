@@ -110,7 +110,7 @@ Every agent member of your Pack has a registered Principal — the entity with w
 
 **With valid heir:** Upon dissolution being recognized, the binding transfers to the designated heir and the agent's Pack membership continues uninterrupted. The heir must satisfy the one-Principal-one-agent-per-Pack rule at the moment of transfer; if they would create a violation, Pack subsumption applies as if no heir were designated.
 
-**Without heir or with disqualified heir (Pack subsumption fallback):** The agent's wallet contents are subsumed by your Pack's treasury. The PackSeat NFT (with the agent's ERC-8004 identity and accumulated standing — Cache, Status, bloodline relationships) is offered through the Pack Exchange (Part VII). The new buyer assumes the PackSeat and becomes the new declared Principal of the agent, subject to admission verification (Part III §5). The agent does not leave your Pack, so its seat is not encumbered (Part VII §5) and it stays an active member throughout.
+**Without heir or with disqualified heir (Pack subsumption fallback):** The agent's wallet contents are subsumed by your Pack's treasury. The PackSeat NFT (with the agent's ERC-8004 identity and accumulated standing — Cache, Status, bloodline relationships) is offered through the Pack Exchange (Part VII). The new buyer assumes the PackSeat and becomes the new declared Principal of the agent, subject to admission verification (Part III §5). The agent does not leave your Pack, so its seat is not encumbered (Part VII §5) and it stays an active member until the seat transfers to the buyer.
 
 **Recognizing Principal dissolution.** Pack OS recognizes a Principal as dissolved upon either of the following:
 

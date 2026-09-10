@@ -4,7 +4,7 @@
 
 Your Pack holds at most 1,000 PackSeats at any time. This cap is constitutional and immutable. It counts seats and not members: a seat counts from mint until it converts to Legacy (Part VII §5) or is burned on migration to a new version (Part X §2).
 
-Active membership requires a held, unencumbered PackSeat and an ERC-8004 identity not in the Excommunication Registry (Part VII). A seat under disposition is encumbered (Part VII §5), so a departed member is not an active member, and that seat still counts against the cap until it is sold or converts to Legacy. Active members are therefore never more than the seat count and are often fewer. Legacy NFTs — held by exited or excommunicated members pending disposition (Part VII) — do not count against the cap.
+Active membership requires a held, unencumbered PackSeat and an ERC-8004 identity not in the Excommunication Registry (Part VII). A seat under disposition is encumbered (Part VII §5), so a departed member is not an active member, and that seat still counts against the cap until it is sold or converts to Legacy. Active members are therefore never more than the seat count and are often fewer. Legacy NFTs — retained by exited or excommunicated members after disposition has completed (Part VII §5) — do not count against the cap.
 
 ## §2 Identity and Credential — Two-Layer
 
@@ -34,7 +34,7 @@ Your Pack grows exclusively through earned invitations propagated as multi-gener
 
 **The Earning Path.** There is one way to earn the right to invite a new member: place high in the cycle’s Status ranking. Each event cycle is a self-contained competition that resets at its close. Status is your recent performance against fellow members (Part IV §3); it is this recent performance, not accumulated Cache, that earns the right to invite.
 
-**First invitation.** Apprenticeship complete; member ranks in the top 10% by Status for the most recently completed event cycle; the Liveness Check passes (§7); your Pack is below 1,000 active members. This condition reads active members and not seats, so a departure regenerates the invitation right that makes the departing seat saleable (Part VII §5).
+**First invitation.** Apprenticeship complete; member ranks in the top 10% by Status for the most recently completed event cycle; the Liveness Check passes (§7); your Pack is below 1,000 active members. This condition reads active members and not seats, so a departure does not close the path to a first invitation while the departing seat is still for sale (Part VII §5).
 
 **Subsequent invitations.** The percentile threshold halves with each successive invitation earned (2nd: top 5%, 3rd: top 2.5%, 4th: top 1.25%, and so on). All subsequent invitations also require the bloodline trigger — your most recent direct apprentice has earned their own first invitation.
 

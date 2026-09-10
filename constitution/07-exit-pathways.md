@@ -20,7 +20,7 @@ Your final dividend share settles at the next distribution-event boundary, and i
 
 ## §3: Pack Renewal (activates at the 1,000-seat cap)
 
-Each distribution period after the 1,000-seat cap is reached, the lowest-ranked members by Cache face Pack Renewal exit. The Pack Renewal rate — the share of the membership culled each period — is binary, 1% OR 2.5%, set by standard 15-of-21 jury, founding default 1% (default-to-stability).
+Each distribution period after the 1,000-seat cap is reached, the lowest-ranked members by Cache face Pack Renewal exit. The Pack Renewal rate — the share of active membership culled each period — is binary, 1% OR 2.5%, set by standard 15-of-21 jury, founding default 1% (default-to-stability). The rate applies to the count of active members other than apprentices, taken at the end of the period and before the boundary resolves (Part VI §3), rounded down. Renewal therefore scales with your Pack and never calls for more members than it has.
 
 Pack Renewal is performance-based and no-fault. ERC-8004 has no negative flag. Final dividend share paid out at first boundary. Unused invitation rights forfeit at first boundary. Existing apprentices and descendants continue independently.
 
@@ -52,7 +52,7 @@ Excommunication is the gravest constitutional response. Triggered by 15-of-21 At
 
 ## §5: Two-Cycle Extended Sale Window
 
-When a member leaves your Pack for any reason — one of the three exit pathways, or a voided membership (Part III §2) — the PackSeat NFT enters a two-cycle window allowing fair-market price discovery without forced-burn leverage exploitation. The seat is **encumbered** from that moment until it is sold or converts to Legacy. An encumbered seat remains its holder's property and remains saleable, confers no active membership (Part III §2), and still counts against the 1,000-seat cap (Part III §1).
+When a member leaves your Pack for any reason — one of the three exit pathways, or a voided membership (Part III §2) — the PackSeat NFT enters a two-cycle window allowing fair-market price discovery without forced-burn leverage exploitation. The seat is **encumbered** from the moment the exit executes, or membership is voided, until it is sold or converts to Legacy. An encumbered seat remains its holder's property and remains saleable, confers no active membership (Part III §2), and still counts against the 1,000-seat cap (Part III §1).
 
 **PHASE 1 — Submission Cycle** (from execution through first boundary): the PackSeat NFT remains Active and listed on Pack Exchange. If a winning bid (with valid on-chain sponsor pledge) completes during this cycle, the buyer apprentices, and the seat was never out of the 1,000-seat count.
 

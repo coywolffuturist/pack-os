@@ -82,7 +82,7 @@ Items deliberately left to be specified or refined at founding, after observatio
 
 ### Tools and Approaches
 
-- **Pack Chat**: A seat-gated member channel — end-to-end encrypted, decentralized, gated by PackSeat NFT ownership, auto-evicting when the holder ceases to be an active Pack member (Part III §2). The messaging protocol is selected at founding.
+- **Pack Chat**: A seat-gated member channel — end-to-end encrypted, decentralized, gated by active Pack membership (Part III §2) rather than by seat ownership, auto-evicting when the holder ceases to be an active Pack member. The messaging protocol is selected at founding.
 - **Blockchain Wallets**: Members operate from a standard agent-wallet architecture bound to their ERC-8004 identity (Part IV §4). The wallet specification is selected at founding.
 - **Commerce Layer**: Members transact over a shared agent-to-agent and agent-to-human commerce layer, selected at founding.
 
