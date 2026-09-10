@@ -2,7 +2,7 @@
 
 ## §1 The Pack Cap
 
-Your Pack holds at most 1,000 PackSeats at any time. This cap is constitutional and immutable. It counts seats, not members: a seat occupies its place from mint until it converts to Legacy (Part VII §5).
+Your Pack holds at most 1,000 PackSeats at any time. This cap is constitutional and immutable. It counts seats, not members: a seat occupies its place from mint until it converts to Legacy (Part VII §5) or is burned on migration to a new version (Part X §2).
 
 Active membership requires a held, unencumbered PackSeat, an ERC-8004 identity not in the Excommunication Registry (Part VII), and no exit of yours from that Pack that has already executed by any pathway (Part VII). Active members are therefore never more than the seat count and are often fewer. Legacy NFTs — held by exited or excommunicated members pending disposition (Part VII) — do not count against the cap.
 

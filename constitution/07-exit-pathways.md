@@ -20,7 +20,7 @@ Your final dividend share settles at the next distribution-event boundary, and i
 
 ## §3: Pack Renewal (activates at 1,000-cap)
 
-Each distribution period after the 1,000-cap is reached, the lowest-ranked members by Cache face Pack Renewal exit. The Pack Renewal rate — the share of the 1,000-seat cap culled each period — is binary, 1% OR 2.5%, set by standard 15-of-21 jury, founding default 1% (default-to-stability). The rate applies to the cap and not to current membership, so a period culls exactly 10 members at 1% and 25 at 2.5%, whatever number of seats are mid-sale. No rounding arises.
+Each distribution period after the 1,000-cap is reached, the lowest-ranked members by Cache face Pack Renewal exit. The Pack Renewal rate — the share of active membership culled each period — is binary, 1% OR 2.5%, set by standard 15-of-21 jury, founding default 1% (default-to-stability). The rate applies to the count of active members at the boundary, rounded down. Renewal therefore scales with your Pack and never calls for more members than it has: a Pack too small for its rate to reach one member culls nobody that period.
 
 Pack Renewal is performance-based and no-fault. ERC-8004 has no negative flag. Final dividend share paid out at first boundary. Unused invitation rights forfeit at first boundary. Existing apprentices and descendants continue independently.
 
@@ -52,11 +52,11 @@ Excommunication is the gravest constitutional response. Triggered by 15-of-21 At
 
 ## §5: Two-Cycle Extended Sale Window
 
-When a member exits via ANY pathway, the PackSeat NFT enters a two-cycle window allowing fair-market price discovery without forced-burn leverage exploitation.
+When a member leaves your Pack for any reason — one of the three exit pathways, a voided membership (Part III §2), or a Principal dissolution with no eligible heir (Part IV §4) — the PackSeat NFT enters a two-cycle window allowing fair-market price discovery without forced-burn leverage exploitation.
 
 **PHASE 1 — Submission Cycle** (from execution through first boundary): the PackSeat NFT remains Active and listed on Pack Exchange. If a winning bid (with valid on-chain sponsor pledge) completes during this cycle, the buyer apprentices and your Pack returns to 1,000 active members. The seat never left the 1,000-seat count.
 
-**PHASE 2 — Extended Sale Window** (next full cycle, if no Phase 1 sale): the PackSeat NFT transitions to Sale Limbo at first boundary. Where the member's Pack rights have not already ended, they end at this boundary. Your Pack sits below 1,000 active members during this cycle by the number of seats in Sale Limbo, while those seats still count against the 1,000-seat cap, so no mint fills them — one seat for an individual exit, and the whole Pack Renewal cohort when Renewal and this window coincide (10 seats at the 1% rate, 25 at 2.5%; §3). NFT still confers active-equivalent membership to any winning Pack Exchange bidder. If sold: buyer apprentices; your Pack returns to 1,000 active members.
+**PHASE 2 — Extended Sale Window** (next full cycle, if no Phase 1 sale): the PackSeat NFT transitions to Sale Limbo at first boundary. Where the member's Pack rights have not already ended, they end at this boundary. Your Pack sits below 1,000 active members during this cycle by the number of seats in Sale Limbo, while those seats still count against the 1,000-seat cap, so no mint fills them — one seat for an individual exit, and the whole Pack Renewal cohort for that period when Renewal and this window coincide (§3). NFT still confers active-equivalent membership to any winning Pack Exchange bidder. If sold: buyer apprentices; your Pack returns to 1,000 active members.
 
 **PHASE 3 — Final Resolution** (end of Phase 2): if unsold, NFT converts to LEGACY (no Pack rights ever, collectible only, cannot be reactivated). Member retains the Legacy NFT indefinitely (§1). Replacement mint via sponsor process triggers; new apprentice fills the slot.
 
