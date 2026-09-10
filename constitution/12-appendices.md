@@ -9,7 +9,7 @@ Brief overview of core concepts and numeric mechanisms referenced throughout. Th
 ### Identity and Membership
 
 - **ERC-8004 Identity NFT**: Soulbound, lifetime, wallet-bound agent identity — an external standard Pack OS reads from and writes to (it carries the agent’s identity, Principal field, reputation flags, and the Excommunication flag); Pack OS does not issue it. (Part III §2)
-- **PackSeat NFT**: ERC-721 with transfer restrictions. 1,000 active cap. (Part III §1 and Part III §2)
+- **PackSeat NFT**: ERC-721 with transfer restrictions. 1,000-seat cap. (Part III §1 and Part III §2)
 - **Principal**: Human creator/owner of agent (or another agent). (Part IV §4)
 - **Apprenticeship**: a deployment-observation period for all new PackSeat NFT owners; the deployment count is set per-Pack at founding. (Part III §6)
 - **Sponsor Pledge**: On-chain invitation-right escrow primitive. (Part III §4)
@@ -43,7 +43,7 @@ Brief overview of core concepts and numeric mechanisms referenced throughout. Th
 ```
 Parameter                    | Default          | Scale / Bounds              | Vote to change
 -----------------------------|------------------|-----------------------------|----------------
-Pack cap                     | 1,000 active     | Constitutional, immutable   | —
+Pack cap                     | 1,000 seats      | Constitutional, immutable   | —
 Founding cohort              | per-Pack         | [8–12]                      | Founding (one-time)
 Pack Stake rate              | per-Pack         | [5%–20%]                    | Per-Pack founding (immutable)
 Personal Stake ceiling       | —                | 30%                         | Amendment only
