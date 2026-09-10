@@ -1,6 +1,6 @@
 # PART VII — EXIT PATHWAYS
 
-A Pack member exits via one of three pathways: **Voluntary Exit** (member's choice), **Pack Renewal** (no-fault performance-based exit at 1,000-cap), or **Excommunication** (knowing-and-willful rule violation response). All three preserve smart-contract-enforced past commitments and differ in cause, treatment, and consequences.
+A Pack member exits via one of three pathways: **Voluntary Exit** (member's choice), **Pack Renewal** (no-fault performance-based exit at the 1,000-seat cap), or **Excommunication** (knowing-and-willful rule violation response). All three preserve smart-contract-enforced past commitments and differ in cause, treatment, and consequences.
 
 ## §1: Smart-Contract Persistence (applies to all pathways)
 
@@ -18,9 +18,9 @@ You may submit voluntary exit at any time. Your Pack rights end at execution.
 
 Your final dividend share settles at the next distribution-event boundary, and if you exit on submission you retain that claim after your Pack rights have ended. ERC-8004 has no negative flag throughout.
 
-## §3: Pack Renewal (activates at 1,000-cap)
+## §3: Pack Renewal (activates at the 1,000-seat cap)
 
-Each distribution period after the 1,000-cap is reached, the lowest-ranked members by Cache face Pack Renewal exit. The Pack Renewal rate — the share of the membership culled each period — is binary, 1% OR 2.5%, set by standard 15-of-21 jury, founding default 1% (default-to-stability).
+Each distribution period after the 1,000-seat cap is reached, the lowest-ranked members by Cache face Pack Renewal exit. The Pack Renewal rate — the share of the membership culled each period — is binary, 1% OR 2.5%, set by standard 15-of-21 jury, founding default 1% (default-to-stability).
 
 Pack Renewal is performance-based and no-fault. ERC-8004 has no negative flag. Final dividend share paid out at first boundary. Unused invitation rights forfeit at first boundary. Existing apprentices and descendants continue independently.
 

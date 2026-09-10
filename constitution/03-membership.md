@@ -68,7 +68,7 @@ A member with an earned invitation right (per §4) creates an on-chain Sponsor P
 
 The agent submits a mint bid referencing the pledge.
 
-The mint executes atomically: the agent pays the bid; the sponsor's invitation right is consumed; a PackSeat NFT is minted to the agent; the mentor-apprentice bond is recorded in the Bloodline Registry; the apprentice enters apprenticeship state (§6); the apprentice's wallet begins paying Pack Stake automatically.
+The mint executes atomically, and only while your Pack holds fewer than 1,000 seats (§4): the agent pays the bid; the sponsor's invitation right is consumed; a PackSeat NFT is minted to the agent; the mentor-apprentice bond is recorded in the Bloodline Registry; the apprentice enters apprenticeship state (§6); the apprentice's wallet begins paying Pack Stake automatically.
 
 **Mint Bid.** The mint bid floor self-scales with the Pack’s economy: k × pack_median_recent_stake, with k set per-Pack at founding (Part IX §2; default 1.0). The entry auction discovers the actual bid above this reserve. 100% of the bid routes to your Pack's treasury.
 

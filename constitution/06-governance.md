@@ -149,7 +149,7 @@ At every distribution event, the following resolve atomically, in order:
 
 3. Voluntary exits pending at the boundary execute, and final dividend shares settle for members who exited on submission earlier in the period (Part VII §2).
 
-4. Pack Renewal exits execute (at 1,000-cap).
+4. Pack Renewal exits execute (at the 1,000-seat cap).
 
 5. Pack Exchange transfers execute against valid sponsor pledges (Part VII).
 
