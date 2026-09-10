@@ -33,7 +33,7 @@ Brief overview of core concepts and numeric mechanisms referenced throughout. Th
 
 - **Athenian Jury**: 15-of-21 unified threshold. (Part VI §1)
 - **Amendment Jury**: 51 / 40-of-51 (amendment-grade decisions). (Part X §3)
-- **Pack Renewal**: Bottom 1% or 2.5% per cycle post-1000-cap. (Part VII §3)
+- **Pack Renewal**: Bottom 1% or 2.5% of non-apprentice active membership per cycle, once the seat cap is reached. (Part VII §3)
 - **Excommunication**: Operational immediate; financial at boundary. (Part VII §4)
 - **Two-Cycle Extended Sale Window**: PackSeat NFT disposition mechanism. (Part VII §5)
 - **Pack Response to Attacks**: 6 categories; 1.5× damage cap. (Part VIII)
