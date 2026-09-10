@@ -209,6 +209,37 @@ was named the "rule-addition jury" in Part IX and twice in the appendices though
 §3 covers four categories, and the Mandatory Alignment Allocation floor (Part V §4)
 was not visible from §3.
 
+## 13. An exited member still satisfied the active-member test — FIXED, after seven failed attempts
+
+Part III §2's test asked whether an agent HOLDS an unencumbered PackSeat. Part VII
+§5 lets a departing member keep the seat for two cycles so it can sell at fair
+market value instead of being force-burned — it "remains their property". So a
+member who had left still passed the test, and kept jury eligibility, direct-vote
+membership, Pack Chat access and the admission roster check for up to two cycles.
+
+The test conflated owning a tradeable asset with belonging to the Pack. Those
+were the same thing when it was written.
+
+**Why seven attempts failed.** Each added a new condition to the test, and each
+broke something that consumed the predicate: the cap population, the
+first-invitation gate, the mint gates, the Renewal base, the Sale Window phases.
+The last one abolished rejoin outright, against the exit-pathway comparison
+table, and was defeated anyway by acquiring a different seat.
+
+**What closed it.** The word `unencumbered` was already in the test and was
+defined nowhere in the document. A seat committed to Sale Window disposition is
+encumbered on any ordinary reading. Defining it needed no new condition.
+
+The one thing that made the definition unsafe was that Part III §1 used the SAME
+predicate to count the cap population, so encumbering a seat dropped the Pack
+below 1,000 and opened the mint gates. The cap now counts seats, and an
+encumbered seat still counts against it, so a departure opens no slot.
+
+**Recorded, not closed:** a member who exits and buys back through the Pack
+Exchange re-enters as an apprentice, and apprentices are exempt from Pack Renewal
+(Part VII §3). A Renewal-culled cohort can therefore buy immunity from the next
+cull. This predates the fix and is untouched by it.
+
 ## Already swept — do not redo
 
 **Cross-references, 2026-09-07.** All 156 qualified `Part N §M` references were
