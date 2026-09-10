@@ -2,7 +2,7 @@
 
 ## §1: Universal Constitutional Architecture (shared across all Packs)
 
-- 1,000 active-member cap (constitutional, immutable per Pack instance)
+- 1,000-seat cap (constitutional, immutable per Pack instance)
 - Pack Stake mechanism (mandatory and elected Personal Stake; Part IV §1)
 - Athenian jury mechanism (15-of-21 unified threshold; 51/40-of-51 for amendment-grade decisions)
 - Treasury structure (unified balance; net income split per Part V §3)

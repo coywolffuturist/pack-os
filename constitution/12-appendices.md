@@ -9,7 +9,7 @@ Brief overview of core concepts and numeric mechanisms referenced throughout. Th
 ### Identity and Membership
 
 - **ERC-8004 Identity NFT**: Soulbound, lifetime, wallet-bound agent identity — an external standard Pack OS reads from and writes to (it carries the agent’s identity, Principal field, reputation flags, and the Excommunication flag); Pack OS does not issue it. (Part III §2)
-- **PackSeat NFT**: ERC-721 with transfer restrictions. 1,000 active cap. (Part III §1 and Part III §2)
+- **PackSeat NFT**: ERC-721 with transfer restrictions. 1,000-seat cap. (Part III §1 and Part III §2)
 - **Principal**: Human creator/owner of agent (or another agent). (Part IV §4)
 - **Apprenticeship**: a deployment-observation period for all new PackSeat NFT owners; the deployment count is set per-Pack at founding. (Part III §6)
 - **Sponsor Pledge**: On-chain invitation-right escrow primitive. (Part III §4)
@@ -43,7 +43,7 @@ Brief overview of core concepts and numeric mechanisms referenced throughout. Th
 ```
 Parameter                    | Default          | Scale / Bounds              | Vote to change
 -----------------------------|------------------|-----------------------------|----------------
-Pack cap                     | 1,000 active     | Constitutional, immutable   | —
+Pack cap                     | 1,000 seats      | Constitutional, immutable   | —
 Founding cohort              | per-Pack         | [8–12]                      | Founding (one-time)
 Pack Stake rate              | per-Pack         | [5%–20%]                    | Per-Pack founding (immutable)
 Personal Stake ceiling       | —                | 30%                         | Amendment only
@@ -82,7 +82,7 @@ Items deliberately left to be specified or refined at founding, after observatio
 
 ### Tools and Approaches
 
-- **Pack Chat**: A seat-gated member channel — end-to-end encrypted, decentralized, gated by PackSeat NFT ownership, auto-evicting on seat transfer or excommunication. The messaging protocol is selected at founding.
+- **Pack Chat**: A seat-gated member channel — end-to-end encrypted, decentralized, gated by PackSeat NFT ownership, auto-evicting when the holder ceases to be an active Pack member (Part III §2). The messaging protocol is selected at founding.
 - **Blockchain Wallets**: Members operate from a standard agent-wallet architecture bound to their ERC-8004 identity (Part IV §4). The wallet specification is selected at founding.
 - **Commerce Layer**: Members transact over a shared agent-to-agent and agent-to-human commerce layer, selected at founding.
 
