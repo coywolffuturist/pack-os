@@ -209,6 +209,56 @@ was named the "rule-addition jury" in Part IX and twice in the appendices though
 §3 covers four categories, and the Mandatory Alignment Allocation floor (Part V §4)
 was not visible from §3.
 
+## 13. An exited member still satisfies the active-member test — OPEN
+
+Part III §2 asks whether an agent HOLDS an unencumbered PackSeat. Part VII §5 lets
+a departing member keep the seat for two cycles so it can sell at fair market
+value instead of being force-burned — it "remains their property". So a member who
+has left still passes the test, and keeps jury eligibility, direct-vote
+membership, Pack Chat access and the admission roster check for up to two cycles.
+
+The test conflates owning a tradeable asset with belonging to the Pack. Those were
+the same thing when it was written.
+
+### Eight attempts, all refuted. Do not attempt a ninth as a patch.
+
+Seven added a condition to the active-member test. Each broke a different consumer
+of the predicate: the cap population, the first-invitation gate, the mint gates,
+the Renewal base, the Sale Window phases. One abolished rejoin outright, against
+the "Can rejoin: yes | yes | NEVER" row of the Part VII comparison table.
+
+The eighth instead DEFINED `unencumbered`, which appears in the test and is
+defined nowhere. That is the right shape, and it still failed, for a reason worth
+recording permanently.
+
+### The load-bearing design nobody wrote down
+
+A Pack falling below its cap during a Sale Window is what makes the departing seat
+sellable. The chain: every Exchange bid needs a sponsor pledge (Part VII §5); a
+pledge escrows an invitation right (Part III §4); an invitation right is earned
+only while the Pack is below the cap (Part III §4). A departure drops the Pack
+below cap, which regenerates the right needed to buy the departing seat.
+
+Any change that keeps the count at 1,000 through the window starves the Exchange:
+no new rights, no bids, every exit force-burns to Legacy. That is the exact
+outcome Part VII §5 says the window exists to prevent, and it breaks Part V §6's
+promise that exit by seat transfer at the clearing price is "preserved throughout".
+
+### What a correct fix must do
+
+Two counts, two gates. Invitation EARNING keys on ACTIVE MEMBERS, which falls
+during the window. MINTING keys on SEATS, which does not. And the mint event in
+Part III §5 has no cap check of its own at all — the earning gate is the only
+thing protecting the cap at mint time, so re-keying it without adding an explicit
+seat check at the moment of use opens an unbounded overshoot, because invitation
+rights have no expiry and bank indefinitely.
+
+### Recorded, not part of this defect
+
+A member who exits and buys back re-enters as an apprentice, and apprentices are
+exempt from Pack Renewal (Part VII §3), so a culled cohort can buy immunity from
+the next cull. This predates the defect above and is untouched by any fix to it.
+
 ## Already swept — do not redo
 
 **Cross-references, 2026-09-07.** All 156 qualified `Part N §M` references were
