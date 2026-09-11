@@ -284,7 +284,7 @@ question, not a text correction, and each needs a ruling.
 3. **Status can be farmed by timing revenue.** Deferring billing across a cycle
    boundary — identical two-cycle revenue, zero growth — nets large positive
    Status, because the down-move is divided by the large base and the up-move by
-   the small one. It beats genuine doubling by roughly nine times.
+   the small one. At a 99% deferral it beats genuine doubling by roughly nine times.
 4. **Status is undefined at a first scored cycle.** The formula divides by the
    previous cycle's revenue, which is zero for every new graduate. No convention.
 5. **A 7-of-21 REJECT minority vetoes for free and at a profit.** Rejected
@@ -323,7 +323,9 @@ promised in CONTRIBUTING after ratification was removed.
 Not yet ruled on, and required before any of the above can be closed:
 a definition of "revenue" with an arm's-length requirement; a definition of
 "operating expenses"; a minimum revenue-event size; a reserve price on Pack
-Exchange bids; and the convention for Status at a member's first scored cycle.
+Exchange bids; the convention for Status at a member's first scored cycle; and
+where the Principal Registry and Bloodline Registry live, since Part X §1 counts
+seven contracts and names neither.
 
 ## Already swept — do not redo
 
