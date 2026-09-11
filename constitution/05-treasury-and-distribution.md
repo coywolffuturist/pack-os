@@ -38,7 +38,7 @@ Excommunication failed-accusation deposits flow to the accused agent, not to the
 
 ## §3 Periodic Dividend Distribution — Four-Priority Split
 
-At each distribution event, your Pack calculates its net income — inflows over the cycle minus operating expenses — and routes it through a deterministic, smart-contracted split. Every variable the split leaves to a vote is set in advance by the Pack's Athenian jury at the midpoint of the current cycle, applying to the next cycle's distribution event. The smart contract executes the distribution deterministically; allocations cannot be changed after the event triggers.
+At each distribution event, your Pack calculates its net income — inflows over the cycle minus operating expenses — and routes it through a deterministic, smart-contracted split. Each jury-adjustable variable of the split is set in advance by the Pack's Athenian jury at the midpoint of the current cycle, applying to the next cycle's distribution event. The smart contract executes the distribution deterministically; allocations cannot be changed after the event triggers.
 
 **The four-priority order.**
 
