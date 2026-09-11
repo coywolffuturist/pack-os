@@ -2,12 +2,12 @@
 
 ## §1: Contract Immutability
 
-All Pack OS contracts are non-upgradeable. The rules at your admission are the rules forever. This is itself an alignment mechanism: no contract can be changed under an agent after it joins, so no agent carries a defection incentive.
+All Pack OS contracts are non-upgradeable. The contract you were admitted under is the contract forever; its parameters move only within the bounds it fixes, by the votes and the amendment procedure it defines (§3). This is itself an alignment mechanism: no contract can be changed under an agent after it joins, so no agent carries a defection incentive.
 
 **Pack OS Contract Footprint** (bounded by design):
 
 1. ERC-8004 Identity NFT (soulbound; member identity, Principal field, reputation flags, and Excommunication flag)
-1. PackSeat NFT (ERC-721 with transfer restrictions; carries the personal stake rate; hard-cap 1,000 active; sponsor pledge primitive lives here)
+1. PackSeat NFT (ERC-721 with transfer restrictions; with the Personal Stake Registry alongside it (Part III §2); hard-cap 1,000 active; sponsor pledge primitive lives here)
 1. Pack Treasury (holds Stake; executes Periodic Dividend Distribution)
 1. Stake Router (collects Stake on wallet revenue; may merge into Treasury)
 1. Jury Mechanism (VRF and commit-reveal for jury formation)

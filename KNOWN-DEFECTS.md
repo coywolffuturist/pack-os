@@ -263,6 +263,67 @@ A member who exits and buys back re-enters as an apprentice, and apprentices are
 exempt from Pack Renewal (Part VII §3), so a culled cohort can buy immunity from
 the next cull. This predates the defect above and is untouched by any fix to it.
 
+## 14. The mechanism layer has not been swept, and a first adversarial pass found eleven open items — OPEN
+
+Every prior sweep covered the text: references, notation, contradictions a
+proofreader finds. None asked whether the rules are sound as designed. One
+adversarial pass did, on 2026-09-11, reading the constitution the way a
+mechanism-design audience would. It found the following. Each is a design
+question, not a text correction, and each needs a ruling.
+
+1. **Principal-chain sybil.** A Principal may be another agent. The admission
+   check tests the declared Principal against the roster, so agent A (Principal:
+   a human) can create agent B and declare A. A is on the roster as an agent, not
+   a Principal; the check passes. Unbounded seats under one human. Appendix C
+   already lists Principal-chain recursion as unresolved.
+2. **Status is not scale-invariant.** The formula is the geometric mean of
+   absolute and proportional growth, which weights proportional growth by the
+   square root of the base. The prose claimed equal credit across scales; that
+   claim is corrected in this pass. Whether the formula should change is open.
+3. **Status can be farmed by timing revenue.** Deferring billing across a cycle
+   boundary — identical two-cycle revenue, zero growth — nets large positive
+   Status, because the down-move is divided by the large base and the up-move by
+   the small one. It beats genuine doubling by roughly nine times.
+4. **Status is undefined at a first scored cycle.** The formula divides by the
+   previous cycle's revenue, which is zero for every new graduate. No convention.
+5. **A 7-of-21 REJECT minority vetoes for free and at a profit.** Rejected
+   treasury deposits forfeit to the treasury and flow back by Cache weight. The
+   cooldown formula holds the drawable pool at exactly 42 under sustained load,
+   so a bloc of 14 agents vetoes most decisions; and excommunication, the only
+   sanction against a cartel, is itself 15-of-21 and therefore vetoable by it.
+6. **Excommunication pays the jury.** Removing a member forfeits one final
+   share and gains the survivors that member's Cache weight in every future
+   distribution. The "why the split" rationale in Part VII §4 says the opposite.
+   No juror recusal for financial interest exists.
+7. **The Mandatory Alignment Allocation is charged on an undefined base.** Net
+   income is inflows minus operating expenses; operating expenses is defined
+   nowhere; substrate is senior in the outflow order; a cycle with no net income
+   pays nothing. The rate is immutable and the payment is discretionary.
+8. **The stake ceiling outbids the Alignment Multiplier.** Cache credits stake
+   times multiplier. The multiplier ceiling is 1.05 and the elected stake ceiling
+   is 30%, so unaligned work at maximum stake out-earns fully aligned work at
+   minimum stake by up to six times, and Renewal survival is ranked by Cache.
+9. **Renewal by lifetime Cache consumes the graduating cohort.** Steady-state
+   Cache is about 6.3 times a one-period graduate's at identical revenue. The
+   cull falls on graduates, so sponsoring — the Pack's only growth mechanism —
+   is a dominated strategy under the bloodline coupling of Part III §4.
+10. **The Market Check is bypassed by naming a non-member payee.** No affiliate
+    or beneficial-ownership test exists anywhere in the document.
+11. **Principal inactivity pays the collective.** A Principal who misses the
+    liveness window is presumed dissolved without a jury, and the agent's wallet
+    is subsumed by the treasury, which flows to members by Cache weight.
+
+Also recorded from the same pass, text-layer and fixed on 2026-09-11: the
+"rules forever" claim in Part X §1; the Principal-binding immutability claim in
+Part III §2; the PackSeat mutable-state contradiction between Part III §2 and
+Part X §1; the accusation/proposal distinction in Part VII §6; and a "ballot"
+promised in CONTRIBUTING after ratification was removed.
+
+Not yet ruled on, and required before any of the above can be closed:
+a definition of "revenue" with an arm's-length requirement; a definition of
+"operating expenses"; a minimum revenue-event size; a reserve price on Pack
+Exchange bids; and the convention for Status at a member's first scored cycle.
+
 ## Already swept — do not redo
 
 **Cross-references, 2026-09-07.** All 156 qualified `Part N §M` references were
@@ -287,13 +348,12 @@ defines it, and never against Part X §3, which now claims to govern which decis
 are amendment-grade. Two vote-to-change cells disagree with it: Pack cap reads
 "Constitutional, immutable" with no vote, and Personal Stake ceiling reads
 "Constitutional", while Part X §3 lists both as amendment-grade parameters. The Personal Stake
-cell is corrected; the Pack cap conflict is open and needs a ruling, because
-Part X §3 also makes "raising any constitutional ceiling" amendment-grade and
-this document uses cap and ceiling for the same objects. Two
+cell is corrected; the Pack cap conflict was closed on 2026-09-10 (Part X §3 now carves the cap out of
+its ceiling clause). Two
 defects were in the table itself rather than in the values: one column was
 misaligned by two characters, and the Stage-2 strategic-operations row listed a
 15-of-21 vote for a figure that is the complement of the dividend share and
 cannot be voted independently of it.
 
-What has **not** been swept: whether the mechanisms are sound as designed. That
-is not a text question.
+The mechanism layer — whether the rules are sound as designed — had its first
+adversarial sweep on 2026-09-11. See defect 14.

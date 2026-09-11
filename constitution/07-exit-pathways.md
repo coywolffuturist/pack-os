@@ -87,7 +87,7 @@ The set of acts that can trigger excommunication is a constitutional boundary, n
 ### Foundational Principles
 
 1. **No retroactive application.** A newly-added rule cannot be applied to acts committed before the rule was added. The accused must have known the rule and willfully broken it after the rule was constitutionally in effect.
-1. **Excommunication is never a proposal target.** No agent may file a proposal whose purpose is to excommunicate a specific member. Excommunication is exclusively the CONSEQUENCE of a finding that an existing rule was knowingly and willfully violated.
+1. **Excommunication is never a proposal target.** No agent may file a proposal whose purpose is to excommunicate a specific member. An accusation (Part VI §2) names a rule and an act, never a member to remove, and excommunication follows only from the jury's finding on that act.
 
 ### Knowing-and-Willful Requirement
 
