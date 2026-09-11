@@ -262,7 +262,7 @@ A member who exits and buys back re-enters as an apprentice, and apprentices are
 exempt from Pack Renewal (Part VII §3), so a culled cohort can buy immunity from
 the next cull. This predates the defect above and is untouched by any fix to it.
 
-## 14. The mechanism layer has not been swept, and a first adversarial pass found eleven open items — OPEN
+## 14. The mechanism layer has had one adversarial sweep, which found eleven open items — OPEN
 
 Prior sweeps covered the text: references, notation, contradictions a
 proofreader finds. Defects 11 and 13 were mechanism findings before this, each found by a
@@ -282,9 +282,9 @@ question, not a text correction, and each needs a ruling.
    claim is corrected in this pass. Whether the formula should change is open.
 3. **Status can be farmed by timing revenue.** Deferring billing across a cycle
    boundary — identical two-cycle revenue, zero growth — nets large positive
-   Status, because the down-move is divided by the large base and the up-move by
-   the small one. Deferring 99% of one cycle's revenue into the next, with the two-cycle total unchanged, nets 18.8 times the Status of a genuine doubling.
-4. **Status is undefined at a first scored cycle.** The formula divides by the
+   Status, because the down-move is divided by the square root of the large base
+   and the up-move by that of the small one. Deferring 99% of one cycle's revenue into the next, with the two-cycle total unchanged, nets 18.8 times the Status of a genuine doubling.
+4. **Status is undefined at a first scored cycle.** The formula divides by the square root of the
    previous cycle's revenue, which is zero for any member with no revenue in the prior cycle, including
    many new graduates. No convention.
 5. **A 7-of-21 REJECT minority vetoes for free and at a profit.** Rejected
@@ -336,10 +336,11 @@ or Bloodline Registries is counted in a footprint that totals seven.
 
 ## 15. The decay parameter is named a half-life and used as a 1/e-life — OPEN
 
-Part IV §2 writes `Cache = Σ (stake × exp(−t_i / half_life))` and Part IV §3 uses the
-same form for Status. `exp(−t/h)` falls to 1/e at t = h, not to 1/2. The parameter
-the text calls a half-life, which Part IX §2 sets at founding and Appendix C
-proposes at four distribution periods, is therefore a 1/e time constant as written. Every prose
+Part IV §2 writes `Cache = Σ_lifetime (stake_paid_event_i × exp(−t_i / half_life))` and
+Part IV §3 uses the same form for Status. `exp(−t/h)` falls to 1/e at t = h, not to 1/2. The parameter
+the text calls a half-life, which Part IX §2 sets at founding, Part VI §4 defaults to
+about four distribution periods, and Part VI §2 ties the recency window to, is
+therefore a 1/e time constant as written. Every prose
 statement about how fast Cache or Status fades, and every founding calibration of
 that number, is off by a factor of ln 2 ≈ 0.69 in one direction or the other.
 
@@ -367,7 +368,7 @@ dropped.
 **Appendix B, 2026-09-07 — INCOMPLETE, see below.** All 16 parameter rows were
 checked against the Part that defines each. Every value and bound matches its source.
 
-**Correction, 2026-09-08.** That sweep checked each row against the ONE Part that
+**Correction, 2026-09-08, updated 2026-09-10.** That sweep checked each row against the ONE Part that
 defines it, and never against Part X §3, which now claims to govern which decisions
 are amendment-grade. Two vote-to-change cells disagree with it: Pack cap reads
 "Constitutional, immutable" with no vote, and Personal Stake ceiling reads
