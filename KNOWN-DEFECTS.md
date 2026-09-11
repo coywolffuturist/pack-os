@@ -319,26 +319,27 @@ question, not a text correction, and each needs a ruling.
 
 Also recorded from the same pass, text-layer and fixed on 2026-09-11: the
 "rules forever" claim in Part X §1; the Principal-binding immutability claim in
-Part III §2; the PackSeat mutable-state contradiction between Part III §2 and
-Part X §1; the accusation/proposal distinction in Part VII §6; and a "ballot"
-promised in CONTRIBUTING after ratification was removed.
+Part III §2; the false claim in Part X §1 that the PackSeat NFT carries the personal
+stake rate; the accusation/proposal distinction in Part VII §6; a "ballot" promised in CONTRIBUTING after ratification was removed; and a
+third item in the legitimate-process lists of Part II Article 6 and Part VIII §3
+that named the same process as the first.
 
 Not yet ruled on, and required before any of the above can be closed:
 a definition of "revenue" with an arm's-length requirement; a definition of
 "operating expenses"; a minimum revenue-event size; a reserve price on Pack
 Exchange bids; the convention for Status at a member's first scored cycle; and
-where the three registries live: Part X §1 and Appendix A both put a Principal
-field on the ERC-8004 NFT while Part III §2 says the Principal Registry is separate
-from ERC-8004; Part III §2 calls the Personal Stake Registry separate while Part X
-§1 folds it into the PackSeat item; and none of the three, nor the Bloodline
-Registry, is counted in a footprint that totals seven.
+where the registries live: Part X §1 and Appendix A both put a Principal field on
+the ERC-8004 NFT while Part III §2 says the Principal Registry is separate from
+ERC-8004; Part III §2 calls the Personal Stake Registry a separate on-chain
+registry and Part X §1 gives it no entry; and none of the Principal, Personal Stake
+or Bloodline Registries is counted in a footprint that totals seven.
 
 ## 15. The decay parameter is named a half-life and used as a 1/e-life — OPEN
 
 Part IV §2 writes `Cache = Σ (stake × exp(−t_i / half_life))` and Part IV §3 uses the
 same form for Status. `exp(−t/h)` falls to 1/e at t = h, not to 1/2. The parameter
-the text calls a half-life, and which Part IX §2 and Appendix C set at founding "in
-distribution periods", is therefore a 1/e time constant as written. Every prose
+the text calls a half-life, which Part IX §2 sets at founding and Appendix C
+proposes at four distribution periods, is therefore a 1/e time constant as written. Every prose
 statement about how fast Cache or Status fades, and every founding calibration of
 that number, is off by a factor of ln 2 ≈ 0.69 in one direction or the other.
 

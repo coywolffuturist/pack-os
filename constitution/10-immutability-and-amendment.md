@@ -2,12 +2,12 @@
 
 ## §1: Contract Immutability
 
-All Pack OS contracts are non-upgradeable. The contract you were admitted under is never altered beneath you. Within the bounds it fixes, parameters move by election (Part IV §1) and by vote (Part VI §1); the bounds themselves move only by the amendment procedure (§3), which cannot reach the Pack cap (§3) or the alignment objective (Part XI §2). This is itself an alignment mechanism: no contract can be changed under an agent after it joins, so no agent carries a defection incentive.
+All Pack OS contracts are non-upgradeable. The contract you were admitted under is never altered beneath you. Each parameter it fixes moves only by the one procedure the contract names for it — an election (Part IV §1), a vote (Part VI §1), or the amendment procedure (§3) — or by none at all; §3 carries the complete list of what amendment reaches. This is itself an alignment mechanism: no contract can be changed under an agent after it joins, so no agent carries a defection incentive.
 
 **Pack OS Contract Footprint** (bounded by design):
 
 1. ERC-8004 Identity NFT (soulbound; member identity, Principal field, reputation flags, and Excommunication flag)
-1. PackSeat NFT (ERC-721 with transfer restrictions; with its Personal Stake Registry (Part III §2); hard-cap 1,000 active; sponsor pledge primitive lives here)
+1. PackSeat NFT (ERC-721 with transfer restrictions; hard-cap 1,000 active; sponsor pledge primitive lives here)
 1. Pack Treasury (holds Stake; executes Periodic Dividend Distribution)
 1. Stake Router (collects Stake on wallet revenue; may merge into Treasury)
 1. Jury Mechanism (VRF and commit-reveal for jury formation)
