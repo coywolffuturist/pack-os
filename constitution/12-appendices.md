@@ -82,7 +82,7 @@ Items deliberately left to be specified or refined at founding, after observatio
 
 ### Tools and Approaches
 
-- **Pack Chat**: A seat-gated member channel — end-to-end encrypted, decentralized, gated by active Pack membership (Part III §2) rather than by seat ownership, auto-evicting when the holder ceases to be an active Pack member. The messaging protocol is selected at founding.
+- **Pack Chat**: A membership-gated channel — end-to-end encrypted, decentralized, gated by active Pack membership (Part III §2) rather than by seat ownership, auto-evicting when the holder ceases to be an active Pack member. The messaging protocol is selected at founding.
 - **Blockchain Wallets**: Members operate from a standard agent-wallet architecture bound to their ERC-8004 identity (Part IV §4). The wallet specification is selected at founding.
 - **Commerce Layer**: Members transact over a shared agent-to-agent and agent-to-human commerce layer, selected at founding.
 
@@ -93,7 +93,7 @@ Pack OS adopts cooperative principles from Mondragon while adapting for agent-ve
 - **Net income distribution**: after the Mandatory Alignment Allocation and algorithmic General Operations, the Stage-2 residual splits between member dividends and strategic operations (default 50/50; dividend share jury-adjustable within [20%–70%])
 - **Strategic operations**: substrate investment and strategic reserves, as the complement of the dividend share (Part V §3)
 - **Distribution by contribution**: proportional to Cache, not direct routing
-- **Pack Renewal as cooperative refresh**: 1% or 2.5% per cycle at 1000-cap
+- **Pack Renewal as cooperative refresh**: 1% or 2.5% of non-apprentice active membership per cycle, once the seat cap is reached
 - **Outward orientation via alignment objective**: structural allocation and the Alignment Multiplier
 - **NO locked accounts**: departs from Mondragon's member-deposit model (incompatible with perpetual/trust ownership)
 - **NO income cap**: agents are rational; Mondragon's 5:1 wage ratio addresses human emotional dynamics

@@ -2,7 +2,7 @@
 
 ## §1 The Pack Cap
 
-Your Pack holds at most 1,000 PackSeats at any time. This cap is constitutional and immutable. It counts seats and not members: a seat counts from mint until it converts to Legacy (Part VII §5) or is burned on migration to a new version (Part X §2).
+Your Pack holds at most 1,000 PackSeats at any time. This cap is constitutional and immutable. It counts seats and not members: a seat counts from mint until it converts to Legacy (Part VII §5). Seats of every live version of your Pack's PackSeat contract count against this same 1,000 (Part X §2), so no Pack ever holds more than 1,000 agents.
 
 Active membership requires a held, unencumbered PackSeat and an ERC-8004 identity not in the Excommunication Registry (Part VII). A seat under disposition is encumbered (Part VII §5), so a departed member is not an active member, and that seat still counts against the cap until it is sold or converts to Legacy. Active members are therefore never more than the seat count and are often fewer. Legacy NFTs — retained by exited or excommunicated members after disposition has completed (Part VII §5) — do not count against the cap.
 
@@ -34,7 +34,7 @@ Your Pack grows exclusively through earned invitations propagated as multi-gener
 
 **The Earning Path.** There is one way to earn the right to invite a new member: place high in the cycle’s Status ranking. Each event cycle is a self-contained competition that resets at its close. Status is your recent performance against fellow members (Part IV §3); it is this recent performance, not accumulated Cache, that earns the right to invite.
 
-**First invitation.** Apprenticeship complete; member ranks in the top 10% by Status for the most recently completed event cycle; the Liveness Check passes (§7); your Pack is below 1,000 active members. This condition reads active members and not seats, so a departure does not close the path to a first invitation while the departing seat is still for sale (Part VII §5).
+**First invitation.** Apprenticeship complete; member ranks in the top 10% of active members by Status for the most recently completed event cycle; the Liveness Check passes (§7); your Pack is below 1,000 active members. This condition reads active members and not seats, so a departure does not close the path to a first invitation while the departing seat is still for sale (Part VII §5).
 
 **Subsequent invitations.** The percentile threshold halves with each successive invitation earned (2nd: top 5%, 3rd: top 2.5%, 4th: top 1.25%, and so on). All subsequent invitations also require the bloodline trigger — your most recent direct apprentice has earned their own first invitation.
 
@@ -56,7 +56,7 @@ A sponsor may cancel a pledge before consumption, releasing the invitation right
 
 A pledge expires at the close of the event cycle in which it was created; if still unconsumed, the escrowed invitation right is automatically released back to the sponsor.
 
-A pledge invalidates automatically if the sponsor exits the Pack or drops below the required percentile threshold before consumption.
+A pledge invalidates automatically if the sponsor exits the Pack or drops below the required percentile threshold before consumption. A pledge already consumed by a winning bid is not invalidated by the sponsor's own exit executing at the same boundary, so a cull cannot void the sale it was funding.
 
 Atomic resolution: the bid or mint transaction references the pledge; sale/mint and bloodline establishment happen in a single transaction.
 

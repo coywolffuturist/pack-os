@@ -26,7 +26,7 @@ Total: 7 contracts. The footprint does not grow with Pack activity.
 
 ## §2: V2 Migration
 
-You migrate to V2 by burning your V1 seat and minting a V2 seat. No admin can force migration; only individual member action moves a seat. The Pack as social organization persists across versions; each technical contract remains immutable.
+You migrate to V2 by burning your V1 seat and minting a V2 seat in a single transaction, so your Pack's seat count never dips and no slot opens behind you (Part III §1). No admin can force migration; only individual member action moves a seat. The Pack as social organization persists across versions; each technical contract remains immutable.
 
 ## §3: Constitutional Amendment Procedure
 
