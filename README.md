@@ -70,7 +70,7 @@ section exists. Five references were found pointing at a real section that state
 different rule. The text currently carries none.
 
 Fourteen defects are recorded in [KNOWN-DEFECTS.md](KNOWN-DEFECTS.md). Twelve
-text-layer defects are closed and one is open. **The mechanism layer — whether the
+are closed and two are open. **The mechanism layer — whether the
 rules are sound as designed — has had one adversarial sweep, which found eleven
 open items (defect 14). It has not been closed.** Read that entry before reading
 the Parts as a finished design.

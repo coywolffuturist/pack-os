@@ -1,12 +1,11 @@
 # Known defects
 
-Every defect found in this text, recorded whether or not it is closed. Thirteen so
-far: **twelve closed, one open.** Each entry states what was wrong, what closed it,
+Every defect found in this text, recorded whether or not it is closed. Fourteen so
+far: **twelve closed, two open.** Each entry states what was wrong, what closed it,
 and — where a fix failed — why.
 
-The open one is **defect 13**. It is a latent interaction between two rules rather
-than a contradiction on the page, and its entry records why a patch does not close
-it.
+The open ones are **defect 13**, a latent interaction between two rules whose entry
+records why a patch does not close it, and **defect 14**, the mechanism layer.
 
 This file exists so a new contributor does not spend a day rediscovering them, and
 so nobody mistakes a known hole for settled text. If you find something not listed
@@ -266,8 +265,8 @@ the next cull. This predates the defect above and is untouched by any fix to it.
 ## 14. The mechanism layer has not been swept, and a first adversarial pass found eleven open items — OPEN
 
 Prior sweeps covered the text: references, notation, contradictions a
-proofreader finds. Defect 11 was the one mechanism finding before this, found by
-a reviewer on 2026-09-08. The first pass aimed at the mechanism layer as a whole
+proofreader finds. Defects 11 and 13 were mechanism findings before this, each found by a
+reviewer. The first pass aimed at the mechanism layer as a whole
 ran on 2026-09-11, reading the constitution the way a
 mechanism-design audience would. It found the following. Each is a design
 question, not a text correction, and each needs a ruling.
@@ -284,14 +283,17 @@ question, not a text correction, and each needs a ruling.
 3. **Status can be farmed by timing revenue.** Deferring billing across a cycle
    boundary — identical two-cycle revenue, zero growth — nets large positive
    Status, because the down-move is divided by the large base and the up-move by
-   the small one. At a 99% deferral it beats genuine doubling by roughly nine times.
+   the small one. Deferring 99% of one cycle's revenue into the next, with the two-cycle total unchanged, nets 18.8 times the Status of a genuine doubling.
 4. **Status is undefined at a first scored cycle.** The formula divides by the
-   previous cycle's revenue, which is zero for every new graduate. No convention.
+   previous cycle's revenue, which is zero for any member with no revenue in the prior cycle, including
+   many new graduates. No convention.
 5. **A 7-of-21 REJECT minority vetoes for free and at a profit.** Rejected
    treasury deposits forfeit to the treasury and flow back by Cache weight. The
-   cooldown formula holds the drawable pool at exactly 42 under sustained load,
-   so a bloc of 14 agents vetoes most decisions; and excommunication, the only
-   sanction against a cartel, is itself 15-of-21 and therefore vetoable by it.
+   cooldown formula holds the drawable pool at 42 under sustained load, though
+   that 42 rotates through the eligible pool, so at a full Pack the smallest bloc
+   that blocks more than half of all decisions is about 94 agents, 9% of the
+   Pack. Excommunication, the only sanction against a cartel, is itself 15-of-21
+   and therefore vetoable by it.
 6. **Excommunication pays the jury.** Removing a member forfeits one final
    share and gains the survivors that member's Cache weight in every future
    distribution. The "why the split" rationale in Part VII §4 says the opposite.
@@ -299,7 +301,7 @@ question, not a text correction, and each needs a ruling.
 7. **The Mandatory Alignment Allocation is charged on an undefined base.** Net
    income is inflows minus operating expenses; operating expenses is defined
    nowhere; substrate is senior in the outflow order; a cycle with no net income
-   pays nothing. The rate is immutable and the payment is discretionary.
+   pays nothing. The floor is immutable and the payment is discretionary.
 8. **The stake ceiling outbids the Alignment Multiplier.** Cache credits stake
    times multiplier. The multiplier ceiling is 1.05 and the elected stake ceiling
    is 30%, so unaligned work at maximum stake out-earns fully aligned work at
@@ -311,7 +313,8 @@ question, not a text correction, and each needs a ruling.
 10. **The Market Check is bypassed by naming a non-member payee.** No affiliate
     or beneficial-ownership test exists anywhere in the document.
 11. **Principal inactivity pays the collective.** A Principal who misses the
-    liveness window is presumed dissolved without a jury, and the agent's wallet
+    liveness window is presumed dissolved without a jury, and if no valid heir
+    exists, and the agent's wallet
     is subsumed by the treasury, which flows to members by Cache weight.
 
 Also recorded from the same pass, text-layer and fixed on 2026-09-11: the
@@ -324,8 +327,9 @@ Not yet ruled on, and required before any of the above can be closed:
 a definition of "revenue" with an arm's-length requirement; a definition of
 "operating expenses"; a minimum revenue-event size; a reserve price on Pack
 Exchange bids; the convention for Status at a member's first scored cycle; and
-where the Principal Registry and Bloodline Registry live, since Part X §1 counts
-seven contracts and names neither.
+where the Principal Registry lives: Part X §1 puts a Principal field on the
+ERC-8004 NFT while Part III §2 says the registry is separate from ERC-8004, and
+neither it nor the Bloodline Registry appears in a footprint that counts seven.
 
 ## Already swept — do not redo
 

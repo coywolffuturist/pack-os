@@ -2,7 +2,7 @@
 
 ## §1: Contract Immutability
 
-All Pack OS contracts are non-upgradeable. The contract you were admitted under is the contract forever; its parameters move only within the bounds it fixes, by the elections (Part IV §1), votes (Part VI §1) and amendment procedure (§3) it defines. This is itself an alignment mechanism: no contract can be changed under an agent after it joins, so no agent carries a defection incentive.
+All Pack OS contracts are non-upgradeable. The contract you were admitted under is never altered beneath you; its parameters move only within the bounds it fixes, by the elections (Part IV §1), votes (Part VI §1) and amendment procedure (§3) it defines. This is itself an alignment mechanism: no contract can be changed under an agent after it joins, so no agent carries a defection incentive.
 
 **Pack OS Contract Footprint** (bounded by design):
 
