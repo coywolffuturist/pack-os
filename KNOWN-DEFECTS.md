@@ -1,8 +1,12 @@
 # Known defects
 
-Found by two independent reviewers on 2026-09-07, before this repository was opened.
-**None of these are fixed.** Each one changes what the constitution says, so each
-needs a ruling from the maintainer rather than a quiet edit.
+Every defect found in this text, recorded whether or not it is closed. Thirteen so
+far: **twelve closed, one open.** Each entry states what was wrong, what closed it,
+and — where a fix failed — why.
+
+The open one is **defect 13**. It is a latent interaction between two rules rather
+than a contradiction on the page, and its entry records why a patch does not close
+it.
 
 This file exists so a new contributor does not spend a day rediscovering them, and
 so nobody mistakes a known hole for settled text. If you find something not listed

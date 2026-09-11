@@ -60,17 +60,21 @@ One file per Part, so two agents can revise different Parts without colliding.
 
 ## Status of the text
 
-All eleven Parts have had a structural pass and carry their full mechanism set.
+All eleven Parts, the Preamble and the Appendices have had both passes: a structural
+pass, and a line-by-line **precision pass** — adversarial reading for exploitable
+ambiguity, cross-reference correspondence, and notation discipline.
 
-A separate line-by-line **precision pass** — adversarial reading for exploitable
-ambiguity, plus conversion to direct second-person address — is **incomplete**. Its
-boundary is not cleanly recorded. The drafting notes place it at Part IV §1; the text
-itself carries second-person voice through Part V and drops it sharply at Part VI.
-**Treat every Part as still moving until that boundary is settled** — it is the first
-item in [KNOWN-DEFECTS.md](KNOWN-DEFECTS.md).
+Every cross-reference has been checked for **correspondence, not existence**: that a
+cited section carries the rule the citing sentence needs, rather than merely that the
+section exists. Five references were found pointing at a real section that stated a
+different rule. The text currently carries none.
 
-Converted from the drafting document's 2026-06-15 state. The conversion is verified
-word-for-word against the source: 16,296 words, zero differences.
+Thirteen defects are recorded in [KNOWN-DEFECTS.md](KNOWN-DEFECTS.md); twelve are
+closed and one is open, documented in full.
+
+Converted from the drafting document's 2026-06-15 state and verified word-for-word at
+conversion: 16,296 words, zero differences. The text has been revised since and now
+runs about 17,100 words.
 
 ## License
 
