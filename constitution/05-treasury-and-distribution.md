@@ -42,7 +42,7 @@ At each distribution event, your Pack calculates its net income — inflows over
 
 **The four-priority order.**
 
-1. Mandatory Alignment Allocation: 10% of net income, taken first. The 10% is a constitutional floor, immutable per §4; the rate is amendment-grade upward (Part X §3). Routes to your Pack's Alignment Allocation Pool, dedicated to your Pack's chosen alignment objective (Part IX §2).
+1. Mandatory Alignment Allocation: 10% of net income, taken first. The 10% is a constitutional floor, immutable per §4; the rate moves only by amendment, upward without limit and downward to that floor (Part X §3). Routes to your Pack's Alignment Allocation Pool, dedicated to your Pack's chosen alignment objective (Part IX §2).
 
 2. General Operations: algorithmic, not voted. The smart contract calculates the amount needed to maintain your Pack's operations runway — a set number of cycles of average operating expense, plus a safety margin — both the runway length and that margin fixed at founding (Part IX §2). Mandatory Alignment and General Operations together form Stage 1 — taken off the top; General Operations comes after alignment and before the Stage-2 split, and what remains is the Stage-2 residual. Algorithmic protection ensures the Pack cannot bankrupt itself by failing to fund operations.
 

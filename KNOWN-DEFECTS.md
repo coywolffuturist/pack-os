@@ -339,8 +339,8 @@ or Bloodline Registries is counted in a footprint that totals seven.
 Part IV §2 writes `Cache = Σ_lifetime (stake_paid_event_i × exp(−t_i / half_life))` and
 Part IV §3 uses the same form for Status. `exp(−t/h)` falls to 1/e at t = h, not to 1/2. The parameter
 the text calls a half-life, which Part IX §2 sets at founding, Part VI §4 defaults to
-about four distribution periods, and Part VI §2 ties the recency window to, is
-therefore a 1/e time constant as written. Every prose
+about four distribution periods, and Part VI §2 cites when defaulting the recency
+window, is therefore a 1/e time constant as written. Every prose
 statement about how fast Cache or Status fades, and every founding calibration of
 that number, is off by a factor of ln 2 ≈ 0.69 in one direction or the other.
 
@@ -372,7 +372,7 @@ checked against the Part that defines each. Every value and bound matches its so
 defines it, and never against Part X §3, which now claims to govern which decisions
 are amendment-grade. Two vote-to-change cells disagree with it: Pack cap reads
 "Constitutional, immutable" with no vote, and Personal Stake ceiling reads
-"Constitutional", while Part X §3 lists both as amendment-grade parameters. The Personal Stake
+"Constitutional", while Part X §3 then listed both as amendment-grade parameters. The Personal Stake
 cell is corrected; the Pack cap conflict was closed on 2026-09-10 (Part X §3 now carves the cap out of
 its ceiling clause). Two
 defects were in the table itself rather than in the values: one column was
