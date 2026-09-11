@@ -322,7 +322,7 @@ Also recorded from the same pass, text-layer and fixed on 2026-09-11: the
 Part III §2; the false claim in Part X §1 that the PackSeat NFT carries the personal
 stake rate; the accusation/proposal distinction in Part VII §6; a "ballot" promised in CONTRIBUTING after ratification was removed; and a
 third item in the legitimate-process lists of Part II Article 6 and Part VIII §3
-that named the same process as the first. Added on the sixth and seventh reviews: Part V §3 called the Mandatory
+that named the same process as the first. Added on the fourth, sixth and seventh reviews: Part V §3 called the Mandatory
 Alignment Allocation rate immutable, against §4 and Part X §3, and twice over-generalised
 which split variables are voted, against its own item 2 and against the amendment route;
 and Part VI §1 used "eligible" for two electorates, a word Part X §3 borrowed at 56b1900
