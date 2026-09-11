@@ -265,9 +265,10 @@ the next cull. This predates the defect above and is untouched by any fix to it.
 
 ## 14. The mechanism layer has not been swept, and a first adversarial pass found eleven open items — OPEN
 
-Every prior sweep covered the text: references, notation, contradictions a
-proofreader finds. None asked whether the rules are sound as designed. One
-adversarial pass did, on 2026-09-11, reading the constitution the way a
+Prior sweeps covered the text: references, notation, contradictions a
+proofreader finds. Defect 11 was the one mechanism finding before this, found by
+a reviewer on 2026-09-08. The first pass aimed at the mechanism layer as a whole
+ran on 2026-09-11, reading the constitution the way a
 mechanism-design audience would. It found the following. Each is a design
 question, not a text correction, and each needs a ruling.
 
