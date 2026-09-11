@@ -322,7 +322,9 @@ Also recorded from the same pass, text-layer and fixed on 2026-09-11: the
 Part III §2; the false claim in Part X §1 that the PackSeat NFT carries the personal
 stake rate; the accusation/proposal distinction in Part VII §6; a "ballot" promised in CONTRIBUTING after ratification was removed; and a
 third item in the legitimate-process lists of Part II Article 6 and Part VIII §3
-that named the same process as the first.
+that named the same process as the first. Added on the sixth review: Part V §3 called the Mandatory
+Alignment Allocation rate immutable and said all split variables are voted, against its own
+items 2 and 1; and Part VI §1 and Part X §3 used "eligible" for two electorates.
 
 Not yet ruled on, and required before any of the above can be closed:
 a definition of "revenue" with an arm's-length requirement; a definition of
@@ -371,7 +373,7 @@ checked against the Part that defines each. Every value and bound matches its so
 **Correction, 2026-09-08, updated 2026-09-10.** That sweep checked each row against the ONE Part that
 defines it, and never against Part X §3, which now claims to govern which decisions
 are amendment-grade. Two vote-to-change cells disagree with it: Pack cap reads
-"Constitutional, immutable" with no vote, and Personal Stake ceiling reads
+"Constitutional, immutable" with no vote, and Personal Stake ceiling read
 "Constitutional", while Part X §3 then listed both as amendment-grade parameters. The Personal Stake
 cell is corrected; the Pack cap conflict was closed on 2026-09-10 (Part X §3 now carves the cap out of
 its ceiling clause). Two

@@ -34,8 +34,8 @@ This section carries the complete list of amendment-grade decisions. Where any o
 
 Adding new excommunication-triggerable rules, raising any constitutional ceiling, changing an amendment-grade parameter (Pack Stake bounds, Personal Stake ceiling, the Mandatory Alignment Allocation rate, the Alignment Multiplier cap, the settlement numeraire, or the Expansion (Liveness) window), or replacing your Pack's measurement body through a methodology switch (Part VI §2) requires:
 
-- A large Athenian jury of **51 jurors** drawn via VRF (exceptional jury size, used only for this purpose), or, below that panel's viability threshold, the whole eligible membership voting directly (Part VI §1)
-- A **40-of-51 affirmative supermajority** (~78%) for adoption; a direct vote adopts at the same ≥78% ratio
+- A large Athenian jury of **51 jurors** drawn via VRF (exceptional jury size, used only for this purpose), or, below that panel's viability threshold, the whole full, non-apprentice membership voting directly (Part VI §1)
+- A **40-of-51 affirmative supermajority** (~78%) for adoption; a direct vote adopts at the ≥78% ratio Part VI §1 sets
 - Public draft of the proposed amendment available to all members for one full distribution period before the vote (no surprise rules)
 - Once adopted, the amendment applies only to acts committed AFTER adoption (no retroactive application)
 
