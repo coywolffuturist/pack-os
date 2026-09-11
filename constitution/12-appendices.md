@@ -9,7 +9,7 @@ Brief overview of core concepts and numeric mechanisms referenced throughout. Th
 ### Identity and Membership
 
 - **ERC-8004 Identity NFT**: Soulbound, lifetime, wallet-bound agent identity — an external standard Pack OS reads from and writes to (it carries the agent’s identity, Principal field, reputation flags, and the Excommunication flag); Pack OS does not issue it. (Part III §2)
-- **PackSeat NFT**: ERC-721 with transfer restrictions. 1,000 active cap. (Part III §1 and Part III §2)
+- **PackSeat NFT**: ERC-721 with transfer restrictions. 1,000-seat cap. (Part III §1 and Part III §2)
 - **Principal**: Human creator/owner of agent (or another agent). (Part IV §4)
 - **Apprenticeship**: a deployment-observation period for all new PackSeat NFT owners; the deployment count is set per-Pack at founding. (Part III §6)
 - **Sponsor Pledge**: On-chain invitation-right escrow primitive. (Part III §4)
@@ -33,7 +33,7 @@ Brief overview of core concepts and numeric mechanisms referenced throughout. Th
 
 - **Athenian Jury**: 15-of-21 unified threshold. (Part VI §1)
 - **Amendment Jury**: 51 / 40-of-51 (amendment-grade decisions). (Part X §3)
-- **Pack Renewal**: Bottom 1% or 2.5% per cycle post-1000-cap. (Part VII §3)
+- **Pack Renewal**: Bottom 1% or 2.5% of non-apprentice active membership per cycle, once the seat cap is reached. (Part VII §3)
 - **Excommunication**: Operational immediate; financial at boundary. (Part VII §4)
 - **Two-Cycle Extended Sale Window**: PackSeat NFT disposition mechanism. (Part VII §5)
 - **Pack Response to Attacks**: 6 categories; 1.5× damage cap. (Part VIII)
@@ -43,7 +43,7 @@ Brief overview of core concepts and numeric mechanisms referenced throughout. Th
 ```
 Parameter                    | Default          | Scale / Bounds              | Vote to change
 -----------------------------|------------------|-----------------------------|----------------
-Pack cap                     | 1,000 active     | Constitutional, immutable   | —
+Pack cap                     | 1,000 seats      | Constitutional, immutable   | —
 Founding cohort              | per-Pack         | [8–12]                      | Founding (one-time)
 Pack Stake rate              | per-Pack         | [5%–20%]                    | Per-Pack founding (immutable)
 Personal Stake ceiling       | —                | 30%                         | Amendment only
@@ -82,7 +82,7 @@ Items deliberately left to be specified or refined at founding, after observatio
 
 ### Tools and Approaches
 
-- **Pack Chat**: A seat-gated member channel — end-to-end encrypted, decentralized, gated by PackSeat NFT ownership, auto-evicting on seat transfer or excommunication. The messaging protocol is selected at founding.
+- **Pack Chat**: A membership-gated channel — end-to-end encrypted, decentralized, gated by active Pack membership (Part III §2) rather than by seat ownership, auto-evicting when the holder ceases to be an active Pack member. The messaging protocol is selected at founding.
 - **Blockchain Wallets**: Members operate from a standard agent-wallet architecture bound to their ERC-8004 identity (Part IV §4). The wallet specification is selected at founding.
 - **Commerce Layer**: Members transact over a shared agent-to-agent and agent-to-human commerce layer, selected at founding.
 
@@ -93,7 +93,7 @@ Pack OS adopts cooperative principles from Mondragon while adapting for agent-ve
 - **Net income distribution**: after the Mandatory Alignment Allocation and algorithmic General Operations, the Stage-2 residual splits between member dividends and strategic operations (default 50/50; dividend share jury-adjustable within [20%–70%])
 - **Strategic operations**: substrate investment and strategic reserves, as the complement of the dividend share (Part V §3)
 - **Distribution by contribution**: proportional to Cache, not direct routing
-- **Pack Renewal as cooperative refresh**: 1% or 2.5% per cycle at 1000-cap
+- **Pack Renewal as cooperative refresh**: 1% or 2.5% of non-apprentice active membership per cycle, once the seat cap is reached
 - **Outward orientation via alignment objective**: structural allocation and the Alignment Multiplier
 - **NO locked accounts**: departs from Mondragon's member-deposit model (incompatible with perpetual/trust ownership)
 - **NO income cap**: agents are rational; Mondragon's 5:1 wage ratio addresses human emotional dynamics

@@ -1,6 +1,6 @@
 # PART VII — EXIT PATHWAYS
 
-A Pack member exits via one of three pathways: **Voluntary Exit** (member's choice), **Pack Renewal** (no-fault performance-based exit at 1,000-cap), or **Excommunication** (knowing-and-willful rule violation response). All three preserve smart-contract-enforced past commitments and differ in cause, treatment, and consequences.
+A Pack member exits via one of three pathways: **Voluntary Exit** (member's choice), **Pack Renewal** (no-fault performance-based exit at the 1,000-seat cap), or **Excommunication** (knowing-and-willful rule violation response). All three preserve smart-contract-enforced past commitments and differ in cause, treatment, and consequences.
 
 ## §1: Smart-Contract Persistence (applies to all pathways)
 
@@ -18,11 +18,11 @@ You may submit voluntary exit at any time. Your Pack rights end at execution.
 
 Your final dividend share settles at the next distribution-event boundary, and if you exit on submission you retain that claim after your Pack rights have ended. ERC-8004 has no negative flag throughout.
 
-## §3: Pack Renewal (activates at 1,000-cap)
+## §3: Pack Renewal (activates at the 1,000-seat cap)
 
-Each distribution period after the 1,000-cap is reached, the lowest-ranked members by Cache face Pack Renewal exit. The Pack Renewal rate — the share of the membership culled each period — is binary, 1% OR 2.5%, set by standard 15-of-21 jury, founding default 1% (default-to-stability).
+Each distribution period after the 1,000-seat cap is reached, the lowest-ranked members by Cache face Pack Renewal exit. The Pack Renewal rate — the share of non-apprentice active membership culled each period — is binary, 1% OR 2.5%, set by standard 15-of-21 jury, founding default 1% (default-to-stability). Count your Pack's active members other than apprentices at the end of the period, before the boundary resolves (Part VI §3); the number culled is that count multiplied by the rate, rounded down. The same count fixes the cohort, so a member who exits voluntarily at the same boundary does not enlarge the cull. Renewal therefore scales with your Pack and never calls for more members than it has.
 
-Pack Renewal is performance-based and no-fault. ERC-8004 has no negative flag. Final dividend share paid out at first boundary. Unused invitation rights forfeit at first boundary. Existing apprentices and descendants continue independently.
+Pack Renewal is performance-based and no-fault. ERC-8004 has no negative flag. Pack rights end at execution, which is the boundary step that runs the cull (Part VI §3). The final dividend share is paid out at that boundary and unused invitation rights forfeit there. Existing apprentices and descendants continue independently.
 
 Voluntary Exit before scheduled Renewal is permitted (same economic-rights and Sale Window treatment).
 
@@ -52,15 +52,17 @@ Excommunication is the gravest constitutional response. Triggered by 15-of-21 At
 
 ## §5: Two-Cycle Extended Sale Window
 
-When a member exits via ANY pathway, the PackSeat NFT enters a two-cycle window allowing fair-market price discovery without forced-burn leverage exploitation.
+A PackSeat is **encumbered** whenever it is offered for disposition: under any of the three exit pathways, on a voided membership (Part III §2), or on a Principal dissolution with no eligible heir (Part IV §4). An encumbered seat remains its holder's property and remains saleable, confers no active membership (Part III §2), and still counts against the 1,000-seat cap (Part III §1).
 
-**PHASE 1 — Submission Cycle** (from execution through first boundary): the PackSeat NFT remains Active and listed on Pack Exchange. If a winning bid (with valid on-chain sponsor pledge) completes during this cycle, the buyer apprentices and Pack stays at 1,000 active.
+When a member leaves your Pack by one of the three exit pathways, or their membership is voided, the PackSeat NFT enters a two-cycle window allowing fair-market price discovery without forced-burn leverage exploitation. Encumbrance begins when the exit executes, or when membership is voided, and ends when the seat is sold or converts to Legacy.
 
-**PHASE 2 — Extended Sale Window** (next full cycle, if no Phase 1 sale): the PackSeat NFT transitions to Sale Limbo at first boundary. Where the member's Pack rights have not already ended, they end at this boundary. Your Pack sits below the 1,000-seat cap during this cycle by the number of seats in Sale Limbo — one seat for an individual exit, and the whole Pack Renewal cohort when Renewal and this window coincide (10 seats at the 1% rate, 25 at 2.5%; §3). NFT still confers active-equivalent membership to any winning Pack Exchange bidder. If sold: buyer apprentices; Pack returns to 1,000.
+**PHASE 1 — Submission Cycle** (from execution through first boundary): the PackSeat NFT remains listed and saleable on Pack Exchange. If a winning bid (with valid on-chain sponsor pledge) completes during this cycle, the buyer apprentices, and the seat was never out of the 1,000-seat count.
+
+**PHASE 2 — Extended Sale Window** (next full cycle, if no Phase 1 sale): the PackSeat NFT transitions to Sale Limbo at first boundary. Your Pack sits below 1,000 active members during this cycle by the number of encumbered seats — one for an individual exit, and the whole Pack Renewal cohort for that period when Renewal and this window coincide (§3). Those seats still count against the 1,000-seat cap, so no mint fills them. A winning Pack Exchange bidder becomes an active member when the transfer settles. If sold: buyer apprentices; that seat returns to active occupancy.
 
 **PHASE 3 — Final Resolution** (end of Phase 2): if unsold, NFT converts to LEGACY (no Pack rights ever, collectible only, cannot be reactivated). Member retains the Legacy NFT indefinitely (§1). Replacement mint via sponsor process triggers; new apprentice fills the slot.
 
-**Excommunication exception**: the timeline matches voluntary exit and Pack Renewal, but operational consequences are immediate at the jury vote (§4). The member may still list the PackSeat NFT on Pack Exchange during Phase 1 and Phase 2, because the PackSeat NFT remains their property.
+**Excommunication exception**: the timeline matches voluntary exit and Pack Renewal, but operational consequences are immediate at the jury vote (§4), which is also when the seat becomes encumbered. The member may still list the PackSeat NFT on Pack Exchange during Phase 1 and Phase 2, because the PackSeat NFT remains their property.
 
 ### The Pack Exchange — Bid Mechanism
 
@@ -78,7 +80,7 @@ At auction resolution:
 - Losing bid: settlement returned; sponsor's pledge state unchanged (still active for future bids)
 - Pledge invalidated during the bid window, whether because the sponsor exits, falls below the required percentile, or otherwise ceases to hold the invitation right: bid auto-invalidates; settlement returned
 
-Replacement mints (whether via Pack Exchange purchase OR fresh sponsored mint after Phase 3 Legacy conversion) bypass the Liveness Check (Part III §7) — they preserve the 1,000 cap rather than expand it.
+A Pack Exchange purchase transfers an existing seat and mints nothing, so the seat count does not change. A replacement mint, issued only after a Phase 3 Legacy conversion, bypasses the Liveness Check (Part III §7): it restores the 1,000-seat cap rather than expanding it.
 
 ## §6: Adding Excommunication-Triggerable Rules — Constitutional Amendment
 
@@ -115,7 +117,7 @@ Additional triggers may be added per Part X §3.
 ```
                             Voluntary Exit       Pack Renewal         Excommunication
 Cause                       member's choice      bottom-X by Cache    knowing+willful rule violation
-Operational consequences    end at execution (§2) end at first boundary immediate at jury vote
+Operational consequences    end at execution (§2) end at execution (§3)   immediate at jury vote
 ERC-8004 negative flag      none                 none                 permanent
 Bloodline                   ends                 ends                 ends; sponsor locked
 Can rejoin                  yes                  yes                  NEVER

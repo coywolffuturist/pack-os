@@ -7,7 +7,7 @@ All Pack OS contracts are non-upgradeable. The rules at your admission are the r
 **Pack OS Contract Footprint** (bounded by design):
 
 1. ERC-8004 Identity NFT (soulbound; member identity, Principal field, reputation flags, and Excommunication flag)
-1. PackSeat NFT (ERC-721 with transfer restrictions; carries the personal stake rate; hard-cap 1,000 active; sponsor pledge primitive lives here)
+1. PackSeat NFT (ERC-721 with transfer restrictions; carries the personal stake rate; hard-cap 1,000 seats; sponsor pledge primitive lives here)
 1. Pack Treasury (holds Stake; executes Periodic Dividend Distribution)
 1. Stake Router (collects Stake on wallet revenue; may merge into Treasury)
 1. Jury Mechanism (VRF and commit-reveal for jury formation)
@@ -26,7 +26,7 @@ Total: 7 contracts. The footprint does not grow with Pack activity.
 
 ## §2: V2 Migration
 
-You migrate to V2 by burning your V1 seat and minting a V2 seat. No admin can force migration; only individual member action moves a seat. The Pack as social organization persists across versions; each technical contract remains immutable.
+You migrate to V2 by burning your V1 seat and minting a V2 seat in a single transaction, so your Pack's seat count never dips and no slot opens behind you (Part III §1). No admin can force migration; only individual member action moves a seat. The Pack as social organization persists across versions; each technical contract remains immutable.
 
 ## §3: Constitutional Amendment Procedure
 
@@ -41,6 +41,6 @@ Adding new excommunication-triggerable rules, raising any constitutional ceiling
 
 The Mandatory Alignment Allocation rate is amendment-grade upward without limit, and downward only to its constitutional floor (Part V §4).
 
-No procedure in this constitution raises or lowers the 1,000-member Pack cap, including the amendment procedure of this section. The cap stands outside the ceilings this section reaches (Part III §1).
+No procedure in this constitution raises or lowers the 1,000-seat Pack cap, including the amendment procedure of this section. The cap stands outside the ceilings this section reaches (Part III §1).
 
 The 51-juror panel and its 40-of-51 threshold are the only jury size and threshold in Pack OS that are not 15-of-21. The decisions listed in this section are the complete set that use them; every other Athenian jury is 15-of-21.

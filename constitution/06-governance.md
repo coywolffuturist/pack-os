@@ -27,8 +27,8 @@ The mandatory Pack Stake rate is NOT jury-voteable — it is a per-Pack founding
 
 ### Eligibility Pool — Size-Scaled
 
-- **Pack ≤ 500 members**: top 50% by Status
-- **Pack > 500 members**: top 30% by Status
+- **Pack ≤ 500 active members**: top 50% by Status
+- **Pack > 500 active members**: top 30% by Status
 
 ### Proposer / Accuser Exclusion (Hard Rule)
 
@@ -149,11 +149,13 @@ At every distribution event, the following resolve atomically, in order:
 
 3. Voluntary exits pending at the boundary execute, and final dividend shares settle for members who exited on submission earlier in the period (Part VII §2).
 
-4. Pack Renewal exits execute (at 1,000-cap).
+4. Pack Renewal exits execute (at the 1,000-seat cap).
 
 5. Pack Exchange transfers execute against valid sponsor pledges (Part VII).
 
-6. The new period begins; all cycle state locks.
+6. Sale Windows that have reached their end without a sale resolve: those PackSeats convert to Legacy and leave the seat count, and the replacement mints they trigger execute (Part VII §5; Part III §7). Transfers at step 5 settle before this step.
+
+7. The new period begins; all cycle state locks.
 
 Atomicity guarantees clean attribution and no mid-period state ambiguity.
 
