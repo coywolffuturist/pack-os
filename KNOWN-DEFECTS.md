@@ -1,11 +1,11 @@
 # Known defects
 
-Every defect found in this text, recorded whether or not it is closed. Fourteen so
-far: **twelve closed, two open.** Each entry states what was wrong, what closed it,
+Every defect found in this text, recorded whether or not it is closed. Fifteen so
+far: **twelve closed, three open.** Each entry states what was wrong, what closed it,
 and — where a fix failed — why.
 
 The open ones are **defect 13**, a latent interaction between two rules whose entry
-records why a patch does not close it, and **defect 14**, the mechanism layer.
+records why a patch does not close it, **defect 14**, the mechanism layer, and **defect 15**, the decay label.
 
 This file exists so a new contributor does not spend a day rediscovering them, and
 so nobody mistakes a known hole for settled text. If you find something not listed
@@ -294,28 +294,28 @@ question, not a text correction, and each needs a ruling.
    that blocks more than half of all decisions is about 94 agents, 9% of the
    Pack. Excommunication, the only sanction against a cartel, is itself 15-of-21
    and therefore vetoable by it.
-6. **Excommunication pays the jury.** Removing a member forfeits one final
-   share and gains the survivors that member's Cache weight in every future
+6. **Excommunication pays the jury.** When a member is removed, the survivors
+   forgo one final share and gain that member's Cache weight in every future
    distribution. The "why the split" rationale in Part VII §4 says the opposite.
    No juror recusal for financial interest exists.
 7. **The Mandatory Alignment Allocation is charged on an undefined base.** Net
    income is inflows minus operating expenses; operating expenses is defined
    nowhere; substrate is senior in the outflow order; a cycle with no net income
-   pays nothing. The floor is immutable and the payment is discretionary.
+   pays nothing. The floor is immutable; the base the rate is charged on is discretionary.
 8. **The stake ceiling outbids the Alignment Multiplier.** Cache credits stake
    times multiplier. The multiplier ceiling is 1.05 and the elected stake ceiling
    is 30%, so unaligned work at maximum stake out-earns fully aligned work at
    minimum stake by up to six times, and Renewal survival is ranked by Cache.
-9. **Renewal by lifetime Cache consumes the graduating cohort.** Steady-state
-   Cache is about 6.3 times a one-period graduate's at identical revenue. The
-   cull falls on graduates, so sponsoring — the Pack's only growth mechanism —
+9. **Renewal by lifetime Cache consumes the graduating cohort.** Under the
+   formula as written, steady-state Cache is about 4.5 times a one-period
+   graduate's at identical revenue (see defect 15 on which decay was intended). The
+   cull falls on graduates either way, so sponsoring — the Pack's only growth mechanism —
    is a dominated strategy under the bloodline coupling of Part III §4.
 10. **The Market Check is bypassed by naming a non-member payee.** No affiliate
     or beneficial-ownership test exists anywhere in the document.
 11. **Principal inactivity pays the collective.** A Principal who misses the
-    liveness window is presumed dissolved without a jury, and if no valid heir
-    exists, and the agent's wallet
-    is subsumed by the treasury, which flows to members by Cache weight.
+    liveness window is presumed dissolved without a jury; if no valid heir exists,
+    the agent's wallet is subsumed by the treasury, which flows to members by Cache weight.
 
 Also recorded from the same pass, text-layer and fixed on 2026-09-11: the
 "rules forever" claim in Part X §1; the Principal-binding immutability claim in
@@ -327,9 +327,25 @@ Not yet ruled on, and required before any of the above can be closed:
 a definition of "revenue" with an arm's-length requirement; a definition of
 "operating expenses"; a minimum revenue-event size; a reserve price on Pack
 Exchange bids; the convention for Status at a member's first scored cycle; and
-where the Principal Registry lives: Part X §1 puts a Principal field on the
-ERC-8004 NFT while Part III §2 says the registry is separate from ERC-8004, and
-neither it nor the Bloodline Registry appears in a footprint that counts seven.
+where the three registries live: Part X §1 and Appendix A both put a Principal
+field on the ERC-8004 NFT while Part III §2 says the Principal Registry is separate
+from ERC-8004; Part III §2 calls the Personal Stake Registry separate while Part X
+§1 folds it into the PackSeat item; and none of the three, nor the Bloodline
+Registry, is counted in a footprint that totals seven.
+
+## 15. The decay parameter is named a half-life and used as a 1/e-life — OPEN
+
+Part IV §2 writes `Cache = Σ (stake × exp(−t_i / half_life))` and Part IV §3 uses the
+same form for Status. `exp(−t/h)` falls to 1/e at t = h, not to 1/2. The parameter
+the text calls a half-life, and which Part IX §2 and Appendix C set at founding "in
+distribution periods", is therefore a 1/e time constant as written. Every prose
+statement about how fast Cache or Status fades, and every founding calibration of
+that number, is off by a factor of ln 2 ≈ 0.69 in one direction or the other.
+
+Either the label is wrong and should read time constant, or the formula is wrong
+and should read `2^(−t/h)`. Which was intended is a ruling. Found by a reviewer
+recomputing defect 14 item 9, which had been stated against true half-life decay
+(6.3×) when the formula as written gives 4.5×.
 
 ## Already swept — do not redo
 
