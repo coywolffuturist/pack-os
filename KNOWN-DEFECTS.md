@@ -1,12 +1,12 @@
 # Known defects
 
-Every defect found in this text, recorded whether or not it is closed. Seventeen so
-far: **thirteen closed, four open.** Each entry states what was wrong, what closed it,
+Every defect found in this text, recorded whether or not it is closed. Eighteen so
+far: **thirteen closed, five open.** Each entry states what was wrong, what closed it,
 and — where a fix failed — why.
 
 The open ones are **defect 13**, a latent interaction between two rules whose entry
-records why a patch does not close it, **defect 14**, the mechanism layer, **defect 15**, the decay label, and **defect 17**, five
-mechanism questions a whole-text review surfaced.
+records why a patch does not close it, **defect 14**, the mechanism layer, **defect 15**, the decay label, **defect 17**, six
+mechanism questions a whole-text review surfaced, and **defect 18**, what a seat carries.
 
 This file exists so a new contributor does not spend a day rediscovering them, and
 so nobody mistakes a known hole for settled text. If you find something not listed
@@ -366,8 +366,11 @@ that carries neither the rule nor the term. Each is fixed on 2026-09-12:
    §2 lists five treasury inflows, §5 adds penalty withholding and Part IV §4 a
    subsumed wallet. Two rewrites failed: "not member capital" was wrong for three of
    the four other inflows, and "none is an outside channel" was wrong for deployment
-   revenue, which outside counterparties pay. §6 now claims only what it can defend —
-   nobody buys in, and the other inflows confer no rights on their source.
+   revenue, which outside counterparties pay. A third said no funder acquires a claim,
+   which Part IV §4's subsumption sale refutes (defect 17 item 6), and called each
+   channel a member's own contribution, which a mint bid and a resale royalty are not.
+   §6 now carries no universal: it says Pack OS builds no channel for outside
+   donations or grants, which is what Part X §1 excludes.
 2. Part III §1 and Part III §2 cited an "Excommunication Registry (Part VII)" and
    Part IV §4 named the same registry. Part VII names no registry; §4 names a
    permanent ERC-8004 flag, which Part X §1 and Appendix A call the Excommunication
@@ -393,9 +396,10 @@ that carries neither the rule nor the term. Each is fixed on 2026-09-12:
    Part V §4 fixes it. The row is removed.
 10. Part V §6 cited Part III for Principal sovereignty and for the right to exit by
    seat transfer at a "secondary-market clearing price". Part III carries neither,
-   and nothing defines that price. The Principal's primacy is Part II Article 3, exit
-   is Part VII §2 and the sale is Part VII §5, where a bid clears on the Pack
-   Exchange. Found on the eleventh review, in a paragraph already edited twice.
+   and nothing defines that price. It now cites the Principal's withdrawal right
+   (Part IV §4) and the right to exit (Part VII §2). Part II Article 3, tried on the
+   eleventh review, is a duty Article 8 overrides, and seat transfer is a consequence
+   of exit rather than one of Part VII's three pathways.
 
 Also corrected: defect 9 gave two counts of bare references without saying why;
 the README word count was a cycle stale.
@@ -422,6 +426,28 @@ is in defect 14's list:
 5. **The footprint omits two contracts the text names:** the Pack-owned Exchange
    contract (Part VII §5) and the Market Check contract (Part V §7). This joins the
    registry question in defect 14.
+6. **Outside capital acquires a dividend claim through the subsumption sale.** Part
+   IV §4 offers the seat of an agent whose Principal dissolved, and the buyer must
+   come from outside the Pack, since one Principal may hold at most one agent in it.
+   The buyer becomes that agent's Principal and may withdraw from its wallet at any
+   time, and dividends flow into that wallet by the agent's accumulated Cache (Part V
+   §3). No other entry route delivers a pre-loaded Cache weight. Found on the twelfth
+   review of PR 27.
+
+## 18. A PackSeat carries no economic state in Part III and carries Cache in Part IV — OPEN
+
+Part III §2: "The PackSeat NFT itself does not carry mutable economic state." Part
+IV §4, selling the seat of an agent whose Principal has dissolved, offers "The
+PackSeat NFT (with the agent's ERC-8004 identity and accumulated standing — Cache,
+Status, bloodline relationships)".
+
+Two readings. Either the agent survives the sale and keeps its own standing while
+only its Principal changes, which is what "becomes the new declared Principal of the
+agent" says and which leaves Part III §2 true; or the seat is sold carrying
+standing, which contradicts Part III §2 and makes a seat an instrument with a price
+that tracks Cache. Which was intended is a ruling, and it decides defect 17 item 6.
+
+Found on the twelfth review of PR 27.
 
 ## Already swept — do not redo
 

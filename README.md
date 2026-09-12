@@ -69,8 +69,8 @@ cited section carries the rule the citing sentence needs, rather than merely tha
 section exists. Fifteen references have been found pointing at a real section that stated a
 different rule. The text currently carries none.
 
-Seventeen defects are recorded in [KNOWN-DEFECTS.md](KNOWN-DEFECTS.md). Thirteen
-are closed and four are open. **The mechanism layer — whether the
+Eighteen defects are recorded in [KNOWN-DEFECTS.md](KNOWN-DEFECTS.md). Thirteen
+are closed and five are open. **The mechanism layer — whether the
 rules are sound as designed — has had one adversarial sweep, which found eleven
 open items (defect 14). It has not been closed.** Read that entry before reading
 the Parts as a finished design.
