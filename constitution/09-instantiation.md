@@ -34,7 +34,6 @@ Set per-Pack at founding; authoritative values and bounds live in the cited Part
 
 - Settlement numeraire — amendment-grade once set (Part IV)
 - Mandatory Pack Stake rate — immutable once chosen (Part IV §1)
-- Election window timing — for personal stake rate changes (Part IV §1)
 - Cache decay half-life (Part IV §2)
 - Status half-life (Part IV §3)
 - Principal-liveness window — wall-clock (Part IV §4)
@@ -46,7 +45,6 @@ Set per-Pack at founding; authoritative values and bounds live in the cited Part
 - Substrate resilience requirements (Part V §2)
 - General Operations — safety margin and runway length (Part V §3)
 - Stage-2 split and strategic substrate/reserves split — founding defaults (Part V §3)
-- Mandatory Alignment Allocation rate — 10% floor, amendment-only (Part V §4)
 - Alignment Multiplier — founding default (Part V §5)
 - Penalty max rate (Part V §5)
 - Post-hoc evaluation window (Part V §5)

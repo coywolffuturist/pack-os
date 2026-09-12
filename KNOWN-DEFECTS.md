@@ -1,11 +1,12 @@
 # Known defects
 
-Every defect found in this text, recorded whether or not it is closed. Fifteen so
-far: **twelve closed, three open.** Each entry states what was wrong, what closed it,
+Every defect found in this text, recorded whether or not it is closed. Seventeen so
+far: **thirteen closed, four open.** Each entry states what was wrong, what closed it,
 and — where a fix failed — why.
 
 The open ones are **defect 13**, a latent interaction between two rules whose entry
-records why a patch does not close it, **defect 14**, the mechanism layer, and **defect 15**, the decay label.
+records why a patch does not close it, **defect 14**, the mechanism layer, **defect 15**, the decay label, and **defect 17**, five
+mechanism questions a whole-text review surfaced.
 
 This file exists so a new contributor does not spend a day rediscovering them, and
 so nobody mistakes a known hole for settled text. If you find something not listed
@@ -121,8 +122,8 @@ predates them in places:
 
 **Resolved 2026-09-07.** The bare-§ count was measured against an earlier draft of
 CONTRIBUTING that required every § to carry its Part. The rule now reads: a
-reference within the same Part may be bare. All 35 bare references were checked
-against the section index of their own Part and all 35 resolve, so none is a defect.
+reference within the same Part may be bare. Every bare reference — 35 at resolution; the first scan above had counted 32 — was
+checked against the section index of its own Part and all resolve, so none is a defect.
 
 Formula notation in prose went from 16 occurrences to 12. The four removed were
 genuine prose violations. The twelve that remain are accepted exceptions, recorded
@@ -352,6 +353,66 @@ Either the label is wrong and should read time constant, or the formula is wrong
 and should read `2^(−t/h)`. Which was intended is a ruling. Found by a reviewer
 recomputing defect 14 item 9, which had been stated against true half-life decay
 (6.3×) when the formula as written gives 4.5×.
+
+## 16. A whole-text review after PR 26 found nine correspondence failures — FIXED
+
+The eight reviews of PR 26 read that branch's diff and the sections it cited. A
+ninth review on 2026-09-12 read the merged text as a whole, against the words the
+branch had introduced. It found nothing wrong with those words. It found nine
+places where sentences that predate every sweep say two things or cite a section
+that carries neither the rule nor the term. Each is fixed on 2026-09-12:
+
+1. Part V §6 said the three capital channels are "the sole inbound channels" while
+   §2 lists five treasury inflows, §5 adds penalty withholding and Part IV §4 a
+   subsumed wallet. §6 now says no capital enters from outside the three, and names
+   the non-capital inflows.
+2. Part III §1, Part III §2 and Part IV §4 cited an "Excommunication Registry
+   (Part VII)". Part VII names no registry; it names a permanent ERC-8004 flag
+   (§4), as do Part X §1 and Appendix A. All three now say the flag.
+3. Part III §1 said Legacy NFTs "pending disposition" do not count against the cap.
+   Part VII §5 keeps a seat Active, and counted, through the submission cycle; it is
+   Sale Limbo seats and Legacy NFTs that do not count, and Legacy is the state after
+   disposition. Part III §1 now says what Part VII §5 says. Defect 13, on the §2
+   active-member test, is untouched.
+4. Part III §1 and Part IX §2 named an "election window" and cited Part IV §1 for
+   it. Part IV §1 has no window; an election takes effect at a period boundary.
+   Part III §1 now says so and the founding-parameter row is removed.
+5. Part VI §1 said the cooldown interval engages when the pool "reaches 42" while
+   its own formula gives an interval of zero at 42. Now: above 42.
+6. Part VII §4 cited Part IV §1 for stake evasion, which Part IV §4 defines.
+7. Part VII §5 cited its own §1 for a member retaining a Legacy NFT; §1 says
+   nothing about NFTs. The citation is removed; the sentence stands on its own.
+8. Appendix A and Part VI §2 cited Part IV §2 for the four-period Cache decay
+   default. Part IV §2 sets no default; Part VI §4 does. Both now cite it.
+9. Part IX §2 listed the Mandatory Alignment Allocation rate under parameters
+   "specified at founding" while its own text said "10% floor, amendment-only" and
+   Part V §4 fixes it. The row is removed.
+
+Also corrected: defect 9 gave two counts of bare references without saying why;
+the README word count was a cycle stale.
+
+## 17. The whole-text review surfaced five mechanism questions — OPEN
+
+Found by the same 2026-09-12 review. Each needs a ruling, not a text fix, and none
+is in defect 14's list:
+
+1. **The 1.5× Pack Response cap has two routes.** Appendix B marks it "—" (no
+   procedure) and Part VIII §3 calls it invariant across tiers, while Part X §3
+   makes "raising any constitutional ceiling" amendment-grade. The Pack cap got an
+   explicit carve-out on 2026-09-10; this cap has none.
+2. **The cooldown floor cannot seat the large panel.** Part VI §1 holds the
+   drawable pool at no fewer than 42 and seats the 51-juror panel at an eligible
+   pool of 102. Whether 102 eligible with 42 drawable seats 51 and backfills to a
+   verdict is not stated.
+3. **Mandatory plus elected, or whichever is higher.** Part IV §1 says the rate
+   that applies is "whichever is higher, the election or the mandatory minimum";
+   Part IV §4 withholds "its mandatory rate plus any elected personal stake rate".
+4. **"Deterministic auto-revocations" as an excommunication trigger.** Part VII §6
+   lists them; Part VII §4 says every excommunication is a jury finding. Whether a
+   provable violation removes a member without a jury is unstated.
+5. **The footprint omits two contracts the text names:** the Pack-owned Exchange
+   contract (Part VII §5) and the Market Check contract (Part V §7). This joins the
+   registry question in defect 14.
 
 ## Already swept — do not redo
 
