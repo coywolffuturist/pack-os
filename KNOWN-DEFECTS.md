@@ -237,16 +237,21 @@ recording permanently.
 
 ### The load-bearing design nobody wrote down
 
-A Pack falling below its cap during a Sale Window is what makes the departing seat
-sellable. The chain: every Exchange bid needs a sponsor pledge (Part VII §5); a
-pledge escrows an invitation right (Part III §4); an invitation right is earned
-only while the Pack is below the cap (Part III §4). A departure drops the Pack
-below cap, which regenerates the right needed to buy the departing seat.
+Every Exchange bid needs a sponsor pledge (Part VII §5); a pledge escrows an
+invitation right (Part III §4); a right is earned only while the Pack is below the
+cap, a condition Part III §4 states under First invitation and does not repeat
+under Subsequent invitations. Rights never expire and bank indefinitely, and only
+the percentile applies at the moment of use (Part III §4, Invitation Holding), so a
+bid at a full Pack is funded from the stock of banked rights. Part VII §5 Phase 1
+is exactly that case: the seat stays Active, the Pack stays at 1,000, and a winning
+bid with a valid pledge completes.
 
-Any change that keeps the count at 1,000 through the window starves the Exchange:
-no new rights, no bids, every exit force-burns to Legacy. It defeats the fair-market
-price discovery without forced-burn leverage that Part VII §5 opens the two-cycle
-window for.
+So a change that keeps the count at 1,000 through the window does not starve the
+Exchange while banked rights exist. It makes the Exchange depend entirely on that
+stock, which nothing replenishes at a full Pack. Whether the stock is deep enough
+that a departing seat always draws a bid is unstated, and a thin stock is what puts
+at risk the fair-market price discovery without forced-burn leverage that Part VII
+§5 opens the window for.
 
 ### What a correct fix must do
 
@@ -366,14 +371,17 @@ that carries neither the rule nor the term. Each is fixed on 2026-09-12:
    §2 lists five treasury inflows, §5 adds penalty withholding and Part IV §4 a
    subsumed wallet. Two rewrites failed: "not member capital" was wrong for three of
    the four other inflows, and "none is an outside channel" was wrong for deployment
-   revenue, which outside counterparties pay. Every rewrite kept an enumeration and
-   every enumeration had a counterexample one section away: "not member capital"
-   against penalty withholding, "no outside channel" against deployment revenue, "no
-   funder acquires a claim" against the Part IV §4 sale (defect 17 item 6), and "a
-   member's contribution" against a mint bid, which is paid before the seat exists.
-   One rewrite deleted the closing claim and left the opening count alone, and the
-   count was the false part. The enumeration is gone: §6 states what Part X §1
-   excludes and points at §2 for the inflows.
+   revenue, which outside counterparties pay. Rewrite after rewrite failed, each on a
+   counterexample a section away: "not member capital" against penalty withholding;
+   "none is an outside channel" against deployment revenue; "no funder acquires a
+   claim" against the Part IV §4 sale (defect 17 item 6); "a member's contribution"
+   against a mint bid, paid before the seat exists; a form that deleted the closing
+   claim and left the opening count standing alone; a form that dropped the count and
+   let the heading, Members to Pack, take in every inflow §2 lists, a mint bid and
+   deployment revenue among them; and a form that offered the two-cycle sale window
+   as a concession against non-refundability, when a seat's proceeds come from the
+   buyer and add to the treasury. §6 now states what Part X §1 excludes and points at
+   §2 for the inflows, and §2 gains the Founding Stake it had never listed.
 2. Part III §1 and Part III §2 cited an "Excommunication Registry (Part VII)" and
    Part IV §4 named the same registry. Part VII names no registry; §4 names a
    permanent ERC-8004 flag, which Part X §1 and Appendix A call the Excommunication

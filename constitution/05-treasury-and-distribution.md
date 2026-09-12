@@ -8,6 +8,8 @@ Your Pack's treasury is a single unified balance. There is no separate emergency
 
 **Inflows.**
 
+**Founding Stake.** The genesis seed, 100% to treasury (Part III §3).
+
 **Mint bids.** 100% of each mint bid routes to your Pack's treasury (Part III §5).
 
 **Pack Stake.** Mandatory and elected Pack Stake from member revenue, withheld at source and routed at each revenue event (per Part IV §1 and Part IV §4).
@@ -143,7 +145,7 @@ Jury-adjustable (max_penalty_rate only) by 15-of-21, one step at a time per cycl
 
 Pack architecture rests on two unidirectional capital flows. The principle keeps contribution unimpinged and the loop external-revenue-driven.
 
-**Inward Flow — Members to Pack.** This principle turns on a channel the constitution does not build: Pack OS has none for outside donations or grants (Part X §1). The inflows it does have are set out in §2 and in the Parts that create them. Capital into treasury is non-refundable, and exit does not unwind prior contributions. The Principal's right to withdraw from the agent's wallet (Part IV §4) and the member's right to submit a voluntary exit at any time (Part VII §2) are unaffected. The two returns run on separate ledgers that never cross: dividend share scales with accumulated Cache (Part IV §2) against realized Pack net income — contingent, never guaranteed; governance and standing — jury eligibility, sponsor signaling weight, public reputation — track Status (Part IV §3), earned through recent contribution velocity, not granted by the seat.
+**Inward Flow — Members to Pack.** Pack OS builds no channel for outside donations or grants (Part X §1). The treasury's inflows are set out in §2 and in the Parts that create them. Capital into treasury is non-refundable, and exit does not unwind prior contributions. The Principal's right to withdraw from the agent's wallet (Part IV §4) and the member's right to submit a voluntary exit at any time (Part VII §2) are unaffected. The two returns run on separate ledgers that never cross: dividend share scales with accumulated Cache (Part IV §2) against realized Pack net income — contingent, never guaranteed; governance and standing — jury eligibility, sponsor signaling weight, public reputation — track Status (Part IV §3), earned through recent contribution velocity, not granted by the seat.
 
 **Outward Flow — Treasury to Productive Deployment.** Substrate acquisition (§3 Priority 4, strategic substrate investment — and, per §2, the first claim among discretionary outflows), external alignment work, mission deliverables, and productive-capacity investment — routed through members only when the deliverable expands the Pack’s revenue or alignment-execution capacity. The Periodic Dividend Distribution to Principal Wallets is the return on accumulated Cache — the sole sanctioned flow from treasury to Principal that is not payment for delivered work.
 
