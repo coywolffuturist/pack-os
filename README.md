@@ -66,18 +66,18 @@ ambiguity, cross-reference correspondence, and notation discipline.
 
 Every cross-reference has been checked for **correspondence, not existence**: that a
 cited section carries the rule the citing sentence needs, rather than merely that the
-section exists. Five references were found pointing at a real section that stated a
-different rule. The text currently carries none.
+section exists. Every reference found pointing at a real section that stated a different rule is
+recorded in KNOWN-DEFECTS.md and fixed.
 
-Fifteen defects are recorded in [KNOWN-DEFECTS.md](KNOWN-DEFECTS.md). Twelve
-are closed and three are open. **The mechanism layer — whether the
+Eighteen defects are recorded in [KNOWN-DEFECTS.md](KNOWN-DEFECTS.md). Thirteen
+are closed and five are open. **The mechanism layer — whether the
 rules are sound as designed — has had one adversarial sweep, which found eleven
 open items (defect 14). It has not been closed.** Read that entry before reading
 the Parts as a finished design.
 
 Converted from the drafting document's 2026-06-15 state and verified word-for-word at
 conversion: 16,296 words, zero differences. The text has been revised since and now
-runs about 17,100 words.
+runs about 17,300 words.
 
 ## License
 

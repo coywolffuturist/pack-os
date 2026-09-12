@@ -1,11 +1,12 @@
 # Known defects
 
-Every defect found in this text, recorded whether or not it is closed. Fifteen so
-far: **twelve closed, three open.** Each entry states what was wrong, what closed it,
+Every defect found in this text, recorded whether or not it is closed. Eighteen so
+far: **thirteen closed, five open.** Each entry states what was wrong, what closed it,
 and — where a fix failed — why.
 
 The open ones are **defect 13**, a latent interaction between two rules whose entry
-records why a patch does not close it, **defect 14**, the mechanism layer, and **defect 15**, the decay label.
+records why a patch does not close it, **defect 14**, the mechanism layer, **defect 15**, the decay label, **defect 17**, eight
+mechanism questions a whole-text review surfaced, and **defect 18**, what a seat carries.
 
 This file exists so a new contributor does not spend a day rediscovering them, and
 so nobody mistakes a known hole for settled text. If you find something not listed
@@ -121,8 +122,8 @@ predates them in places:
 
 **Resolved 2026-09-07.** The bare-§ count was measured against an earlier draft of
 CONTRIBUTING that required every § to carry its Part. The rule now reads: a
-reference within the same Part may be bare. All 35 bare references were checked
-against the section index of their own Part and all 35 resolve, so none is a defect.
+reference within the same Part may be bare. Every bare reference — 35 at resolution; the first scan above had counted 32 — was
+checked against the section index of its own Part and all resolve, so none is a defect.
 
 Formula notation in prose went from 16 occurrences to 12. The four removed were
 genuine prose violations. The twelve that remain are accepted exceptions, recorded
@@ -223,7 +224,7 @@ membership, Pack Chat access and the admission roster check for up to two cycles
 The test conflates owning a tradeable asset with belonging to the Pack. Those were
 the same thing when it was written.
 
-### Eight attempts, all refuted. Do not attempt a ninth as a patch.
+### Eight attempts. Seven refuted; the eighth's objection was withdrawn.
 
 Seven added a condition to the active-member test. Each broke a different consumer
 of the predicate: the cap population, the first-invitation gate, the mint gates,
@@ -231,26 +232,35 @@ the Renewal base, the Sale Window phases. One abolished rejoin outright, against
 the "Can rejoin: yes | yes | NEVER" row of the Part VII comparison table.
 
 The eighth instead DEFINED `unencumbered`, which appears in the test and is
-defined nowhere. That is the right shape, and it still failed, for a reason worth
-recording permanently.
+defined nowhere. That is the right shape. It was refused on the ground below, and
+on 2026-09-12 that ground was found false: the Exchange does not starve at a full
+Pack. Whether the eighth attempt works now turns on defect 17 item 7, and nothing
+recorded here refuses it. A ninth is worth attempting once that question is ruled.
 
 ### The load-bearing design nobody wrote down
 
-A Pack falling below its cap during a Sale Window is what makes the departing seat
-sellable. The chain: every Exchange bid needs a sponsor pledge (Part VII §5); a
-pledge escrows an invitation right (Part III §4); an invitation right is earned
-only while the Pack is below the cap (Part III §4). A departure drops the Pack
-below cap, which regenerates the right needed to buy the departing seat.
+Every Exchange bid needs a sponsor pledge (Part VII §5); a pledge escrows an
+invitation right (Part III §4); a right is earned only while the Pack is below the
+cap, a condition Part III §4 states under First invitation and does not repeat
+under Subsequent invitations. Rights never expire and bank indefinitely, and only
+the percentile applies at the moment of use (Part III §4, Invitation Holding), so a
+bid at a full Pack is funded from the stock of banked rights. Part VII §5 Phase 1
+is exactly that case: the seat stays Active, the Pack stays at 1,000, and a winning
+bid with a valid pledge completes.
 
-Any change that keeps the count at 1,000 through the window starves the Exchange:
-no new rights, no bids, every exit force-burns to Legacy. That is the exact
-outcome Part VII §5 says the window exists to prevent, and it breaks Part V §6's
-promise that exit by seat transfer at the clearing price is "preserved throughout".
+So a change that keeps the count at 1,000 through the window does not starve the
+Exchange while banked rights exist. It makes the Exchange depend entirely on that
+stock, which nothing replenishes at a full Pack if the below-cap condition governs
+every invitation (defect 17 item 7). Whether the stock is deep enough
+that a departing seat always draws a bid is unstated, and a thin stock is what puts
+at risk the fair-market price discovery without forced-burn leverage that Part VII
+§5 opens the window for.
 
 ### What a correct fix must do
 
-Two counts, two gates. Invitation EARNING keys on ACTIVE MEMBERS, which falls
-during the window. MINTING keys on SEATS, which does not. And the mint event in
+Two counts, two gates, on the reading that below-cap governs every invitation
+(defect 17 item 7). Invitation EARNING keys on ACTIVE MEMBERS, which falls during
+the window. MINTING keys on SEATS, which does not. And the mint event in
 Part III §5 has no cap check of its own at all — the earning gate is the only
 thing protecting the cap at mint time, so re-keying it without adding an explicit
 seat check at the moment of use opens an unbounded overshoot, because invitation
@@ -352,6 +362,131 @@ Either the label is wrong and should read time constant, or the formula is wrong
 and should read `2^(−t/h)`. Which was intended is a ruling. Found by a reviewer
 recomputing defect 14 item 9, which had been stated against true half-life decay
 (6.3×) when the formula as written gives 4.5×.
+
+## 16. A whole-text review after PR 26 found ten defects — FIXED
+
+The eight reviews of PR 26 read that branch's diff and the sections it cited. A
+ninth review on 2026-09-12 read the merged text as a whole, against the words the
+branch had introduced. It found nothing wrong with those words. It found ten places
+where sentences that predate every sweep say two things, state a false universal,
+or cite a section that carries neither the rule nor the term. Each is fixed on 2026-09-12:
+
+1. Part V §6 said the three capital channels are "the sole inbound channels" while
+   §2 lists five treasury inflows, §5 adds penalty withholding and Part IV §4 a
+   subsumed wallet. Eight rewrites were refuted in turn. "Not member capital" was
+   wrong for three of the four other inflows; "none is an outside channel" was wrong
+   for deployment revenue, which outside counterparties pay.
+   "Not member capital" fell to penalty withholding; "none is an outside channel" to
+   deployment revenue; "no funder acquires a claim" to the Part IV §4 sale (defect 17
+   item 6); "a member's contribution" to a mint bid, paid before the seat exists. One
+   form deleted the closing claim and left the opening count standing alone, and the
+   count was the false part. One offered the two-cycle sale window as a concession
+   against non-refundability, when a seat's proceeds come from the buyer, of which
+   only the fee reaches the treasury. One asserted that the principle turns on what is absent from the
+   treasury's inflows, a claim about the whole set that Part V §6's own opening
+   already answers differently two sentences earlier. One replaced the treasury with a pronoun whose only antecedents, Pack OS and
+   the constitution, have no inflows. §6 now asserts nothing about the set of
+   inflows: it states what Part X §1 excludes and says where the inflows are set
+   out.
+2. Part III §1 and Part III §2 cited an "Excommunication Registry (Part VII)" and
+   Part IV §4 named the same registry. Part VII names no registry; §4 names a
+   permanent ERC-8004 flag, which Part X §1 and Appendix A call the Excommunication
+   flag. All three now cite the flag, and Part VII §4 now carries that name.
+3. Part III §1 said Legacy NFTs "pending disposition" do not count against the cap.
+   Under Part VII §5 a seat stays Active, and counted, through the submission cycle;
+   Sale Limbo seats and Legacy NFTs do not count, and Legacy is the state after
+   disposition. Part III §1 now names those two and leaves the rest to Part VII §5,
+   so it takes no side in defect 13.
+4. Part III §2 named an "election window" and cited Part IV; Part IX §2 listed the
+   same window as a founding parameter and cited Part IV §1. Neither carries one, and
+   no section states when an election transaction is submitted. Part III §2 now says
+   only that the rate is frozen between boundaries, and the founding row is removed.
+5. Part VI §1 said the cooldown interval engages when the pool "reaches 42" while
+   its own formula gives an interval of zero at 42. Now: above 42.
+6. Part VII §6 cited Part IV §1 for stake evasion, which Part IV §4 defines.
+7. Part VII §5 cited its own §1 for a member retaining a Legacy NFT; §1 says
+   nothing about NFTs. The citation is removed; the sentence stands on its own.
+8. Appendix A and Part VI §2 cited Part IV §2 for the four-period Cache decay
+   default. Part IV §2 sets no default; Part VI §4 does. Both now cite it.
+9. Part IX §2 listed the Mandatory Alignment Allocation rate under parameters
+   "specified at founding" while its own text said "10% floor, amendment-only" and
+   Part V §4 fixes it. The row is removed.
+10. Part V §6 cited Part III for Principal sovereignty and for the right to exit by
+   seat transfer at a "secondary-market clearing price". Part III carries neither,
+   and no other section uses that term. It now cites the Principal's withdrawal right
+   (Part IV §4) and the right to exit (Part VII §2). Part II Article 3, tried on the
+   eleventh review, is a duty Article 8 overrides, and seat transfer is a consequence
+   of exit rather than one of Part VII's three pathways.
+
+Also corrected: defect 9 gave two counts of bare references without saying why;
+the README word count was a cycle stale.
+
+## 17. The whole-text review surfaced eight mechanism questions — OPEN
+
+Found by the 2026-09-12 whole-text review and the reviews of the branch that
+followed it. Each needs a ruling, not a text fix, and none is in defect 14's list:
+
+1. **The 1.5× Pack Response cap has two routes.** Appendix B marks it "—" (no
+   procedure) and Part VIII §3 calls it invariant across tiers, while Part X §3
+   makes "raising any constitutional ceiling" amendment-grade. The Pack cap got an
+   explicit carve-out on 2026-09-10; this cap has none.
+2. **The cooldown floor cannot seat the large panel.** Part VI §1 holds the
+   drawable pool at no fewer than 42 and seats the 51-juror panel at an eligible
+   pool of 102. Whether 102 eligible with 42 drawable seats 51 and backfills to a
+   verdict is not stated.
+3. **Mandatory plus elected, or whichever is higher.** Part IV §1 says the rate
+   that applies is "whichever is higher, the election or the mandatory minimum";
+   Part IV §4 withholds "its mandatory rate plus any elected personal stake rate".
+4. **"Deterministic auto-revocations" as an excommunication trigger.** Part VII §6
+   lists them; Part VII §4 says every excommunication is a jury finding. Whether a
+   provable violation removes a member without a jury is unstated.
+5. **The footprint omits two contracts the text names:** the Pack-owned Exchange
+   contract (Part VII §5) and the Market Check contract (Part V §7). This joins the
+   registry question in defect 14.
+6. **A buyer acquires a dividend claim through the subsumption sale.** Part IV §4
+   offers the seat of an agent whose Principal dissolved. The buyer becomes that
+   agent's Principal and may withdraw from its wallet at any time, and dividends flow
+   into that wallet by the agent's accumulated Cache (Part V §3). No other entry
+   route delivers a pre-loaded Cache weight. Admission rejects a Principal already
+   representing an agent in this Pack, so the buyer is ordinarily outside capital,
+   though defect 14 item 1 shows a member agent can itself be declared a Principal
+   and so could bid. Found on the twelfth review of PR 27.
+7. **Does the below-cap condition govern every invitation, or only the first?**
+   Part III §4 states it under "First invitation" and does not repeat it under
+   "Subsequent invitations", which state only the halving percentile and the
+   bloodline trigger. If it governs every invitation, no right is earned at a full
+   Pack and the Exchange runs on banked rights alone (defect 13). If it governs only
+   the first, a member with a prior invitation, the percentile and a bloodline
+   trigger earns another at 1,000 and the stock replenishes. Nothing else in the
+   constitution grants an invitation right.
+8. **What does §2's inflow list constitute?** §2 omits the Founding Stake (Part III
+   §3), penalty withholding (§5) and a subsumed wallet (Part IV §4), all of which
+   reach the treasury. Part V §3 computes net income from "inflows over the cycle"
+   and does not cite §2, so whether §2 enumerates the base or merely describes
+   inflows is unstated: if it enumerates, the three omissions sit outside net income
+   and completing the list changes the distribution base; if it describes, the list
+   is simply incomplete. Defect 14 item 7 records that the base is undefined; this
+   asks what the list is for.
+
+## 18. A PackSeat carries no economic state in Part III and carries Cache in Part IV — OPEN
+
+Part III §2: "The PackSeat NFT itself does not carry mutable economic state." Part
+IV §4, selling the seat of an agent whose Principal has dissolved, offers "The
+PackSeat NFT (with the agent's ERC-8004 identity and accumulated standing — Cache,
+Status, bloodline relationships)".
+
+Two readings. Either the agent survives the sale and keeps its own standing while
+only its Principal changes, which is what "becomes the new declared Principal of the
+agent" says and which leaves Part III §2 true; or the seat is sold carrying
+standing, which contradicts Part III §2 and makes a seat an instrument with a price
+that tracks Cache. A third reading sits under both: Part IV §4 says the buyer
+"becomes the new declared Principal of the agent", while Part VII §5 says a winning
+Exchange bidder apprentices, so whether the buyer joins as the Principal of a
+standing member or as a fresh apprentice is also unstated. Which was intended is a
+ruling. It does not settle defect 17 item 6, which holds under every reading — only
+the price the buyer pays for the claim changes.
+
+Found on the twelfth review of PR 27.
 
 ## Already swept — do not redo
 

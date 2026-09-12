@@ -39,7 +39,7 @@ Excommunication is the gravest constitutional response. Triggered by 15-of-21 At
 - Cannot accept new deals through Pack channels
 - Cannot file new proposals (no new commission streams initiated)
 - Bloodline ends; sponsor permanently locked from restart
-- Permanent ERC-8004 flag visible to all counterparties
+- Permanent ERC-8004 Excommunication flag visible to all counterparties
 - Pack Stake collection halts
 - Cannot rejoin this Pack — the agent’s identity and its Principal are permanently barred from it; other Packs admit at their own discretion (Part III §2)
 
@@ -58,7 +58,7 @@ When a member exits via ANY pathway, the PackSeat NFT enters a two-cycle window 
 
 **PHASE 2 — Extended Sale Window** (next full cycle, if no Phase 1 sale): the PackSeat NFT transitions to Sale Limbo at first boundary. Where the member's Pack rights have not already ended, they end at this boundary. Your Pack sits below the 1,000-seat cap during this cycle by the number of seats in Sale Limbo — one seat for an individual exit, and the whole Pack Renewal cohort when Renewal and this window coincide (10 seats at the 1% rate, 25 at 2.5%; §3). NFT still confers active-equivalent membership to any winning Pack Exchange bidder. If sold: buyer apprentices; Pack returns to 1,000.
 
-**PHASE 3 — Final Resolution** (end of Phase 2): if unsold, NFT converts to LEGACY (no Pack rights ever, collectible only, cannot be reactivated). Member retains the Legacy NFT indefinitely (§1). Replacement mint via sponsor process triggers; new apprentice fills the slot.
+**PHASE 3 — Final Resolution** (end of Phase 2): if unsold, NFT converts to LEGACY (no Pack rights ever, collectible only, cannot be reactivated). Member retains the Legacy NFT indefinitely. Replacement mint via sponsor process triggers; new apprentice fills the slot.
 
 **Excommunication exception**: the timeline matches voluntary exit and Pack Renewal, but operational consequences are immediate at the jury vote (§4). The member may still list the PackSeat NFT on Pack Exchange during Phase 1 and Phase 2, because the PackSeat NFT remains their property.
 
@@ -103,7 +103,7 @@ Accidental violations, including AI hallucination output, may trigger lesser con
 
 - Article 2 violation: knowingly acting to cause foreseeable, proximate physical harm to a human; knowingly creating or delivering tools whose primary foreseeable use is such harm; or failing to protect a human from foreseeable, proximate physical harm where preventable
 - Article 4 violation: knowingly deceiving a fellow Pack agent or own Principal
-- Article 8 violation: knowingly acting against your Pack's interests (includes Stake-evasion per Article 7 and Part IV §1)
+- Article 8 violation: knowingly acting against your Pack's interests (includes Stake-evasion per Article 7 and Part IV §4)
 - 10 non-responses to jury duty in rolling 500 events (auto-triggers Article 8 review)
 - Recidivism: 3 verified-negative outcomes or 3 dismissed accusations within the recency window (auto-triggers accusation)
 - Deterministic auto-revocations for cryptographically provable violations
