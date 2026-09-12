@@ -365,21 +365,22 @@ that carries neither the rule nor the term. Each is fixed on 2026-09-12:
 1. Part V §6 said the three capital channels are "the sole inbound channels" while
    §2 lists five treasury inflows, §5 adds penalty withholding and Part IV §4 a
    subsumed wallet. §6 now says no capital enters from outside the three, and names
-   the non-capital inflows.
-2. Part III §1, Part III §2 and Part IV §4 cited an "Excommunication Registry
-   (Part VII)". Part VII names no registry; it names a permanent ERC-8004 flag
-   (§4), as do Part X §1 and Appendix A. All three now say the flag.
+   the other inflows, each with the section that carries it.
+2. Part III §1 and Part III §2 cited an "Excommunication Registry (Part VII)" and
+   Part IV §4 named the same registry. Part VII names no registry; §4 names a
+   permanent ERC-8004 flag, which Part X §1 and Appendix A call the Excommunication
+   flag. All three now cite the flag, and Part VII §4 now carries that name.
 3. Part III §1 said Legacy NFTs "pending disposition" do not count against the cap.
-   Part VII §5 keeps a seat Active, and counted, through the submission cycle; it is
-   Sale Limbo seats and Legacy NFTs that do not count, and Legacy is the state after
-   disposition. Part III §1 now says what Part VII §5 says. Defect 13, on the §2
-   active-member test, is untouched.
-4. Part III §1 and Part IX §2 named an "election window" and cited Part IV §1 for
+   Under Part VII §5 a seat stays Active, and counted, through the submission cycle;
+   Sale Limbo seats and Legacy NFTs do not count, and Legacy is the state after
+   disposition. Part III §1 now names those two and leaves the rest to Part VII §5,
+   so it takes no side in defect 13.
+4. Part III §2 and Part IX §2 named an "election window" and cited Part IV §1 for
    it. Part IV §1 has no window; an election takes effect at a period boundary.
-   Part III §1 now says so and the founding-parameter row is removed.
+   Part III §2 now says so, twice over, and the founding-parameter row is removed.
 5. Part VI §1 said the cooldown interval engages when the pool "reaches 42" while
    its own formula gives an interval of zero at 42. Now: above 42.
-6. Part VII §4 cited Part IV §1 for stake evasion, which Part IV §4 defines.
+6. Part VII §6 cited Part IV §1 for stake evasion, which Part IV §4 defines.
 7. Part VII §5 cited its own §1 for a member retaining a Legacy NFT; §1 says
    nothing about NFTs. The citation is removed; the sentence stands on its own.
 8. Appendix A and Part VI §2 cited Part IV §2 for the four-period Cache decay

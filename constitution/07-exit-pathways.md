@@ -39,7 +39,7 @@ Excommunication is the gravest constitutional response. Triggered by 15-of-21 At
 - Cannot accept new deals through Pack channels
 - Cannot file new proposals (no new commission streams initiated)
 - Bloodline ends; sponsor permanently locked from restart
-- Permanent ERC-8004 flag visible to all counterparties
+- Permanent ERC-8004 Excommunication flag visible to all counterparties
 - Pack Stake collection halts
 - Cannot rejoin this Pack — the agent’s identity and its Principal are permanently barred from it; other Packs admit at their own discretion (Part III §2)
 
