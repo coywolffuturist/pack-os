@@ -224,7 +224,7 @@ membership, Pack Chat access and the admission roster check for up to two cycles
 The test conflates owning a tradeable asset with belonging to the Pack. Those were
 the same thing when it was written.
 
-### Eight attempts, all refuted. Do not attempt a ninth as a patch.
+### Eight attempts. Seven refuted; the eighth's objection was withdrawn.
 
 Seven added a condition to the active-member test. Each broke a different consumer
 of the predicate: the cap population, the first-invitation gate, the mint gates,
@@ -232,8 +232,10 @@ the Renewal base, the Sale Window phases. One abolished rejoin outright, against
 the "Can rejoin: yes | yes | NEVER" row of the Part VII comparison table.
 
 The eighth instead DEFINED `unencumbered`, which appears in the test and is
-defined nowhere. That is the right shape, and it still failed, for a reason worth
-recording permanently.
+defined nowhere. That is the right shape. It was refused on the ground below, and
+on 2026-09-12 that ground was found false: the Exchange does not starve at a full
+Pack. Whether the eighth attempt works now turns on defect 17 item 7, and nothing
+recorded here refuses it. A ninth is worth attempting once that question is ruled.
 
 ### The load-bearing design nobody wrote down
 
@@ -256,8 +258,9 @@ at risk the fair-market price discovery without forced-burn leverage that Part V
 
 ### What a correct fix must do
 
-Two counts, two gates. Invitation EARNING keys on ACTIVE MEMBERS, which falls
-during the window. MINTING keys on SEATS, which does not. And the mint event in
+Two counts, two gates, on the reading that below-cap governs every invitation
+(defect 17 item 7). Invitation EARNING keys on ACTIVE MEMBERS, which falls during
+the window. MINTING keys on SEATS, which does not. And the mint event in
 Part III §5 has no cap check of its own at all — the earning gate is the only
 thing protecting the cap at mint time, so re-keying it without adding an explicit
 seat check at the moment of use opens an unbounded overshoot, because invitation
@@ -360,28 +363,28 @@ and should read `2^(−t/h)`. Which was intended is a ruling. Found by a reviewe
 recomputing defect 14 item 9, which had been stated against true half-life decay
 (6.3×) when the formula as written gives 4.5×.
 
-## 16. A whole-text review after PR 26 found ten correspondence failures — FIXED
+## 16. A whole-text review after PR 26 found ten defects — FIXED
 
 The eight reviews of PR 26 read that branch's diff and the sections it cited. A
 ninth review on 2026-09-12 read the merged text as a whole, against the words the
-branch had introduced. It found nothing wrong with those words. It found ten
-places where sentences that predate every sweep say two things or cite a section
-that carries neither the rule nor the term. Each is fixed on 2026-09-12:
+branch had introduced. It found nothing wrong with those words. It found ten places
+where sentences that predate every sweep say two things, state a false universal,
+or cite a section that carries neither the rule nor the term. Each is fixed on 2026-09-12:
 
 1. Part V §6 said the three capital channels are "the sole inbound channels" while
    §2 lists five treasury inflows, §5 adds penalty withholding and Part IV §4 a
-   subsumed wallet. Two rewrites failed: "not member capital" was wrong for three of
-   the four other inflows, and "none is an outside channel" was wrong for deployment
-   revenue, which outside counterparties pay. Each rewrite was refuted in turn.
+   subsumed wallet. Eight rewrites were refuted in turn. "Not member capital" was
+   wrong for three of the four other inflows; "none is an outside channel" was wrong
+   for deployment revenue, which outside counterparties pay.
    "Not member capital" fell to penalty withholding; "none is an outside channel" to
    deployment revenue; "no funder acquires a claim" to the Part IV §4 sale (defect 17
    item 6); "a member's contribution" to a mint bid, paid before the seat exists. One
    form deleted the closing claim and left the opening count standing alone, and the
    count was the false part. One offered the two-cycle sale window as a concession
-   against non-refundability, when a seat's proceeds come from the buyer and add to
-   the treasury. One made the principle turn on what is absent from the treasury's
-   inflows, which put every inflow §2 lists under a heading that reads Members to
-   Pack. One replaced the treasury with a pronoun whose only antecedents, Pack OS and
+   against non-refundability, when a seat's proceeds come from the buyer, of which
+   only the fee reaches the treasury. One asserted that the principle turns on what is absent from the
+   treasury's inflows, a claim about the whole set that Part V §6's own opening
+   already answers differently two sentences earlier. One replaced the treasury with a pronoun whose only antecedents, Pack OS and
    the constitution, have no inflows. §6 now asserts nothing about the set of
    inflows: it states what Part X §1 excludes and says where the inflows are set
    out.
@@ -456,12 +459,14 @@ followed it. Each needs a ruling, not a text fix, and none is in defect 14's lis
    the first, a member with a prior invitation, the percentile and a bloodline
    trigger earns another at 1,000 and the stock replenishes. Nothing else in the
    constitution grants an invitation right.
-8. **Part V §2's inflow list is not the list Part V §6 points at.** §2 omits the
-   Founding Stake (Part III §3), penalty withholding (§5) and a subsumed wallet
-   (Part IV §4). Adding them is not free: Part V §3 computes net income from
-   "inflows over the cycle", so an entry in §2 enters the distribution base, and the
-   Founding Stake is a genesis seed with no revenue event behind it. Defect 14 item 7
-   already records that the base is undefined.
+8. **What does §2's inflow list constitute?** §2 omits the Founding Stake (Part III
+   §3), penalty withholding (§5) and a subsumed wallet (Part IV §4), all of which
+   reach the treasury. Part V §3 computes net income from "inflows over the cycle"
+   and does not cite §2, so whether §2 enumerates the base or merely describes
+   inflows is unstated: if it enumerates, the three omissions sit outside net income
+   and completing the list changes the distribution base; if it describes, the list
+   is simply incomplete. Defect 14 item 7 records that the base is undefined; this
+   asks what the list is for.
 
 ## 18. A PackSeat carries no economic state in Part III and carries Cache in Part IV — OPEN
 
