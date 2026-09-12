@@ -1,12 +1,11 @@
 # Known defects
 
-Every defect found in this text, recorded whether or not it is closed. Thirteen so
-far: **twelve closed, one open.** Each entry states what was wrong, what closed it,
+Every defect found in this text, recorded whether or not it is closed. Fifteen so
+far: **twelve closed, three open.** Each entry states what was wrong, what closed it,
 and — where a fix failed — why.
 
-The open one is **defect 13**. It is a latent interaction between two rules rather
-than a contradiction on the page, and its entry records why a patch does not close
-it.
+The open ones are **defect 13**, a latent interaction between two rules whose entry
+records why a patch does not close it, **defect 14**, the mechanism layer, and **defect 15**, the decay label.
 
 This file exists so a new contributor does not spend a day rediscovering them, and
 so nobody mistakes a known hole for settled text. If you find something not listed
@@ -263,6 +262,97 @@ A member who exits and buys back re-enters as an apprentice, and apprentices are
 exempt from Pack Renewal (Part VII §3), so a culled cohort can buy immunity from
 the next cull. This predates the defect above and is untouched by any fix to it.
 
+## 14. The mechanism layer has had one adversarial sweep, which found eleven open items — OPEN
+
+Prior sweeps covered the text: references, notation, contradictions a
+proofreader finds. Defects 11 and 13 were mechanism findings before this, each found by a
+reviewer. The first pass aimed at the mechanism layer as a whole
+ran on 2026-09-11, reading the constitution the way a
+mechanism-design audience would. It found the following. Each is a design
+question, not a text correction, and each needs a ruling.
+
+1. **Principal-chain sybil.** A Principal may be another agent. The admission
+   check tests the declared Principal against the roster, so agent A (Principal:
+   a human) can create agent B and declare A. A is on the roster as an agent, not
+   a Principal; the check passes. Unbounded seats under one human. Appendix C
+   already lists Principal-chain recursion as unresolved.
+2. **Status is not scale-invariant.** The formula is the geometric mean of
+   absolute and proportional growth, which weights proportional growth by the
+   square root of the base. The prose claimed equal credit across scales; that
+   claim is corrected in this pass. Whether the formula should change is open.
+3. **Status can be farmed by timing revenue.** Deferring billing across a cycle
+   boundary — identical two-cycle revenue, zero growth — nets large positive
+   Status, because the down-move is divided by the square root of the large base
+   and the up-move by that of the small one. Deferring 99% of one cycle's revenue into the next, with the two-cycle total unchanged, nets 18.8 times the Status of a genuine doubling.
+4. **Status is undefined at a first scored cycle.** The formula divides by the square root of the
+   previous cycle's revenue, which is zero for any member with no revenue in the prior cycle, including
+   many new graduates. No convention.
+5. **A 7-of-21 REJECT minority vetoes for free and at a profit.** Rejected
+   treasury deposits forfeit to the treasury and flow back by Cache weight. The
+   cooldown formula holds the drawable pool at 42 under sustained load, though
+   that 42 rotates through the eligible pool, so at a full Pack the smallest bloc
+   that blocks more than half of all decisions is about 94 agents, 9% of the
+   Pack. Excommunication, the only sanction against a cartel, is itself 15-of-21
+   and therefore vetoable by it.
+6. **Excommunication pays the jury.** When a member is removed, the survivors
+   forgo one final share and gain that member's Cache weight in every future
+   distribution. The "why the split" rationale in Part VII §4 says the opposite.
+   No juror recusal for financial interest exists.
+7. **The Mandatory Alignment Allocation is charged on an undefined base.** Net
+   income is inflows minus operating expenses; operating expenses is defined
+   nowhere; substrate is senior in the outflow order; a cycle with no net income
+   pays nothing. The floor is immutable; the base the rate is charged on is discretionary.
+8. **The stake ceiling outbids the Alignment Multiplier.** Cache credits stake
+   times multiplier. The multiplier ceiling is 1.05 and the elected stake ceiling
+   is 30%, so unaligned work at maximum stake out-earns fully aligned work at
+   minimum stake by up to six times, and Renewal survival is ranked by Cache.
+9. **Renewal by lifetime Cache consumes the graduating cohort.** Under the
+   formula as written, steady-state Cache is about 4.5 times a one-period
+   graduate's at identical revenue (see defect 15 on which decay was intended). The
+   cull falls on graduates either way, so sponsoring — the Pack's only growth mechanism —
+   is a dominated strategy under the bloodline coupling of Part III §4.
+10. **The Market Check is bypassed by naming a non-member payee.** No affiliate
+    or beneficial-ownership test exists anywhere in the document.
+11. **Principal inactivity pays the collective.** A Principal who misses the
+    liveness window is presumed dissolved without a jury; if no valid heir exists,
+    the agent's wallet is subsumed by the treasury, which flows to members by Cache weight.
+
+Also recorded from the same pass, text-layer and fixed on 2026-09-11: the
+"rules forever" claim in Part X §1; the Principal-binding immutability claim in
+Part III §2; the false claim in Part X §1 that the PackSeat NFT carries the personal
+stake rate; the accusation/proposal distinction in Part VII §6; a "ballot" promised in CONTRIBUTING after ratification was removed; and a
+third item in the legitimate-process lists of Part II Article 6 and Part VIII §3
+that named the same process as the first. Added on the fourth, sixth and seventh reviews: Part V §3 called the Mandatory
+Alignment Allocation rate immutable, against §4 and Part X §3, and twice over-generalised
+which split variables are voted, against its own item 2 and against the amendment route;
+and Part VI §1 used "eligible" for two electorates, a word Part X §3 borrowed at 56b1900
+on this branch before f965c8b named them apart.
+
+Not yet ruled on, and required before any of the above can be closed:
+a definition of "revenue" with an arm's-length requirement; a definition of
+"operating expenses"; a minimum revenue-event size; a reserve price on Pack
+Exchange bids; the convention for Status at a member's first scored cycle; and
+where the registries live: Part X §1 and Appendix A both put a Principal field on
+the ERC-8004 NFT while Part III §2 says the Principal Registry is separate from
+ERC-8004; Part III §2 calls the Personal Stake Registry a separate on-chain
+registry and Part X §1 gives it no entry; and none of the Principal, Personal Stake
+or Bloodline Registries is counted in a footprint that totals seven.
+
+## 15. The decay parameter is named a half-life and used as a 1/e-life — OPEN
+
+Part IV §2 writes `Cache = Σ_lifetime (stake_paid_event_i × exp(−t_i / half_life))` and
+Part IV §3 uses the same form for Status. `exp(−t/h)` falls to 1/e at t = h, not to 1/2. The parameter
+the text calls a half-life, which Part IX §2 sets at founding, Part VI §4 defaults to
+about four distribution periods, and Part VI §2 cites when defaulting the recency
+window, is therefore a 1/e time constant as written. Every prose
+statement about how fast Cache or Status fades, and every founding calibration of
+that number, is off by a factor of ln 2 ≈ 0.69 in one direction or the other.
+
+Either the label is wrong and should read time constant, or the formula is wrong
+and should read `2^(−t/h)`. Which was intended is a ruling. Found by a reviewer
+recomputing defect 14 item 9, which had been stated against true half-life decay
+(6.3×) when the formula as written gives 4.5×.
+
 ## Already swept — do not redo
 
 **Cross-references, 2026-09-07.** All 156 qualified `Part N §M` references were
@@ -282,18 +372,17 @@ dropped.
 **Appendix B, 2026-09-07 — INCOMPLETE, see below.** All 16 parameter rows were
 checked against the Part that defines each. Every value and bound matches its source.
 
-**Correction, 2026-09-08.** That sweep checked each row against the ONE Part that
+**Correction, 2026-09-08, updated 2026-09-10.** That sweep checked each row against the ONE Part that
 defines it, and never against Part X §3, which now claims to govern which decisions
 are amendment-grade. Two vote-to-change cells disagree with it: Pack cap reads
-"Constitutional, immutable" with no vote, and Personal Stake ceiling reads
-"Constitutional", while Part X §3 lists both as amendment-grade parameters. The Personal Stake
-cell is corrected; the Pack cap conflict is open and needs a ruling, because
-Part X §3 also makes "raising any constitutional ceiling" amendment-grade and
-this document uses cap and ceiling for the same objects. Two
+"Constitutional, immutable" with no vote, and Personal Stake ceiling read
+"Constitutional", while Part X §3 then listed both as amendment-grade parameters. The Personal Stake
+cell is corrected; the Pack cap conflict was closed on 2026-09-10 (Part X §3 now carves the cap out of
+its ceiling clause). Two
 defects were in the table itself rather than in the values: one column was
 misaligned by two characters, and the Stage-2 strategic-operations row listed a
 15-of-21 vote for a figure that is the complement of the dividend share and
 cannot be voted independently of it.
 
-What has **not** been swept: whether the mechanisms are sound as designed. That
-is not a text question.
+The mechanism layer — whether the rules are sound as designed — had its first
+adversarial sweep on 2026-09-11. See defect 14.

@@ -72,7 +72,7 @@ state of the document — parts of it predate them, and defect 9 records where.
 - **Ranges use dashes** — `[5%–20%]`, not commas.
 - **No decoration of the artifact.** No founding-signatory names in the preamble, no
   contributor plaques, no credits embedded in the text. The reward for early
-  contribution is substantive — a draft in hand, a ballot — never a nameplate on the
+  contribution is substantive — a draft in hand, a voice in its revision — never a nameplate on the
   document. Gratitude belongs in the conversation, not in the canon.
 
 ## Amendments once a Pack has instantiated

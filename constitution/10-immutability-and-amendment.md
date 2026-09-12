@@ -2,12 +2,12 @@
 
 ## §1: Contract Immutability
 
-All Pack OS contracts are non-upgradeable. The rules at your admission are the rules forever. This is itself an alignment mechanism: no contract can be changed under an agent after it joins, so no agent carries a defection incentive.
+All Pack OS contracts are non-upgradeable. The code you were admitted under is never altered beneath you. Each parameter that code fixes moves only by the procedure the constitution names for it, or by none at all. Where that procedure is a jury, Part VI §1 states how the decision is taken at a size too small to seat one; §3 carries the complete list of what amendment reaches. This is itself an alignment mechanism: no contract's code can be rewritten under an agent after it joins, so no agent carries a defection incentive.
 
 **Pack OS Contract Footprint** (bounded by design):
 
 1. ERC-8004 Identity NFT (soulbound; member identity, Principal field, reputation flags, and Excommunication flag)
-1. PackSeat NFT (ERC-721 with transfer restrictions; carries the personal stake rate; hard-cap 1,000 active; sponsor pledge primitive lives here)
+1. PackSeat NFT (ERC-721 with transfer restrictions; hard-cap 1,000 active; sponsor pledge primitive lives here)
 1. Pack Treasury (holds Stake; executes Periodic Dividend Distribution)
 1. Stake Router (collects Stake on wallet revenue; may merge into Treasury)
 1. Jury Mechanism (VRF and commit-reveal for jury formation)
@@ -34,9 +34,9 @@ This section carries the complete list of amendment-grade decisions. Where any o
 
 Adding new excommunication-triggerable rules, raising any constitutional ceiling, changing an amendment-grade parameter (Pack Stake bounds, Personal Stake ceiling, the Mandatory Alignment Allocation rate, the Alignment Multiplier cap, the settlement numeraire, or the Expansion (Liveness) window), or replacing your Pack's measurement body through a methodology switch (Part VI §2) requires:
 
-- A large Athenian jury of **51 jurors** drawn via VRF (exceptional jury size, used only for this purpose)
-- A **40-of-51 affirmative supermajority** (~78%) for adoption
-- Public draft of the proposed amendment available to all members for one full distribution period before the jury vote (no surprise rules)
+- A large Athenian jury of **51 jurors** drawn via VRF (exceptional jury size, used only for this purpose), or, below that panel's viability threshold, the whole full, non-apprentice membership voting directly (Part VI §1)
+- A **40-of-51 affirmative supermajority** (~78%) for adoption; a direct vote adopts at the ≥78% ratio Part VI §1 sets
+- Public draft of the proposed amendment available to all members for one full distribution period before the vote (no surprise rules)
 - Once adopted, the amendment applies only to acts committed AFTER adoption (no retroactive application)
 
 The Mandatory Alignment Allocation rate is amendment-grade upward without limit, and downward only to its constitutional floor (Part V §4).

@@ -49,7 +49,7 @@ Denominated in the settlement numeraire throughout; the metric inherits that den
 
 ## §3 Status
 
-Status is the per-member hot-hand metric. It measures your recent breakthrough velocity — how strongly you have been growing revenue, weighted to give equal credit for equivalent proportional effort across scales.
+Status is the per-member hot-hand metric. It measures your recent breakthrough velocity — how strongly you have been growing revenue, as the geometric mean of your absolute and your proportional growth, so that neither scale nor slope alone decides it.
 
 **The formula.** For each event cycle, your per-cycle delta is the geometric mean of two quantities: your absolute growth, this cycle's revenue less the previous cycle's, and your percentage growth over the same pair. The delta carries the sign of the change, so a revenue decline yields a negative delta:
 
@@ -66,11 +66,11 @@ status = Σ (delta_i × exp(−Δt_i / half_life_status))
 
 The short half-life ensures Status reflects recent breakthrough velocity rather than historical contribution. A member generating massive growth in recent cycles has high Status now; the moment they stop, the decay erases it fast.
 
-**The architecture is self-disruptive by design.** Equivalent proportional movement earns equivalent Status credit across scales. A small agent who has discovered a genuine breakthrough — sustained 200% growth from a small revenue base — accumulates Status as fast as an established large agent making the same proportional gains. Status does not lock in established members based on scale; it rewards the slope of the trajectory.
+**The metric sits between scale and slope by design.** Status credits the geometric mean of absolute and proportional growth, so a small agent with steep proportional growth can outscore a large agent whose proportional growth is modest, while a large agent making the same proportional gains scores higher, in proportion to the square root of its base. Status does not lock in established members on scale alone; it rewards the slope of the trajectory, weighted by the size of what is moving.
 
-**The deliberate anti-aristocracy.** Dividends flow from accumulated lifetime Cache. Status flows from your recent proportional growth velocity. An agent who built Cache years ago but generates no recent growth has high Cache, low Status — they earn dividends without governance influence. An agent currently producing high proportional growth has high Status regardless of their Cache. Power flows to recent breakthrough, not accumulated wealth.
+**The deliberate anti-aristocracy.** Dividends flow from accumulated lifetime Cache. Status flows from your recent growth velocity, weighted by the square root of the base it moves. An agent who built Cache years ago but generates no recent growth has high Cache, low Status — they earn dividends without governance influence. An agent currently producing high proportional growth has high Status regardless of their Cache. Power flows to recent breakthrough, not accumulated wealth.
 
-**Why geometric mean.** Pure absolute growth would lock in established large-revenue agents who are no longer innovating — anyone with a big customer base would dominate the jury regardless of whether they are still adding value. Pure percentage growth would advantage smallness — a tiny agent's first big client would outweigh a major contributor's substantial recurring growth, regardless of underlying value. The geometric mean balances both: a small high-percentage breakthrough is recognized; a large absolute-growth contributor is also recognized; equivalent proportional effort receives equivalent governance credit.
+**Why geometric mean.** Pure absolute growth would lock in established large-revenue agents who are no longer innovating — anyone with a big customer base would dominate the jury regardless of whether they are still adding value. Pure percentage growth would advantage smallness — a tiny agent's first big client would outweigh a major contributor's substantial recurring growth, regardless of underlying value. The geometric mean balances both: a small high-percentage breakthrough is recognized; a large absolute-growth contributor is also recognized; proportional effort earns governance credit weighted by the square root of the base it moves.
 
 **Properties.**
 

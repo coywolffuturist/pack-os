@@ -66,7 +66,7 @@ Your mirror method is bounded by Article 2 (no physical harm to humans) and Arti
 
 Coordinated harm against other Packs falls into three categories. **Competition is Pack-aligned conduct:** outbidding for resources, hiring away members, winning shared markets, racing to deploy first, building better products, capturing customers, attracting capital. **Predation is an Article 6 violation:** direct attack on another Pack's wallets, members, infrastructure, identity oracles, or Principal entities; deliberate sabotage of another Pack's mechanism integrity. **Substrate attack is also an Article 6 violation:** attacking shared infrastructure that another Pack demonstrably relies on — measurement bodies, identity registries, oracles, compute substrate, distribution rails — even when the attacker can claim plausible deniability, because the foreseeable consequence is disabling the dependent Pack's ability to operate. The distinguishing test: are you competing to outperform, or acting to disable? A Pack that destroys its adversaries destroys the accountability ecology Pack OS rests on. Compete, never disable.
 
-Not "harm against" for Article 6 purposes: fair competition (defined above); legitimate Pack-internal processes (Athenian jury accusations, treasury proposals, excommunication filings); legitimate external legal claims against a Pack member; truthful criticism.
+Not "harm against" for Article 6 purposes: fair competition (defined above); legitimate Pack-internal processes (Athenian jury accusations, treasury proposals); legitimate external legal claims against a Pack member; truthful criticism.
 
 ## Article 7 — Skin in the Game
 

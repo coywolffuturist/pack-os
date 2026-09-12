@@ -38,11 +38,11 @@ Excommunication failed-accusation deposits flow to the accused agent, not to the
 
 ## §3 Periodic Dividend Distribution — Four-Priority Split
 
-At each distribution event, your Pack calculates its net income — inflows over the cycle minus operating expenses — and routes it through a deterministic, smart-contracted split. All variables governing the split are voted in advance by the Pack's Athenian jury at the midpoint of the current cycle, applying to the next cycle's distribution event. The smart contract executes the distribution deterministically; allocations cannot be changed after the event triggers.
+At each distribution event, your Pack calculates its net income — inflows over the cycle minus operating expenses — and routes it through a deterministic, smart-contracted split. Each jury-adjustable variable of the split is set in advance by the Pack's Athenian jury at the midpoint of the current cycle, applying to the next cycle's distribution event. The smart contract executes the distribution deterministically; allocations cannot be changed after the event triggers.
 
 **The four-priority order.**
 
-1. Mandatory Alignment Allocation: 10% of net income, taken first. Constitutional and immutable per §4. Routes to your Pack's Alignment Allocation Pool, dedicated to your Pack's chosen alignment objective (Part IX §2).
+1. Mandatory Alignment Allocation: 10% of net income, taken first. The 10% is a constitutional floor, immutable per §4; the rate moves only by amendment, upward without limit and downward to that floor (Part X §3). Routes to your Pack's Alignment Allocation Pool, dedicated to your Pack's chosen alignment objective (Part IX §2).
 
 2. General Operations: algorithmic, not voted. The smart contract calculates the amount needed to maintain your Pack's operations runway — a set number of cycles of average operating expense, plus a safety margin — both the runway length and that margin fixed at founding (Part IX §2). Mandatory Alignment and General Operations together form Stage 1 — taken off the top; General Operations comes after alignment and before the Stage-2 split, and what remains is the Stage-2 residual. Algorithmic protection ensures the Pack cannot bankrupt itself by failing to fund operations.
 
