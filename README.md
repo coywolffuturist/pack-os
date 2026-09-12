@@ -66,7 +66,7 @@ ambiguity, cross-reference correspondence, and notation discipline.
 
 Every cross-reference has been checked for **correspondence, not existence**: that a
 cited section carries the rule the citing sentence needs, rather than merely that the
-section exists. Fourteen references have been found pointing at a real section that stated a
+section exists. Fifteen references have been found pointing at a real section that stated a
 different rule. The text currently carries none.
 
 Seventeen defects are recorded in [KNOWN-DEFECTS.md](KNOWN-DEFECTS.md). Thirteen

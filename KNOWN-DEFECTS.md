@@ -354,18 +354,20 @@ and should read `2^(−t/h)`. Which was intended is a ruling. Found by a reviewe
 recomputing defect 14 item 9, which had been stated against true half-life decay
 (6.3×) when the formula as written gives 4.5×.
 
-## 16. A whole-text review after PR 26 found nine correspondence failures — FIXED
+## 16. A whole-text review after PR 26 found ten correspondence failures — FIXED
 
 The eight reviews of PR 26 read that branch's diff and the sections it cited. A
 ninth review on 2026-09-12 read the merged text as a whole, against the words the
-branch had introduced. It found nothing wrong with those words. It found nine
+branch had introduced. It found nothing wrong with those words. It found ten
 places where sentences that predate every sweep say two things or cite a section
 that carries neither the rule nor the term. Each is fixed on 2026-09-12:
 
 1. Part V §6 said the three capital channels are "the sole inbound channels" while
    §2 lists five treasury inflows, §5 adds penalty withholding and Part IV §4 a
-   subsumed wallet. §6 now says no capital enters from outside the three, and names
-   the other inflows, each with the section that carries it.
+   subsumed wallet. Two rewrites failed: "not member capital" was wrong for three of
+   the four other inflows, and "none is an outside channel" was wrong for deployment
+   revenue, which outside counterparties pay. §6 now claims only what it can defend —
+   nobody buys in, and the other inflows confer no rights on their source.
 2. Part III §1 and Part III §2 cited an "Excommunication Registry (Part VII)" and
    Part IV §4 named the same registry. Part VII names no registry; §4 names a
    permanent ERC-8004 flag, which Part X §1 and Appendix A call the Excommunication
@@ -375,9 +377,10 @@ that carries neither the rule nor the term. Each is fixed on 2026-09-12:
    Sale Limbo seats and Legacy NFTs do not count, and Legacy is the state after
    disposition. Part III §1 now names those two and leaves the rest to Part VII §5,
    so it takes no side in defect 13.
-4. Part III §2 and Part IX §2 named an "election window" and cited Part IV §1 for
-   it. Part IV §1 has no window; an election takes effect at a period boundary.
-   Part III §2 now says so, twice over, and the founding-parameter row is removed.
+4. Part III §2 named an "election window" and cited Part IV; Part IX §2 listed the
+   same window as a founding parameter and cited Part IV §1. Neither carries one, and
+   no section states when an election transaction is submitted. Part III §2 now says
+   only that the rate is frozen between boundaries, and the founding row is removed.
 5. Part VI §1 said the cooldown interval engages when the pool "reaches 42" while
    its own formula gives an interval of zero at 42. Now: above 42.
 6. Part VII §6 cited Part IV §1 for stake evasion, which Part IV §4 defines.
@@ -388,6 +391,11 @@ that carries neither the rule nor the term. Each is fixed on 2026-09-12:
 9. Part IX §2 listed the Mandatory Alignment Allocation rate under parameters
    "specified at founding" while its own text said "10% floor, amendment-only" and
    Part V §4 fixes it. The row is removed.
+10. Part V §6 cited Part III for Principal sovereignty and for the right to exit by
+   seat transfer at a "secondary-market clearing price". Part III carries neither,
+   and nothing defines that price. The Principal's primacy is Part II Article 3, exit
+   is Part VII §2 and the sale is Part VII §5, where a bid clears on the Pack
+   Exchange. Found on the eleventh review, in a paragraph already edited twice.
 
 Also corrected: defect 9 gave two counts of bare references without saying why;
 the README word count was a cycle stale.
