@@ -244,9 +244,8 @@ only while the Pack is below the cap (Part III §4). A departure drops the Pack
 below cap, which regenerates the right needed to buy the departing seat.
 
 Any change that keeps the count at 1,000 through the window starves the Exchange:
-no new rights, no bids, every exit force-burns to Legacy. That is the exact
-outcome Part VII §5 says the window exists to prevent, and it defeats the sale
-window Part VII §5 opens for exactly that purpose.
+no new rights, no bids, every exit force-burns to Legacy. It defeats the
+fair-market price discovery Part VII §5 opens the two-cycle window for.
 
 ### What a correct fix must do
 
@@ -367,10 +366,11 @@ that carries neither the rule nor the term. Each is fixed on 2026-09-12:
    subsumed wallet. Two rewrites failed: "not member capital" was wrong for three of
    the four other inflows, and "none is an outside channel" was wrong for deployment
    revenue, which outside counterparties pay. A third said no funder acquires a claim,
-   which Part IV §4's subsumption sale refutes (defect 17 item 6), and called each
-   channel a member's own contribution, which a mint bid and a resale royalty are not.
-   §6 now carries no universal: it says Pack OS builds no channel for outside
-   donations or grants, which is what Part X §1 excludes.
+   which Part IV §4's subsumption sale refutes (defect 17 item 6). A fourth scoped the
+   count to a member's contribution, which a mint bid is not, since it is paid before
+   the seat exists. Each rewrite kept an enumeration and each enumeration had a
+   counterexample one section away. The enumeration is gone: §6 points at §2 for the
+   inflows and states only what Part X §1 excludes.
 2. Part III §1 and Part III §2 cited an "Excommunication Registry (Part VII)" and
    Part IV §4 named the same registry. Part VII names no registry; §4 names a
    permanent ERC-8004 flag, which Part X §1 and Appendix A call the Excommunication
@@ -426,13 +426,14 @@ followed it. Each needs a ruling, not a text fix, and none is in defect 14's lis
 5. **The footprint omits two contracts the text names:** the Pack-owned Exchange
    contract (Part VII §5) and the Market Check contract (Part V §7). This joins the
    registry question in defect 14.
-6. **Outside capital acquires a dividend claim through the subsumption sale.** Part
-   IV §4 offers the seat of an agent whose Principal dissolved, and the buyer must
-   come from outside the Pack, since one Principal may hold at most one agent in it.
-   The buyer becomes that agent's Principal and may withdraw from its wallet at any
-   time, and dividends flow into that wallet by the agent's accumulated Cache (Part V
-   §3). No other entry route delivers a pre-loaded Cache weight. Found on the twelfth
-   review of PR 27.
+6. **A buyer acquires a dividend claim through the subsumption sale.** Part IV §4
+   offers the seat of an agent whose Principal dissolved. The buyer becomes that
+   agent's Principal and may withdraw from its wallet at any time, and dividends flow
+   into that wallet by the agent's accumulated Cache (Part V §3). No other entry
+   route delivers a pre-loaded Cache weight. Admission rejects a Principal already
+   representing an agent in this Pack, so the buyer is ordinarily outside capital,
+   though item 1 above shows a member agent can itself be declared a Principal and so
+   could bid. Found on the twelfth review of PR 27.
 
 ## 18. A PackSeat carries no economic state in Part III and carries Cache in Part IV — OPEN
 
