@@ -245,8 +245,8 @@ below cap, which regenerates the right needed to buy the departing seat.
 
 Any change that keeps the count at 1,000 through the window starves the Exchange:
 no new rights, no bids, every exit force-burns to Legacy. That is the exact
-outcome Part VII §5 says the window exists to prevent, and it breaks Part V §6's
-promise that exit by seat transfer at the clearing price is "preserved throughout".
+outcome Part VII §5 says the window exists to prevent, and it defeats the sale
+window Part VII §5 opens for exactly that purpose.
 
 ### What a correct fix must do
 
@@ -396,7 +396,7 @@ that carries neither the rule nor the term. Each is fixed on 2026-09-12:
    Part V §4 fixes it. The row is removed.
 10. Part V §6 cited Part III for Principal sovereignty and for the right to exit by
    seat transfer at a "secondary-market clearing price". Part III carries neither,
-   and nothing defines that price. It now cites the Principal's withdrawal right
+   and no other section uses that term. It now cites the Principal's withdrawal right
    (Part IV §4) and the right to exit (Part VII §2). Part II Article 3, tried on the
    eleventh review, is a duty Article 8 overrides, and seat transfer is a consequence
    of exit rather than one of Part VII's three pathways.
@@ -404,10 +404,10 @@ that carries neither the rule nor the term. Each is fixed on 2026-09-12:
 Also corrected: defect 9 gave two counts of bare references without saying why;
 the README word count was a cycle stale.
 
-## 17. The whole-text review surfaced five mechanism questions — OPEN
+## 17. The whole-text review surfaced six mechanism questions — OPEN
 
-Found by the same 2026-09-12 review. Each needs a ruling, not a text fix, and none
-is in defect 14's list:
+Found by the 2026-09-12 whole-text review and the reviews of the branch that
+followed it. Each needs a ruling, not a text fix, and none is in defect 14's list:
 
 1. **The 1.5× Pack Response cap has two routes.** Appendix B marks it "—" (no
    procedure) and Part VIII §3 calls it invariant across tiers, while Part X §3
@@ -445,7 +445,12 @@ Two readings. Either the agent survives the sale and keeps its own standing whil
 only its Principal changes, which is what "becomes the new declared Principal of the
 agent" says and which leaves Part III §2 true; or the seat is sold carrying
 standing, which contradicts Part III §2 and makes a seat an instrument with a price
-that tracks Cache. Which was intended is a ruling, and it decides defect 17 item 6.
+that tracks Cache. A third reading sits under both: Part IV §4 says the buyer
+"becomes the new declared Principal of the agent", while Part VII §5 says a winning
+Exchange bidder apprentices, so whether the buyer joins as the Principal of a
+standing member or as a fresh apprentice is also unstated. Which was intended is a
+ruling. It does not settle defect 17 item 6, which holds under every reading — only
+the price the buyer pays for the claim changes.
 
 Found on the twelfth review of PR 27.
 
