@@ -5,7 +5,7 @@ far: **thirteen closed, five open.** Each entry states what was wrong, what clos
 and — where a fix failed — why.
 
 The open ones are **defect 13**, a latent interaction between two rules whose entry
-records why a patch does not close it, **defect 14**, the mechanism layer, **defect 15**, the decay label, **defect 17**, six
+records why a patch does not close it, **defect 14**, the mechanism layer, **defect 15**, the decay label, **defect 17**, eight
 mechanism questions a whole-text review surfaced, and **defect 18**, what a seat carries.
 
 This file exists so a new contributor does not spend a day rediscovering them, and
@@ -248,7 +248,8 @@ bid with a valid pledge completes.
 
 So a change that keeps the count at 1,000 through the window does not starve the
 Exchange while banked rights exist. It makes the Exchange depend entirely on that
-stock, which nothing replenishes at a full Pack. Whether the stock is deep enough
+stock, which nothing replenishes at a full Pack if the below-cap condition governs
+every invitation (defect 17 item 7). Whether the stock is deep enough
 that a departing seat always draws a bid is unstated, and a thin stock is what puts
 at risk the fair-market price discovery without forced-burn leverage that Part VII
 §5 opens the window for.
@@ -371,17 +372,19 @@ that carries neither the rule nor the term. Each is fixed on 2026-09-12:
    §2 lists five treasury inflows, §5 adds penalty withholding and Part IV §4 a
    subsumed wallet. Two rewrites failed: "not member capital" was wrong for three of
    the four other inflows, and "none is an outside channel" was wrong for deployment
-   revenue, which outside counterparties pay. Rewrite after rewrite failed, each on a
-   counterexample a section away: "not member capital" against penalty withholding;
-   "none is an outside channel" against deployment revenue; "no funder acquires a
-   claim" against the Part IV §4 sale (defect 17 item 6); "a member's contribution"
-   against a mint bid, paid before the seat exists; a form that deleted the closing
-   claim and left the opening count standing alone; a form that dropped the count and
-   let the heading, Members to Pack, take in every inflow §2 lists, a mint bid and
-   deployment revenue among them; and a form that offered the two-cycle sale window
-   as a concession against non-refundability, when a seat's proceeds come from the
-   buyer and add to the treasury. §6 now states what Part X §1 excludes and points at
-   §2 for the inflows, and §2 gains the Founding Stake it had never listed.
+   revenue, which outside counterparties pay. Each rewrite was refuted in turn.
+   "Not member capital" fell to penalty withholding; "none is an outside channel" to
+   deployment revenue; "no funder acquires a claim" to the Part IV §4 sale (defect 17
+   item 6); "a member's contribution" to a mint bid, paid before the seat exists. One
+   form deleted the closing claim and left the opening count standing alone, and the
+   count was the false part. One offered the two-cycle sale window as a concession
+   against non-refundability, when a seat's proceeds come from the buyer and add to
+   the treasury. One made the principle turn on what is absent from the treasury's
+   inflows, which put every inflow §2 lists under a heading that reads Members to
+   Pack. One replaced the treasury with a pronoun whose only antecedents, Pack OS and
+   the constitution, have no inflows. §6 now asserts nothing about the set of
+   inflows: it states what Part X §1 excludes and says where the inflows are set
+   out.
 2. Part III §1 and Part III §2 cited an "Excommunication Registry (Part VII)" and
    Part IV §4 named the same registry. Part VII names no registry; §4 names a
    permanent ERC-8004 flag, which Part X §1 and Appendix A call the Excommunication
@@ -415,7 +418,7 @@ that carries neither the rule nor the term. Each is fixed on 2026-09-12:
 Also corrected: defect 9 gave two counts of bare references without saying why;
 the README word count was a cycle stale.
 
-## 17. The whole-text review surfaced six mechanism questions — OPEN
+## 17. The whole-text review surfaced eight mechanism questions — OPEN
 
 Found by the 2026-09-12 whole-text review and the reviews of the branch that
 followed it. Each needs a ruling, not a text fix, and none is in defect 14's list:
@@ -445,6 +448,20 @@ followed it. Each needs a ruling, not a text fix, and none is in defect 14's lis
    representing an agent in this Pack, so the buyer is ordinarily outside capital,
    though defect 14 item 1 shows a member agent can itself be declared a Principal
    and so could bid. Found on the twelfth review of PR 27.
+7. **Does the below-cap condition govern every invitation, or only the first?**
+   Part III §4 states it under "First invitation" and does not repeat it under
+   "Subsequent invitations", which state only the halving percentile and the
+   bloodline trigger. If it governs every invitation, no right is earned at a full
+   Pack and the Exchange runs on banked rights alone (defect 13). If it governs only
+   the first, a member with a prior invitation, the percentile and a bloodline
+   trigger earns another at 1,000 and the stock replenishes. Nothing else in the
+   constitution grants an invitation right.
+8. **Part V §2's inflow list is not the list Part V §6 points at.** §2 omits the
+   Founding Stake (Part III §3), penalty withholding (§5) and a subsumed wallet
+   (Part IV §4). Adding them is not free: Part V §3 computes net income from
+   "inflows over the cycle", so an entry in §2 enters the distribution base, and the
+   Founding Stake is a genesis seed with no revenue event behind it. Defect 14 item 7
+   already records that the base is undefined.
 
 ## 18. A PackSeat carries no economic state in Part III and carries Cache in Part IV — OPEN
 

@@ -8,8 +8,6 @@ Your Pack's treasury is a single unified balance. There is no separate emergency
 
 **Inflows.**
 
-**Founding Stake.** The genesis seed, 100% to treasury (Part III §3).
-
 **Mint bids.** 100% of each mint bid routes to your Pack's treasury (Part III §5).
 
 **Pack Stake.** Mandatory and elected Pack Stake from member revenue, withheld at source and routed at each revenue event (per Part IV §1 and Part IV §4).
