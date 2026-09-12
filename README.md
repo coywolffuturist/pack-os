@@ -67,7 +67,7 @@ ambiguity, cross-reference correspondence, and notation discipline.
 Every cross-reference has been checked for **correspondence, not existence**: that a
 cited section carries the rule the citing sentence needs, rather than merely that the
 section exists. Every reference found pointing at a real section that stated a different rule is
-recorded in KNOWN-DEFECTS.md, as defect 9 and defect 16, and fixed.
+recorded in KNOWN-DEFECTS.md and fixed.
 
 Eighteen defects are recorded in [KNOWN-DEFECTS.md](KNOWN-DEFECTS.md). Thirteen
 are closed and five are open. **The mechanism layer — whether the
